@@ -4,7 +4,13 @@
 
 <?php get_template_part('templates/sections/section-adv') ?>
 
-<?php get_template_part('templates/sections/section-shops') ?>
+<section class="section-shop">
+    <div class="container">
+        <h2>Магазины центра</h2>
+
+        <?php get_template_part('templates/shop-list') ?>
+    </div>
+</section>
 
 
 

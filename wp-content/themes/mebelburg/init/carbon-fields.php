@@ -64,16 +64,29 @@ function site_carbon()
 
         ->set_page_menu_position(2)
         ->set_icon('dashicons-admin-generic')
-        ->add_fields( array (
+        ->add_fields(array(
             Field::make('complex', 'crb_hero_slider', 'Слайдер на первом экране')
                 ->add_fields(array(
                     Field::make('rich_text', 'crb_hero_slider_header', 'Заголовок')
                         ->set_width(33),
-                        Field::make('text', 'crb_hero_slider_link_more', 'Ссылка кнопки')
+                    Field::make('text', 'crb_hero_slider_link_more', 'Ссылка кнопки')
                         ->set_width(33),
                     Field::make('image', 'crb_hero_slider_image', 'Изображение слайда')
                         ->set_width(33)
-                  
+
                 ))
-                ));      
+        ));
+
+    Container::make('theme_options', 'Магазины')
+        //->show_on_page('shops')
+        ->set_page_menu_position(3)
+        ->set_icon('dashicons-cart')
+        ->add_fields(array(
+            Field::make('complex', 'crb_shops_list', 'Перечень магазинов')
+                ->set_classes( 'cf-complex' )
+                ->add_fields(array(
+                    Field::make('image', 'crb_shop_item', 'Логотип'),
+                    Field::make('text', 'crb_shop_item_text', 'Atl-текст(название магазина)')
+                ))
+        ));
 }

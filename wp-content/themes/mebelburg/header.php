@@ -154,7 +154,7 @@
             // $main_menu = wp_nav_menu(
             //     array(
             //         'container' => 'nav',
-            //         'menu_class' => 'header__menu',
+            //         'menu_class' => 'main-menu',
             //     )
             // );
             ?>

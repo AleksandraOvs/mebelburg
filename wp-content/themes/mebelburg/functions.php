@@ -61,3 +61,60 @@ function my_customize_register( $wp_customize ) {
     )));
 }
 add_action( 'customize_register', 'my_customize_register' );
+
+// add_action( 'init', 'register_post_types' );
+
+// 	function register_post_types(){
+	
+// 		register_post_type( 'shops', [
+// 			'label'  => null,
+// 			'labels' => [
+// 				'name'               => 'Магазины', // основное название для типа записи
+// 				'singular_name'      => 'Магазины', // название для одной записи этого типа
+// 				'add_new'            => 'Добавить Магазин', // для добавления новой записи
+// 				'add_new_item'       => 'Добавление Магазина', // заголовка у вновь создаваемой записи в админ-панели.
+// 				'edit_item'          => 'Редактирование Магазина', // для редактирования типа записи
+// 				'new_item'           => 'Новый Магазин', // текст новой записи
+// 				'view_item'          => 'Смотреть магазин', // для просмотра записи этого типа.
+// 				'search_items'       => 'Искать магазин', // для поиска по этим типам записи
+// 				'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
+// 				'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
+// 				'parent_item_colon'  => '', // для родителей (у древовидных типов)
+// 				'menu_name'          => 'Магазины', // название меню
+// 			],
+// 			'description'            => '',
+// 			'public'                 => true,
+// 			// 'publicly_queryable'  => null, // зависит от public
+// 			// 'exclude_from_search' => null, // зависит от public
+// 			// 'show_ui'             => null, // зависит от public
+// 			// 'show_in_nav_menus'   => null, // зависит от public
+// 			'show_in_menu'           => true, // показывать ли в меню админки
+// 			// 'show_in_admin_bar'   => null, // зависит от show_in_menu
+// 			'show_in_rest'        => true, // добавить в REST API. C WP 4.7
+// 			'rest_base'           => null, // $post_type. C WP 4.7
+// 			'menu_position'       => 4,
+// 			'menu_icon'           => 'dashicons-cart',
+// 			//'capability_type'   => 'post',
+// 			//'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
+// 			//'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
+// 			'hierarchical'        => false,
+// 			'supports'            => [ 'title', 'editor', 'thumbnail', 'excerpt'], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+// 			'taxonomies'          => ['category'],
+// 			'has_archive'         => true,
+// 			'rewrite'             => true,
+// 			'query_var'           => true,
+// 		] ); 
+	
+//	}
+
+add_action( 'widgets_init', 'register_widgets' );
+function register_widgets(){
+	register_sidebar( array(
+		'name'          => 'footer-widget',
+		'id'            => "footer-widget",
+		'description'   => 'Нижняя панель футера',
+		'class'         => 'footer__inner__bottom__widget',
+		'before_widget' => '',
+		'after_widget'  => '',
+	) );
+}
