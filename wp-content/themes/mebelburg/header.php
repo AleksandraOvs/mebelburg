@@ -77,6 +77,15 @@
                         }
                         ?>
                         <?php
+                        if (carbon_get_theme_option('crb_header_map') && $crb_map_icon = carbon_get_theme_option('crb_header_map_icon')) {
+                            $crb_map_icon_url = wp_get_attachment_image_url($crb_map_icon, 'full');
+
+                            echo '<li class="header__top__messengers__item"><img src="' . $crb_map_icon_url . '" />
+
+                                    <span class="contact-link__name">' . carbon_get_theme_option('crb_header_map') . '</li>';
+                        }
+                        ?>
+                        <?php
                         if (carbon_get_theme_option('crb_header_shed') && $crb_shed_icon = carbon_get_theme_option('crb_header_shed_icon')) {
                             $crb_shed_icon_url = wp_get_attachment_image_url($crb_shed_icon, 'full');
 
@@ -86,15 +95,7 @@
                         }
                         ?>
 
-                        <?php
-                        if (carbon_get_theme_option('crb_header_map') && $crb_map_icon = carbon_get_theme_option('crb_header_map_icon')) {
-                            $crb_map_icon_url = wp_get_attachment_image_url($crb_map_icon, 'full');
-
-                            echo '<li class="header__top__messengers__item"><img src="' . $crb_map_icon_url . '" />
-
-                                    <span class="contact-link__name">' . carbon_get_theme_option('crb_header_map') . '</li>';
-                        }
-                        ?>
+                        
                     </ul>
                 </div>
             </div>
