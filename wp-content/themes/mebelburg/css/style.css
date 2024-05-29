@@ -1058,6 +1058,29 @@ p.footer-address {
   }
 }
 
+@media (max-width: 662px){
+  .address {
+    display: none;
+}
+
+ul.header__top__messengers li:last-child {
+  display: none;
+}
+
+ul.header__top__messengers {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5% 5% 83%;
+  column-gap: 20px;
+}
+
+li.header__top__messengers__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+}
+
 @media (max-width: 576px) {
   li.shops-list__item img {
     width: 108px;
