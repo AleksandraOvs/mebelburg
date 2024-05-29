@@ -26,6 +26,12 @@
                                     echo $slide_header;
                                 }
                                 ?>
+
+                                <?php
+                                if ($slide_link = $hero_slide['crb_hero_slider_link_more']) {
+                                    echo '<div class="hero-slider__slide__content__more"><a class="hero-slider__slide__content__more__link" href="'.$slide_link.'">Более подробно</a></div>';
+                                }
+                                ?>
                             </div>
 
                         </div>

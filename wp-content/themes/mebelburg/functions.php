@@ -27,7 +27,8 @@ function gut_styles(){
 }
 
 register_nav_menus(array(
-    'head_menu' => 'Main menu'
+    'head_menu' => 'Main menu',
+    'items_wrap'      => '%3$s'
 ));
 
 add_theme_support('post-thumbnails');

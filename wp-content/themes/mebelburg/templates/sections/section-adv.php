@@ -16,7 +16,7 @@
                     <div class="section-adv__grid__item__content__bottom"></div>
                 </div>
             </li>
-            <li class="section-adv__grid__item" style="background-color:transparent; background-image:url(<?php echo get_stylesheet_directory_uri() . '/images/adv3.svg' ?>); background-repeat:no-repeat; background-position: center;">
+            <li class="section-adv__grid__item box3" style="background-color:transparent; background-image:url(<?php echo get_stylesheet_directory_uri() . '/images/adv3.svg' ?>); background-repeat:no-repeat; background-position: center;">
                
                 <div class="section-adv__grid__item__content">
                     <div class="section-adv__grid__item__content__top"></div>
@@ -36,7 +36,7 @@
                     <div class="section-adv__grid__item__content__bottom"></div>
                 </div>
             </li>
-            <li class="section-adv__grid__item">
+            <li class="section-adv__grid__item box6">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/images/adv6.png' ?>" alt="" class="section-adv__grid__item__img">
                 <div class="section-adv__grid__item__content">
                     <div class="section-adv__grid__item__content__top"></div>
