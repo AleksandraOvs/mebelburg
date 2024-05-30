@@ -1057,6 +1057,7 @@ p.footer-address {
 
   ul.section-adv__grid {
     grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
 
   li.section-adv__grid__item.box3 {
