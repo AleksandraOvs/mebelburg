@@ -105,6 +105,7 @@ a {
 
 .button:hover {
   background: var(--black);
+  border-color: var(--black);
   color: #fff;
   transition: all .3s linear;
 }
