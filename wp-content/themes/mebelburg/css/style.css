@@ -860,7 +860,7 @@ p.footer-address {
     display: flex;
     width: 100%;
     justify-content: center;
-    padding: 34px 0;
+    padding: 24px 0;
     background: #fff;
     position: absolute;
     top: 60px;
@@ -868,6 +868,10 @@ p.footer-address {
     z-index: 5;
     transform: translateY(-50px);
     opacity: 0;
+  }
+
+  nav .main-menu{
+    padding:10px 0;
   }
 
   a.header__inner__burger._open span {
