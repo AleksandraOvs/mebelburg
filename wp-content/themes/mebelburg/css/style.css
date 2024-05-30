@@ -866,7 +866,7 @@ p.footer-address {
   border-radius: 100%;
 }
 
-a.messenger__item .contact-link__img {
+.footer__inner__bottom__messengers a.messenger__item .contact-link__img {
   width: 18px;
   height: 20px;
   position: absolute;
