@@ -210,7 +210,7 @@ a.header__inner__burger {
   border-radius: 30px;
   right: 20px;
   position: absolute;
-  top: 10px;
+  top: 7px;
   z-index: 6;
   transition: all .3s linear;
 }
@@ -929,14 +929,14 @@ p.footer-address {
     z-index: 6;
   }
 
-  nav.menu-menu-1-container {
-    display: flex;
+  nav {
+    display: none;
     width: 100%;
     justify-content: center;
     padding: 24px 0;
     background: #fff;
     position: absolute;
-    top: 60px;
+    top: 58px;
     left:0;
     z-index: 5;
     transform: translateY(-50px);
@@ -957,7 +957,8 @@ p.footer-address {
     transition: all .5s linear;
   }
 
-  nav.menu-menu-1-container._open {
+  nav._open {
+    display:flex;
     transform: translateY(0);
     opacity: 1;
     transition: transform .5s ease-in-out, opacity .3s linear;
@@ -1163,6 +1164,27 @@ p.footer-address {
     margin: 0 auto;
 }
 
+a.header__inner__burger {
+  top: 4px;
+  right: 12px;
+}
+
+.hero-slider__button-next {
+  right: 12px;
+}
+
+.hero-slider__button-prev {
+  left: 12px;
+}
+
+.swiper-slide.hero-slider__slide {
+  padding: 18px 12px 12px 12px;
+}
+
+.sale-block__item__content__bottom {
+  padding: 12px;
+}
+
 .button {
   font-size: 14px;
   padding: 12px;
@@ -1194,6 +1216,10 @@ nav ul .menu-item a {
   display: block;
   width: 177px;
   height: 48px;
+}
+
+section.hero-block {
+  padding-top: 114px;
 }
 
 ul.sale-block li {
@@ -1239,7 +1265,7 @@ ul.sale-block li {
 }
 
 .section-adv__grid__item__content {
-  padding: 18px;
+  padding: 12px;
 }
 
   a.footer__logo.logo {
