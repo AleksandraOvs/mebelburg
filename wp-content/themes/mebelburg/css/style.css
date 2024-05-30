@@ -965,6 +965,7 @@ p.footer-address {
 @media (max-width: 1100px){
   nav .main-menu {
     display: block;
+    columns: 2 auto;
     /* columns: 2; */
   }
 
