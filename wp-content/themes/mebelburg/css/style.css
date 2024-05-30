@@ -1171,8 +1171,9 @@ p.footer-address {
 ul.sale-block {
   gap: 12px;
 }
-  nav ul .menu-item a {
-    width: 160px;
+nav ul .menu-item a {
+  /* width: auto; */
+  max-width: 120px;
 }
 
 .sale-block__item__content__head__date {
