@@ -104,8 +104,8 @@ a {
 }
 
 .button:hover {
-  background: transparent;
-  color: var(--beige);
+  background: var(--black);
+  color: #fff;
   transition: all .3s linear;
 }
 
