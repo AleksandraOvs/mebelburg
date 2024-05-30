@@ -1064,6 +1064,12 @@ p.footer-address {
     width: 160px;
 }
 
+.header__inner__logo_mob {
+  display: block;
+  width: 177px;
+  height: 48px;
+}
+
   li.shops-list__item img {
     width: 108px;
     height: 72px;
