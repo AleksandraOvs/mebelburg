@@ -72,7 +72,7 @@ h2 {
   font-size: calc(1em + 4vw);
   font-family: 'Inter-Tight', sans-serif;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 100%;
   text-align: center;
   margin: 0;
 }
@@ -743,7 +743,7 @@ li.shops-list__item img {
   position: relative;
   margin-bottom: 5px;
   padding-bottom: 2px;
-  display: inline-block;
+  display: inline;
   background: transparent;
   border: none;
   padding: 0;
@@ -787,6 +787,14 @@ a.footer__logo.logo img {
   font-size: 14px;
 }
 
+.footer-menu li a:hover{
+  color:var(--beige);
+}
+
+.footer-menu li a:hover:after{
+  width: 0;
+}
+
 p.footer-address {
   text-align: right;
   font-size: 14px;
@@ -818,11 +826,21 @@ p.footer-address {
 
 .footer__inner__bottom__messengers .messenger__item {
   display: block;
+  position:relative;
   width: 40px;
   height: 40px;
-  padding: 7px;
   border: 1px solid #fff;
   border-radius: 100%;
+}
+
+a.messenger__item .contact-link__img {
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  object-fit: contain;
+  object-position: center;
 }
 
 @media (max-width: 1240px) {
