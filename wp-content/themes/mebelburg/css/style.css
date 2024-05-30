@@ -1246,7 +1246,7 @@ ul.sale-block li {
   .section-adv__description {
     padding-left: 0;
     padding-right: 0;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     font-size: calc(1em + 3vw);
     font-weight: 500;
@@ -1257,7 +1257,7 @@ ul.sale-block li {
 
   .section-adv__title {
     text-align: center;
-    max-width: 60%;
+    max-width: 100%;
   }
 
   .section-adv__grid__item__content__bottom {
