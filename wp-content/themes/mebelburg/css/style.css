@@ -119,6 +119,14 @@ a {
 }
 
 /*HEADER*/
+
+header.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+
 .header__top {
   position: relative;
   z-index: 10;
@@ -187,7 +195,7 @@ a.messenger__item .contact-link__img {
 
 .header__inner {
   position: relative;
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   background: #fff;
@@ -338,6 +346,11 @@ ul.header__inner__menu2 {
 } */
 
 /*HERO*/
+
+section.hero-block {
+  padding-top: 120px;
+}
+
 .swiper.hero-slider {
   position: relative;
   /* height: 98vh; */
@@ -778,6 +791,7 @@ li.shops-list__item img {
   padding-bottom: 2px;
   display: inline;
   background: transparent;
+  line-height: 2;
   border: none;
   padding: 0;
   color: #fff;
@@ -853,7 +867,7 @@ p.footer-address {
 .footer__inner__bottom__messengers {
   display: flex;
   align-items: flex-end;
-  gap: 18px;
+  gap: 5px;
   justify-content: flex-end;
 }
 
