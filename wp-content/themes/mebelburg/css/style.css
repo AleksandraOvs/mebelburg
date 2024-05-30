@@ -1133,6 +1133,10 @@ p.footer-address {
     align-items: center;
     justify-content: flex-end;
   }
+
+  ul.header__top__messengers li:nth-child(3) {
+    transform: translateX(-10px);
+}
 }
 
 @media (max-width: 576px) {
