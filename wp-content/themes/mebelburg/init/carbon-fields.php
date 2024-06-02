@@ -75,18 +75,30 @@ function site_carbon()
                         ->set_width(33)
 
                 ))
-        ));
+                ));
 
-    Container::make('theme_options', 'Магазины')
-        //->show_on_page('shops')
-        ->set_page_menu_position(3)
-        ->set_icon('dashicons-cart')
-        ->add_fields(array(
-            Field::make('complex', 'crb_shops_list', 'Перечень магазинов')
-                ->set_classes( 'cf-complex' )
-                ->add_fields(array(
-                    Field::make('image', 'crb_shop_item', 'Логотип'),
-                    Field::make('text', 'crb_shop_item_text', 'Atl-текст(название магазина)')
-                ))
-        ));
+    Container::make('post_meta', 'Информация о магазине')
+    ->show_on_post_type('shops')
+    ->add_fields( array(
+        Field::make('image', 'crb_shop_item', 'Логотип')
+        ->set_width(33),
+        Field::make('text', 'crb_shop_item_name', 'Название')
+        ->set_width(33),
+        // Field::make('text', 'crb_shop_item_cat', 'Категория магазина')
+        // ->set_width(25),
+        Field::make('text', 'crb_shop_item_location', 'Этаж')
+        ->set_width(33)
+    ));
+        //->set_page_menu_position(3)
+        //->set_icon('dashicons-cart')
+        // ->add_fields(array(
+        //     Field::make('complex', 'crb_shops_list', 'Перечень магазинов')
+        //         ->set_classes( 'cf-complex' )
+        //         ->add_fields(array(
+        //             Field::make('image', 'crb_shop_item', 'Логотип'),
+        //             Field::make('text', 'crb_shop_item_name', 'Название магазина'),
+        //             Field::make('text', 'crb_shop_item_cat', 'Категория магазина'),
+        //             Field::make('text', 'crb_shop_item_location', 'Этаж')
+        //         ))
+        // ));
 }

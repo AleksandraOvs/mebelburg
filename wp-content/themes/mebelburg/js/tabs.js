@@ -1,0 +1,3 @@
+$( function() {
+    $( "#shops-tabs" ).tabs();
+  } );
