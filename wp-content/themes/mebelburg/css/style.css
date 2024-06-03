@@ -1207,6 +1207,11 @@ p.footer-address {
     font-size: 18px;
   }
 
+  .button {
+    font-size: 18px;
+    padding: 10px 18px;
+  }
+
   .sale-block__item__content__bottom {
     background: #fff;
     padding: 18px;
