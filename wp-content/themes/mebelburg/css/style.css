@@ -1052,6 +1052,14 @@ p.footer-address {
   margin-top: 75px;
 }
 
+@media(min-width: 1440px){
+  .swiper-wrapper.cats-slider__wrapper {
+  transform: none !important;
+}
+}
+
+
+
 /* @media (min-width: 1440px){
   .swiper-wrapper.cats-slider__wrapper{
     transform: none !important;

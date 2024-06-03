@@ -30,8 +30,8 @@
                 $categories = get_terms(array(
                     'taxonomy' => 'category',
                     'hide_empty' => false,
-                    // 'child_of' => 4
-                    'child_of' => 14
+                    'child_of' => 4
+                    //'child_of' => 14
                 ));
                 ?>
                 <?php if ($categories) :
