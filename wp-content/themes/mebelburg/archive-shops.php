@@ -18,38 +18,45 @@
                 </p>
             </div>
         </div>
+    </div>
 
+    <div class="container-nopaddings">
         <div class="page-section__content">
 
             <div class="shops-filter">
 
-                <span class="shops-cat active">Все</span> 
+
                 <?php
                 $categories = get_terms(array(
                     'taxonomy' => 'category',
                     'hide_empty' => false,
-                    'child_of' => 4
+                    // 'child_of' => 4
+                    'child_of' => 14
                 ));
                 ?>
                 <?php if ($categories) :
                 ?>
+                    <div class="swiper cats-slider">
+                        <div class="swiper-wrapper cats-slider__wrapper">
+                            <div class="shops-cat active">Все</div>
+                            <?php
+                            foreach ($categories as $category) {
+                            ?>
+                                <div data-term-id="<?php echo $category->term_id; ?>" class="swiper-slide shops-cat"><?php echo $category->name ?></div>
+                            <?php
+                            }
 
-                    <?php
-                    foreach ($categories as $category) {
-                    ?>
-                        <span data-term-id="<?php echo $category->term_id; ?>" class="shops-cat"><?php echo $category->name ?></span>
-                    <?php
-                    }
-
-                    ?>
-
+                            ?>
+                        </div>
+                    </div>
 
                 <?php endif; ?>
-    
+
 
             </div>
 
-            <?php
+            <div class="container">
+ <?php
 
             if (have_posts()) {
             ?>
@@ -74,7 +81,14 @@
                 <button class="button">Смотреть еще</button>
             </div>
 
+            </div>
+
+           
+
         </div>
+    </div>
+
+
     </div>
 </section>
 

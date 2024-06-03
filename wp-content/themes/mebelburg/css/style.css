@@ -38,7 +38,7 @@ body:after {
   left: 0;
   background-image: url(../images/bg.png);
   background-repeat: repeat;
-  opacity: 0.07;
+  opacity: 0.05;
 }
 
 body._fixed {
@@ -52,6 +52,11 @@ body._fixed {
   max-width: 100%;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.container-nopaddings {
+  width: 100%;
+  padding: 0;
 }
 
 .main-wrapper {
@@ -1010,32 +1015,48 @@ p.footer-address {
 }
 
 .shops-filter {
-  display: flex;
+    margin-bottom: 35px;
+
+  /* display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 5px;
   flex-wrap: wrap;
-  margin-bottom: 35px;
+  margin-bottom: 35px; */
 }
 
 .shops-cat {
-  padding: 12px 18px;
+  padding: 10px 18px;
   border-radius: 58px;
   border: 1px solid #ccc;
   text-align: center;
   background-color: #fff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
+  margin: 0 5px;
 }
 .shops-cat.active {
   background-color: #000;
   color: #fff;
+}
 
+.swiper-wrapper.cats-slider__wrapper {
+  justify-content: center;
+}
+
+.swiper-slide.shops-cat {
+  width: auto !important;
 }
 
 #more-shops {
   margin-top: 75px;
 }
+
+/* @media (min-width: 1440px){
+  .swiper-wrapper.cats-slider__wrapper{
+    transform: none !important;
+  }
+} */
 
 @media (max-width: 1240px) {
   .header__inner__logo_mob {
