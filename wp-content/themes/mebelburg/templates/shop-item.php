@@ -27,12 +27,13 @@
                         esc_html($category->name) // Название рубрики
                     );
                 }, get_the_category());
+                unset($links[array_search('<span class="shop__cat">Магазины</span>',$links)]);
 
                 echo implode(', ', $links);
 
                 ?>
             </div>
-
+            
 
             <?php
         if ($shop_floor = carbon_get_post_meta(get_the_ID(), 'crb_shop_item_location')) {

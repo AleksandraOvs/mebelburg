@@ -156,3 +156,9 @@ function modify_main_query( $query )
     }
 }
 add_action( 'pre_get_posts', 'modify_main_query' );
+
+
+/**
+ * Подгрузка постов ajax
+ */
+require get_template_directory() . '/init/load-posts.php';

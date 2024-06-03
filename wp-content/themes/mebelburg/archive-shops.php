@@ -21,64 +21,57 @@
 
         <div class="page-section__content">
 
-            <form action="" method="POST" id="shops-filter"> 
+            <div class="shops-filter">
 
-
+                <span class="shops-cat active">Все</span> 
                 <?php
                 $categories = get_terms(array(
                     'taxonomy' => 'category',
                     'hide_empty' => false,
-                    'child_of' => 14
+                    'child_of' => 4
                 ));
                 ?>
                 <?php if ($categories) :
                 ?>
-                    
 
-
-                    
-                    <input type="submit" value="all">
                     <?php
                     foreach ($categories as $category) {
                     ?>
-                        
-                        <a href="#" class="shops-cat" ><?php echo $category->name ?></a>
+                        <span data-term-id="<?php echo $category->term_id; ?>" class="shops-cat"><?php echo $category->name ?></span>
                     <?php
                     }
 
                     ?>
 
-                   
+
                 <?php endif; ?>
-                <!-- <input type="hidden" name="action" value="filtershops"> -->
-                
-            </form>
+    
+
+            </div>
 
             <?php
 
-if ( have_posts() ) {
-	?>
-    <ul class="page-shops__list">
-    <?php
-	while ( have_posts() ) {
-		the_post();
-		?>
-        <?php get_template_part('templates/shop-item'); ?>
-        <?php
-	}
-	?>
-    </ul>
-    <?php
-}
-else {
-	
-}
+            if (have_posts()) {
+            ?>
+                <ul class="page-shops__list">
+                    <?php
+                    while (have_posts()) {
+                        the_post();
+                    ?>
+                        <?php get_template_part('templates/shop-item'); ?>
+                    <?php
+                    }
+                    ?>
+                </ul>
+            <?php
+            } else {
+            }
 
-wp_reset_postdata();
+            wp_reset_postdata();
 
-?>
+            ?>
             <div id="more-shops">
-                <a href="#" data-paged="<?php echo $paged ?>" class="button">Смотреть еще</a>
+                <button class="button">Смотреть еще</button>
             </div>
 
         </div>
