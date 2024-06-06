@@ -40,4 +40,41 @@ jQuery(document).ready(function () {
     currentPage = 1;
     loadPosts(true);
   });
+
+  button = $('#load-posts a');
+  paged = button.data('paged');
+  maxPages = button.data('max_pages');
+
+  button.click( function(event){
+    event.preventDefault();
+    
+    $.ajax({
+
+      url: my_ajax_script.ajax_url,
+      type: 'POST',
+      data: {
+        paged: paged,
+        action: 'loadmore'
+      },
+      beforeSend: function(xhr){
+          button.text('Загружаю...');
+      },
+      success: function(data){
+        //alert(data);
+        paged++;
+        $('.sale-block__list').append(data);
+        //button.parent().before( data );
+        button.text('Смотреть ещё');
+
+        if (paged >= maxPages) {
+          jQuery('#load-posts').hide();
+        } else {
+          jQuery('#load-posts').show();
+        }
+      }
+
+    });
+  }
+);
+
 });

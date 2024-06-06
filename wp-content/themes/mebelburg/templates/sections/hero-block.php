@@ -48,40 +48,33 @@
             </div>
         </div>
 
-        <ul class="sale-block">
-            <li class="sale-block__item">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/images/001.jpg' ?> " alt="">
-                <div class="sale-block__item__content">
-                    <div class="sale-block__item__content__head">
-                        <div class="sale-block__item__content__head__date">До 15 мая</div>
-                        <div class="sale-block__item__content__head__link">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13 8V1H6" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M13 1L1 13" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+        <?php
+         $args = array(
+            'post_type' => 'sales',
+            //'cat' => '2',
+            'posts_per_page' => 2,
+        );
 
-                        </div>
-                    </div>
-                    <div class="sale-block__item__content__bottom">Уютная мебель по акции. Скидки до 50%</div>
-                </div>
-            </li>
-            <li class="sale-block__item">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/images/002.jpg' ?> " alt="">
-                <div class="sale-block__item__content">
-                    <div class="sale-block__item__content__head">
-                        <div class="sale-block__item__content__head__date">C 15 мая до 22 июня</div>
-                        <div class="sale-block__item__content__head__link">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13 8V1H6" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M13 1L1 13" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+        $query = new WP_Query($args);
 
-                        </div>
-                    </div>
-                    <div class="sale-block__item__content__bottom">Уютная мебель по акции. Скидки до 50%</div>
-                </div>
-            </li>
-        </ul>
+        if ($query->have_posts()) {
+        ?>
+            <ul class="sale-block__list">
+                    <?php
+                    while ($query->have_posts()) {
+                        $query->the_post();
+                    
+                       get_template_part('templates/sale-item');
+                    
+                    }
+                    ?>
+                </ul>
+        <?php
+        }
+        wp_reset_postdata();
+
+        ?>
+
         <a href="/" class="button">Все акции</a>
     </div>
 </section>

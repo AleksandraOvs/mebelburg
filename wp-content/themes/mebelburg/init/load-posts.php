@@ -59,3 +59,39 @@ function loadPostsFromCategory()
     echo json_encode($result);
     exit;
 }
+
+
+//  fn ajax hook
+add_action('wp_ajax_nopriv_loadmore', 'loadmore');
+add_action('wp_ajax_loadmore', 'loadmore');
+
+function loadmore(){
+
+    $paged = ! empty ($_POST['paged']) ? $_POST['paged'] :1;
+    $paged++;
+
+    $args = array(
+        'paged' => $paged,
+        'post_status' => 'publish',
+        'post_type' => 'sales',
+        'posts_per_page' => 6
+    );
+
+
+    query_posts($args);
+    
+    while( have_posts() ): the_post();
+       get_template_part('templates/sale-item');
+endwhile;
+
+    // query_posts( array(
+    //     'paged' => $paged
+    // ));
+
+    // while( have_posts()) : the_post();
+    //     the_title();
+    // endwhile;
+
+
+    die;
+}

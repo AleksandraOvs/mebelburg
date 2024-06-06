@@ -1,19 +1,19 @@
 <?php
-    $paged = get_query_var('paged') ? get_quey_var('paged') : 1;
-    global $wp_query;
+global $wp_query;
+    $paged = get_query_var('paged');
+    $paged++;
+
+    //global $wp_query;
     $max_pages = $wp_query->max_num_pages;
+    //echo '<pre>';
+    //print_r($paged );
 
-    echo '<pre>';
-    print_r($wp_query);
-    //print_r($max_pages);
-
-    //if ($paged < $max_pages)
-?>
+// ?>
 <?php
-if ($postsRerPage < $max_pages){
+//if ($paged < $max_pages){
     ?>
-<div id="more-shops">
-    <a href="#" class="button">Смотреть еще</a>
+<div id="load-posts">
+    <a data-max_pages="<?php echo $max_pages ?>" data-paged="<?php echo $paged ?>" href="#" class="button">Смотреть еще</a>
 </div>
     <?php
-}
+//}

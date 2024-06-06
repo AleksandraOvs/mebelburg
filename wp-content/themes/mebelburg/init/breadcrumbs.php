@@ -35,6 +35,9 @@ function site_breadcrumbs()
         } elseif (is_post_type_archive('shops')){
             echo 'Магазины и бренды';
 
+        } elseif (is_post_type_archive('sales')){
+            echo 'Акции';
+
         }elseif (is_tag()) {
 
             single_tag_title();

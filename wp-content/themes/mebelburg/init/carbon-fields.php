@@ -89,16 +89,18 @@ function site_carbon()
         Field::make('text', 'crb_shop_item_location', 'Этаж')
         ->set_width(33)
     ));
-        //->set_page_menu_position(3)
-        //->set_icon('dashicons-cart')
-        // ->add_fields(array(
-        //     Field::make('complex', 'crb_shops_list', 'Перечень магазинов')
-        //         ->set_classes( 'cf-complex' )
-        //         ->add_fields(array(
-        //             Field::make('image', 'crb_shop_item', 'Логотип'),
-        //             Field::make('text', 'crb_shop_item_name', 'Название магазина'),
-        //             Field::make('text', 'crb_shop_item_cat', 'Категория магазина'),
-        //             Field::make('text', 'crb_shop_item_location', 'Этаж')
-        //         ))
-        // ));
+
+    Container::make('post_meta', 'Информация об акции')
+    ->show_on_post_type('sales')
+    ->add_fields( array(
+        Field::make('image', 'crb_sale_img', 'Фото')
+        ->set_width(33),
+        Field::make('text', 'crb_sale_date', 'Дата акции')
+        ->set_width(33),
+        // Field::make('text', 'crb_shop_item_cat', 'Категория магазина')
+        // ->set_width(25),
+        Field::make('rich_text', 'crb_sale_desc', 'Подробности акции')
+        ->set_width(33)
+    ));
+       
 }

@@ -42,7 +42,7 @@ register_nav_menus(array(
 
 add_theme_support('post-thumbnails');
 add_image_size('bigpic', 900, 747, true);
-add_image_size('mediumpic', 500, 737, true);
+add_image_size('mediumpic', 780, 540, true);
 add_image_size('smallpic', 100, 75, true);
 
 //displayed logo
@@ -118,6 +118,47 @@ function register_post_types()
 		),
 		'query_var'           => 'shops',
 	]);
+
+	register_post_type('sales', [
+		'label'  => null,
+		'labels' => [
+			'name'               => 'Акции', // основное название для типа записи
+			'singular_name'      => 'Акции', // название для одной записи этого типа
+			'add_new'            => 'Добавить Акцию', // для добавления новой записи
+			'add_new_item'       => 'Добавление Акции', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Редактирование Акции', // для редактирования типа записи
+			'new_item'           => 'Новая Акция', // текст новой записи
+			'view_item'          => 'Смотреть Акцию', // для просмотра записи этого типа.
+			'search_items'       => 'Искать Акцию', // для поиска по этим типам записи
+			'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
+			'parent_item_colon'  => '', // для родителей (у древовидных типов)
+			'menu_name'          => 'Акции', // название меню
+		],
+		'description'            => '',
+		'public'                 => true,
+		// 'publicly_queryable'  => null, // зависит от public
+		// 'exclude_from_search' => null, // зависит от public
+		// 'show_ui'             => null, // зависит от public
+		// 'show_in_nav_menus'   => null, // зависит от public
+		'show_in_menu'           => true, // показывать ли в меню админки
+		// 'show_in_admin_bar'   => null, // зависит от show_in_menu
+		'show_in_rest'        => true, // добавить в REST API. C WP 4.7
+		'rest_base'           => null, // $post_type. C WP 4.7
+		'menu_position'       => 4,
+		'menu_icon'           => 'dashicons-smiley',
+		//'capability_type'   => 'post',
+		//'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
+		//'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
+		'hierarchical'        => true,
+		'supports'            => ['title'], // ['title', 'thumbnail']'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+		'taxonomies'          => ['category'],
+		'has_archive'         => true,
+		'rewrite'             => array(
+			'slug'	=> 'sales',
+		),
+		'query_var'           => 'sales',
+	]);
 }
 
 add_action('widgets_init', 'register_widgets');
@@ -150,6 +191,12 @@ function modify_main_query( $query )
     }
 
     if ( is_post_type_archive( 'shops' ) ) {
+        // Display 10 posts for a custom post type called 'portfolio'
+        $query->set( 'posts_per_page', 6);
+        return;
+    }
+
+	if ( is_post_type_archive( 'sales' ) ) {
         // Display 10 posts for a custom post type called 'portfolio'
         $query->set( 'posts_per_page', 6);
         return;
