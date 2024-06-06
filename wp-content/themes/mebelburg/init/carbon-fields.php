@@ -40,7 +40,7 @@ function site_carbon()
             Field::make('image', 'crb_header_shed_icon', 'Иконка')
                 ->set_width(50),
 
-        ))
+            ))
 
         ->add_tab(__('Мессенджеры'), array(
             Field::make('complex', 'messengers', 'Ссылки на мессенджеры')
@@ -57,7 +57,19 @@ function site_carbon()
                     Field::make('image', 'crb_mes_image', 'Иконка контакта')
 
                         ->set_width(33),
-                )),
+                ))
+        ))
+
+                ->add_tab(__('Формы обратной связи'), array(
+                    
+                            Field::make('text', 'crb_cf_rent', 'Контактная форма для страницы Аренда')
+                                ->help_text('вставьте шорткод для формы обратной связи в это поле')
+                                ->set_width(33),
+
+                                Field::make('text', 'crb_cf_adv', 'Контактная форма для страницы Реклама')
+                                ->help_text('вставьте шорткод для формы обратной связи в это поле')
+                                ->set_width(33),
+                
         ));
 
     Container::make('theme_options', 'Первый экран')

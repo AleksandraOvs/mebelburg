@@ -174,7 +174,11 @@ get_header() ?>
             <p class="form-block__description">
             Оставьте заявку — и мы свяжемся с вами для обсуждения деталей
             </p>
-            <?php echo do_shortcode('[contact-form-7 id="f53577e" title="Untitled"]')?>
+
+            <?php if ($rent_contactform = carbon_get_theme_option('crb_cf_rent' )){
+                echo do_shortcode(" $rent_contactform "); 
+            }?>
+            <?php //echo do_shortcode('[contact-form-7 id="f53577e" title="Untitled"]')?>
         </div>
     </div>
 

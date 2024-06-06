@@ -93,7 +93,10 @@ get_header() ?>
             <p class="form-block__description">
             Оставьте заявку — и мы свяжемся с вами для обсуждения деталей
             </p>
-            <?php echo do_shortcode('[contact-form-7 id="8b26afb" title="Форма (реклама)"]')?>
+            <?php if ($adv_contactform = carbon_get_theme_option('crb_cf_adv' )){
+                echo do_shortcode(" $adv_contactform "); 
+            }?>
+            <?php //echo do_shortcode('[contact-form-7 id="8b26afb" title="Форма (реклама)"]')?>
         </div>
     </div>
 
