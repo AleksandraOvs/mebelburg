@@ -56,9 +56,9 @@ jQuery(document).ready(function () {
         paged: paged,
         action: 'loadmore'
       },
-      beforeSend: function(xhr){
-          button.text('Загружаю...');
-      },
+      // beforeSend: function(xhr){
+      //     button.text('Загружаю...');
+      // },
       success: function(data){
         //alert(data);
         paged++;
