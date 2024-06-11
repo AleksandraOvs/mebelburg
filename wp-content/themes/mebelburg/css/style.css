@@ -339,6 +339,12 @@ nav.header__inner__bottom .main-menu {
 
 .main-menu .menu-item.current-menu-item {
   border-color: var(--beige);
+  background: var(--beige);
+  
+}
+
+.main-menu .menu-item.current-menu-item a{
+  color: #fff;
 }
 
 /* 
@@ -1458,6 +1464,67 @@ div#load-posts {
   margin-top: 75px;
 }
 
+/*404*/
+
+._e404__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content:space-around;
+
+}
+
+section.page-section._e404 {
+  height: 100vh;
+  padding: 0;
+}
+
+._e404__inner__error {
+  position: relative;
+    font-weight: 500;
+    font-size: 23.75vw;
+    line-height: 100%;
+}
+
+._e404__inner__error span {
+  font-style: italic;
+}
+
+section.page-section._e404 .container {
+  padding-top: 7%;
+  height: 100%;
+}
+
+._e404__inner__text {
+  width: 33vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+._e404__inner__text .button {
+  margin-top: 10%;
+}
+
+.error-text {
+  position: absolute;
+    top: 0;
+    right: -30px;
+    display: flex;
+    transform: rotate(-15deg);
+    justify-content: center;
+    align-items: center;
+    width: 107px;
+    height: 107px;
+    background: var(--purple);
+    border-radius: 100%;
+}
+
+.error-text p{
+  line-height: 1;
+    color: #fff;
+}
+
 @media(min-width: 1440px) {
   .swiper-wrapper.cats-slider__wrapper {
     transform: none !important;
@@ -1768,6 +1835,28 @@ p.acceptance-text {
   line-height: 100%;
   font-weight: 500;
 }
+
+._e404__inner__error {
+  position: relative;
+  font-weight: 500;
+  font-size: 39vw;
+}
+.error-text {
+  width: 98px;
+  height: 98px;
+}
+
+._e404__inner__text {
+  width: 70vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.error-text {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
 }
 
 @media (max-width: 992px) {
@@ -2060,6 +2149,26 @@ p.acceptance-text {
 
 .section-rent__causes__list {
   grid-template-columns: 1fr;
+}
+
+._e404__inner__error {
+  position: relative;
+  font-weight: 500;
+  font-size: 47.4vw;
+}
+._e404__inner__text {
+  width: 100%;
+}
+
+.error-text {
+  width: 75px;
+  height: 75px;
+}
+
+.error-text {
+  position: absolute;
+  top: 15px;
+  right: 25%;
 }
 }
 
