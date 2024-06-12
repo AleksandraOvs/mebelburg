@@ -6,7 +6,7 @@ function site_breadcrumbs()
     // получаем номер текущей страницы
     $page_num = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-    $separator = ' / '; //  разделяем обычным слэшем, но можете чем угодно другим
+    $separator = ' <span>/</span> '; //  разделяем обычным слэшем, но можете чем угодно другим
 
     // если главная страница сайта
     if (is_front_page()) {

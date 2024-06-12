@@ -414,6 +414,11 @@ ul.breadcrumbs__list {
   font-size: 14px;
 }
 
+ul.breadcrumbs__list span {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
 /*HERO*/
 
 section.hero-block {
@@ -914,6 +919,7 @@ h4.psl__item__content__name {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-left: 14px;
 }
 
 .psl__item__content__more__cat .shop__cat {
