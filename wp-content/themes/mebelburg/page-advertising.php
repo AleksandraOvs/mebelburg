@@ -13,7 +13,7 @@ get_header() ?>
             </ul>
 
             <div class="page-section__title">
-                <h2><?php the_title() ?></h2>
+                <h2>Размещение рекламы на&nbsp;территории центра</h2>
             </div>
 
             <div class="page-section__description adv-description">
@@ -33,8 +33,7 @@ get_header() ?>
                         <p>30 236 м<sup>2</sup></p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom color-white">
-                        <p>общая площадь<br>
-                            интерьерно-выставочного центра</p>
+                        <p>общая площадь интерьерно-выставочного центра</p>
                     </div>
                 </div>
             </li>
@@ -45,8 +44,7 @@ get_header() ?>
                         <p>17 000 м<sup>2</sup></p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom color-white">
-                        <p>площадь магазинов<br>
-                            и экспозиций</p>
+                        <p>площадь магазинов и&nbsp;экспозиций</p>
                     </div>
                 </div>
             </li>
@@ -57,8 +55,7 @@ get_header() ?>
                         <p>100 000+</p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom ">
-                        <p>человек — потенциальные посетители<br>
-                            среди жителей ближайших ЖК</p>
+                        <p>человек — потенциальные посетители среди жителей ближайших ЖК</p>
                     </div>
                 </div>
             </li>
@@ -68,8 +65,7 @@ get_header() ?>
                         <p class="color-beige">850 000+</p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom">
-                        <p>человек — потенциальные посетители<br>
-                            среди жителей ближайших ЖК</p>
+                        <p>человек — потенциальные посетители среди жителей ближайших ЖК</p>
                     </div>
                 </div>
             </li>

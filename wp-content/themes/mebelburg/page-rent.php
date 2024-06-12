@@ -18,7 +18,7 @@ get_header() ?>
 
             <div class="page-section__description rent-description">
                 <p>
-                    Забронируйте место для вашей компании в новом интерьерно-выставочном центре
+                    Забронируйте место для вашей компании <wbr>в&nbsp;новом&nbsp;интерьерно-выставочном&nbsp;центре
                 </p>
             </div>
         </div>
@@ -68,8 +68,7 @@ get_header() ?>
                         <p class="color-beige">850 000+</p>
                     </div>
                     <div class="section-rent__grid__item__content__bottom">
-                        <p>человек — потенциальные посетители<br>
-                            среди жителей ближайших ЖК</p>
+                        <p>человек — потенциальные посетители среди жителей ближайших ЖК</p>
                     </div>
                 </div>
             </li>
@@ -117,8 +116,7 @@ get_header() ?>
                             </div>
                         </div>
                         <div class="section-rent__causes__list__item__bottom">
-                            <p>Удачное соседство с&nbsp;гипермаркетами<br>
-                                «Лента» и «Leroy Merlin»</p>
+                            <p>Удачное соседство с&nbsp;гипермаркетами «Лента» и «Leroy Merlin»</p>
                         </div>
                     </div>
                 </li>
@@ -131,8 +129,7 @@ get_header() ?>
                             </div>
                         </div>
                         <div class="section-rent__causes__list__item__bottom">
-                            <p>Продуманное зонирование для&nbsp;удобства<br>
-                                арендаторов и&nbsp;навигации посетителей</p>
+                            <p>Продуманное зонирование для&nbsp;удобства арендаторов и&nbsp;навигации посетителей</p>
                         </div>
                     </div>
                 </li>

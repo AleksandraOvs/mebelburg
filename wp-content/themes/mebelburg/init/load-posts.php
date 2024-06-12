@@ -23,7 +23,7 @@ function loadPostsFromCategory()
     $custom_query_args = array(
         'post_type' => 'shops',
         'post_status' => 'publish',
-        'posts_per_page' => 15,
+        'posts_per_page' => 3,
         'paged' => $_POST['paged'],
     );
 
@@ -82,6 +82,41 @@ function loadmore(){
     
     while( have_posts() ): the_post();
        get_template_part('templates/sale-item');
+endwhile;
+
+    // query_posts( array(
+    //     'paged' => $paged
+    // ));
+
+    // while( have_posts()) : the_post();
+    //     the_title();
+    // endwhile;
+
+
+    die;
+}
+
+//  fn ajax hook
+add_action('wp_ajax_nopriv_loadmore_posts', 'loadmore_posts');
+add_action('wp_ajax_loadmore_posts', 'loadmore_posts');
+
+function loadmore_posts(){
+
+    $paged = ! empty ($_POST['paged']) ? $_POST['paged'] :1;
+    $paged++;
+
+    $args = array(
+        'paged' => $paged,
+        'post_status' => 'publish',
+        //'post_type' => 'post',
+        'posts_per_page' => 12
+    );
+
+
+    query_posts($args);
+    
+    while( have_posts() ): the_post();
+       get_template_part('templates/post-item');
 endwhile;
 
     // query_posts( array(

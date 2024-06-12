@@ -77,4 +77,36 @@ jQuery(document).ready(function () {
   }
 );
 
+button.click( function(event){
+  event.preventDefault();
+  
+  $.ajax({
+
+    url: my_ajax_script.ajax_url,
+    type: 'POST',
+    data: {
+      paged: paged,
+      action: 'loadmore_posts'
+    },
+    // beforeSend: function(xhr){
+    //     button.text('Загружаю...');
+    // },
+    success: function(data){
+      //alert(data);
+      paged++;
+      $('.post-block__list').append(data);
+      //button.parent().before( data );
+      button.text('Смотреть ещё');
+
+      if (paged >= maxPages) {
+        jQuery('#load-posts').hide();
+      } else {
+        jQuery('#load-posts').show();
+      }
+    }
+
+  });
+}
+);
+
 });

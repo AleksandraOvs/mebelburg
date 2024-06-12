@@ -29,6 +29,7 @@ function site_breadcrumbs()
         } elseif (is_page()) { // страницы WordPress 
 
             the_title();
+
         } elseif (is_category()) {
 
             single_cat_title();
@@ -37,6 +38,12 @@ function site_breadcrumbs()
 
         } elseif (is_post_type_archive('sales')){
             echo 'Акции';
+
+        } elseif (is_post_type_archive('news')){
+            echo 'Новости';
+
+        } elseif (is_page('advertising')){
+            echo 'Реклама';
 
         }elseif (is_tag()) {
 

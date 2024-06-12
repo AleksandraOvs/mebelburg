@@ -28,12 +28,12 @@
 
             if (have_posts()) {
             ?>
-                <ul class="post-block__list">
+                <ul class="news-block__list">
                     <?php
                     while (have_posts()) {
                         the_post();
                     ?>
-                        <?php get_template_part('templates/post-item'); ?>
+                        <?php get_template_part('templates/sale-item'); ?>
                     <?php
                     }
                     ?>
@@ -58,6 +58,5 @@
 
     </div>
 </section>
-
 
 <?php get_footer() ?>

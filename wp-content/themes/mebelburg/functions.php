@@ -191,13 +191,11 @@ function modify_main_query( $query )
     }
 
     if ( is_post_type_archive( 'shops' ) ) {
-        // Display 10 posts for a custom post type called 'portfolio'
-        $query->set( 'posts_per_page', 6);
+        $query->set( 'posts_per_page', 15);
         return;
     }
 
 	if ( is_post_type_archive( 'sales' ) ) {
-        // Display 10 posts for a custom post type called 'portfolio'
         $query->set( 'posts_per_page', 6);
         return;
     }
