@@ -58,12 +58,6 @@
                                         }
                                         ?>
 
-                                        <?php
-                                        if ($crb_contact_text = $crb_contact['crb_contact_name']) {
-                                            echo '<span class="contact-link__name">' . $crb_contact_text . '" </span>';
-                                        }
-                                        ?>
-
                                     </a>
                                 </li>
 
