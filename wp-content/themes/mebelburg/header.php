@@ -43,7 +43,7 @@
 
                     <ul class="header__top__messengers">
                         <?php
-                        if ($crb_header_contacts = carbon_get_theme_option('crb_header_contacts')) {
+                        if ($crb_header_contacts = carbon_get_theme_option('crb_messengers_contacts')) {
                         ?>
 
                             <?php

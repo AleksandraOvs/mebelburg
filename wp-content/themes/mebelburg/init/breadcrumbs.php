@@ -39,11 +39,14 @@ function site_breadcrumbs()
         } elseif (is_post_type_archive('sales')){
             echo 'Акции';
 
-        } elseif (is_post_type_archive('news')){
+        } elseif (is_page('news')){
             echo 'Новости';
 
         } elseif (is_page('advertising')){
             echo 'Реклама';
+
+        } elseif (is_page(191)){
+            echo 'Новости';
 
         }elseif (is_tag()) {
 
