@@ -37,6 +37,7 @@
                 </ul>
             <?php
             } else {
+                echo '<h2>Не нейдено</h2>'
             }
 
             wp_reset_postdata();
