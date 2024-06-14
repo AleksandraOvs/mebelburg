@@ -115,6 +115,27 @@ function site_carbon()
                 ->set_width(33)
         ));
 
+    Container::make('post_meta', 'Информация об организации')
+        ->show_on_post_type('food')
+        ->add_fields(array(
+            Field::make('image', 'crb_food_logo', 'Логотип')
+                ->set_width(33),
+            Field::make('text', 'crb_food_title', 'Заголовок')
+                ->set_width(33),
+            Field::make('text', 'crb_food_description', 'Краткое описание')
+                ->set_width(33),
+            Field::make('complex', 'crb_food_icons', 'Иконки')
+                ->add_fields(array(
+                    Field::make('image', 'crb_food_icon', 'Иконка')
+                        ->set_width(50),
+                    Field::make('text', 'crb_food_icon_title', 'Подпись к иконке')
+                        ->set_width(50)
+                )),
+            Field::make('rich_text', 'crb_food_shed', 'Время работы')
+                ->help_text('слова в теге span открашиваются в #663780 (фиолетовый цвет)'),
+            Field::make('text', 'crb_food_location', 'Местоположение')
+        ));
+
     Container::make('post_meta', 'Страница Контакты')
         ->show_on_page('contacts')
         ->add_tab(__('Код карты'), array(
@@ -123,56 +144,54 @@ function site_carbon()
 
         ->add_tab(__('Телефон'), array(
             Field::make('text', 'crb_contact_card_head1', 'Заголовок карточки')
-            ->set_width(70),
+                ->set_width(70),
             Field::make('image', 'crb_contacts_cards_icon1', 'Иконка')
-            ->set_width(30),
+                ->set_width(30),
             Field::make('complex', 'crb_contact_card_items1', 'Контакты')
-            ->add_fields( array (
-                Field::make('text', 'crb_contacts_name1', 'Название контакта')
-                ->set_width(33),
-                Field::make('text', 'crb_contacts_text1', 'Текст ссылки')
-                ->set_width(33),
-                Field::make('text', 'crb_contacts_link1', 'Ссылка на телефон')
-                ->set_width(33),
-            ))
+                ->add_fields(array(
+                    Field::make('text', 'crb_contacts_name1', 'Название контакта')
+                        ->set_width(33),
+                    Field::make('text', 'crb_contacts_text1', 'Текст ссылки')
+                        ->set_width(33),
+                    Field::make('text', 'crb_contacts_link1', 'Ссылка на телефон')
+                        ->set_width(33),
+                ))
         ))
 
-            ->add_tab(__('E-mail'), array(
-                Field::make('text', 'crb_contact_card_head2', 'Заголовок карточки')
+        ->add_tab(__('E-mail'), array(
+            Field::make('text', 'crb_contact_card_head2', 'Заголовок карточки')
                 ->set_width(70),
-                Field::make('image', 'crb_contacts_cards_icon2', 'Иконка')
+            Field::make('image', 'crb_contacts_cards_icon2', 'Иконка')
                 ->set_width(30),
-                Field::make('complex', 'crb_contact_card_items2', 'Контакты')
-                ->add_fields( array (
+            Field::make('complex', 'crb_contact_card_items2', 'Контакты')
+                ->add_fields(array(
                     Field::make('text', 'crb_contacts_name2', 'Название контакта')
-                    ->set_width(33),
+                        ->set_width(33),
                     Field::make('text', 'crb_contacts_text2', 'Текст ссылки')
-                    ->set_width(33),
+                        ->set_width(33),
                     Field::make('text', 'crb_contacts_link2', 'Ссылка')
-                    ->set_width(33),
+                        ->set_width(33),
                 ))
-            ))
+        ))
 
-                ->add_tab(__('Адрес'), array(
-                    Field::make('text', 'crb_contact_card_head3', 'Заголовок карточки')
-                    ->set_width(70),
-                    Field::make('image', 'crb_contacts_cards_icon3', 'Иконка')
-                    ->set_width(30),
-                    Field::make('complex', 'crb_contact_card_items3', 'Контакты')
-                    ->add_fields( array (
-                        Field::make('text', 'crb_contacts_name3', 'Название контакта')
+        ->add_tab(__('Адрес'), array(
+            Field::make('text', 'crb_contact_card_head3', 'Заголовок карточки')
+                ->set_width(70),
+            Field::make('image', 'crb_contacts_cards_icon3', 'Иконка')
+                ->set_width(30),
+            Field::make('complex', 'crb_contact_card_items3', 'Контакты')
+                ->add_fields(array(
+                    Field::make('text', 'crb_contacts_name3', 'Название контакта')
                         ->set_width(33),
-                        Field::make('text', 'crb_contacts_text3', 'Текст ссылки')
+                    Field::make('text', 'crb_contacts_text3', 'Текст ссылки')
                         ->set_width(33),
-                        Field::make('text', 'crb_contacts_link3', 'Ссылка')
+                    Field::make('text', 'crb_contacts_link3', 'Ссылка')
                         ->set_width(33),
-                    ))
                 ))
+        ))
 
-                    ->add_tab(__('Режим работы'), array(
-                        Field::make('rich_text', 'crb_contact_shed', 'Режим работы')
-                        ->help_text('слова в теге span открашиваются в #663780 (фиолетовый цвет)')
-                    ));
-                        
-        
+        ->add_tab(__('Режим работы'), array(
+            Field::make('rich_text', 'crb_contact_shed', 'Режим работы')
+                ->help_text('слова в теге span открашиваются в #663780 (фиолетовый цвет)')
+        ));
 }

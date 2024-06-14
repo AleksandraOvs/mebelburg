@@ -39,6 +39,10 @@ function site_breadcrumbs()
         } elseif (is_post_type_archive('sales')){
             echo 'Акции';
 
+        } elseif (is_post_type_archive('food')){
+            echo 'Еда';
+
+
         } elseif (is_page('news')){
             echo 'Новости';
 

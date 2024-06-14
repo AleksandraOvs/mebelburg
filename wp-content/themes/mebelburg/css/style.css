@@ -718,6 +718,16 @@ ul.section-adv__grid li:nth-child(6) {
   overflow: hidden;
   height: 55vh;
   min-height: 400px;
+  transition: all .5s ease-in-out;
+}
+
+.section-adv__grid__item:hover{
+  filter:brightness(1.2);
+  backdrop-filter:brightness(1.2);
+  -webkit-backdrop-filter:brightness(1.2);
+  -moz-backdrop-filter:brightness(1.2);
+  -o-backdrop-filter:brightness(1.2);
+  transition: all .5s ease-in-out;
 }
 
 .section-adv__grid__item__content {
@@ -1805,6 +1815,112 @@ section.page-section._e404 .container {
   height: 100%;
 }
 
+/*food page*/
+
+section.page-section._food-page .page-section__content {
+  margin-top: 120px;
+}
+
+li.food-block__list__item {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.food-block__logo {
+  width: 245px;
+  height: 115px;
+  margin: 0 auto 40px;
+}
+
+h3.food-title {
+  font-size: calc(1em + 2.5vw);
+  line-height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.food-block__title {
+  width: 70%;
+ 
+  margin: 0 auto 35px;
+}
+
+p.food-description {
+  text-align: center;
+    line-height: 100%;
+    font-weight: 500;
+    margin-top: 35px;
+    padding-left: 21%;
+    padding-right: 21%;
+}
+
+ul.food-block__icons {
+  margin-top: 50px;
+}
+
+ul.food-block__icons {
+  list-style: none;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+li.food-block__icon__item {
+  background-color: #fff;
+    padding: 18px;
+    border: 1px solid #ccc;
+    display: flex;
+    width: 15%;
+    max-width: 245px;
+    gap: 20%;
+    border-radius: 10px;
+    flex-direction: column;
+    height: 245px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li.food-block__icon__item img {
+  width: 75px;
+  height: 75px;
+}
+
+.food-block__shedule{
+font-size: calc(1em + 4vw);
+    line-height: 100%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.food-block__shedule span{
+  color: #663780;
+}
+
+p.food-block__location {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+}
+
+section.page-section._food-page {
+  padding-top: 150px;
+  padding-bottom: 0;
+}
+
+.food-block__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+ul.food-block__list .food-block__list__item:nth-child(odd) {
+  background: rgba(0, 0, 0, .07);
+}
+
 ._e404__inner__text {
   width: 33vw;
   text-align: center;
@@ -1837,6 +1953,14 @@ section.page-section._e404 .container {
 @media(min-width: 1440px) {
   .swiper-wrapper.cats-slider__wrapper {
     transform: none !important;
+  }
+
+}
+
+@media (max-width: 1400px){
+  
+  li.food-block__icon__item {
+    width: 25%;
   }
 }
 
@@ -2225,6 +2349,37 @@ section.page-section._e404 .container {
     line-height: 100%;
     margin: 0 auto 50px;
   }
+
+  section.page-section._food-page .page-section__content {
+    margin-top: 80px;
+}
+li.food-block__list__item {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+h3.food-title {
+  font-size: calc(1em + 1.29vw);
+}
+
+.food-block__title {
+  width: 80%;
+  margin: 0 auto 35px;
+}
+
+p.food-description {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+li.food-block__icon__item {
+  width: 230px;
+  height: 230px;
+}
+
+li.food-block__icon__item p {
+  font-size: 14px;
+}
 }
 
 @media (max-width: 992px) {
@@ -2235,6 +2390,15 @@ section.page-section._e404 .container {
   ul.sale-block li {
     width: 100%;
     height: 484px;
+  }
+
+  ul.food-block__icons {
+    list-style: none;
+    margin-top: 35px;
+  }
+
+  .food-block__shedule {
+    margin-top: 60px;
   }
 }
 
@@ -2315,6 +2479,10 @@ section.page-section._e404 .container {
 }
 
 @media (max-width: 576px) {
+
+  h2 {
+    font-size: calc(1em + 3vw);
+  }
   .container {
     position: relative;
     width: 100%;
@@ -2703,6 +2871,32 @@ ul.page-contacts__contact-cards li:nth-child(2) {
 
 .subscribe-us__title {
   font-size: 30px;
+}
+
+.page-section__description {
+  width: 90%;
+  font-size: 14px;
+}
+
+h3.food-title {
+  font-size: 20px;
+}
+
+.food-block__title {
+  width: 90%;
+}
+
+li.food-block__icon__item {
+  width: 162px;
+  height: 162px;
+}
+
+ul.food-block__icons {
+  gap: 12px;
+}
+
+.food-block__shedule {
+  font-size: calc(1em + 2.3vw);
 }
 }
 
