@@ -58,7 +58,7 @@
             </div>
 
             <div class="footer__inner__bottom__right">
-                <a href="/" class="policy-link">Политика конфиденциальности</a>
+                <a href="<?php echo site_url('privacy-policy') ?>" class="policy-link">Политика конфиденциальности</a>
                 <div class="footer__inner__bottom__messengers">
                 <?php
                 if ($crb_header_contacts = carbon_get_theme_option('crb_messengers_contacts')) {
