@@ -2897,10 +2897,6 @@ ul.section-plan__grid li:nth-child(5) { grid-area: 3 / 1 / 4 / 5; }
     width: 80%;
   }
 
-  ul.section-adv__grid li:first-child .section-adv__grid__item__content .section-adv__grid__item__content__bottom {
-    width: 60%;
-}
-
   #more-shops {
     margin-top: 55px;
   }
@@ -3100,6 +3096,11 @@ ul.section-plan__grid li:nth-child(5) { grid-area: 3 / 1 / 4 / 5; }
   .section-advertising__grid__item__content {
     padding: 12px;
   }
+
+  
+  ul.section-adv__grid li:first-child .section-adv__grid__item__content .section-adv__grid__item__content__bottom {
+    width: 60%;
+}
 
   .section-adv__description {
     padding-left: 0;
