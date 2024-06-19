@@ -24,8 +24,8 @@ get_header() ?>
             </div>
 
             <div class="page-section__scheme-links">
-                <a class="scheme-link active" href="<?php echo site_url('scheme') ?>">Схема центра</a>
-                <a class="scheme-link" href="<?php echo site_url('plan') ?>">План участка</a>
+                <a class="scheme-link" href="<?php echo site_url('scheme') ?>">Схема центра</a>
+                <a class="scheme-link active" href="<?php echo site_url('plan') ?>">План участка</a>
             </div>
         </div>
 

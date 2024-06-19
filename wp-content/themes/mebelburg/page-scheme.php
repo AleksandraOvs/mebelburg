@@ -24,8 +24,8 @@ get_header() ?>
             </div>
 
             <div class="page-section__scheme-links">
-                <a class="scheme-link" href="<?php echo site_url('scheme') ?>">Схема центра</a>
-                <a class="scheme-link active" href="<?php echo site_url('plan') ?>">План участка</a>
+                <a class="scheme-link active" href="<?php echo site_url('scheme') ?>">Схема центра</a>
+                <a class="scheme-link" href="<?php echo site_url('plan') ?>">План участка</a>
             </div>
         </div>
 
@@ -116,7 +116,7 @@ get_header() ?>
                         <div class="swiper-slide floors-slider__slide">
                             <div class="floors-slider__slide__img">
                                 <?php
-                                $floor2_slide_img_url = wp_get_attachment_image_url($floor3_slide, 'full');
+                                $floor3_slide_img_url = wp_get_attachment_image_url($floor3_slide, 'full');
                                 ?>
 
                                 <img class="floors-slider__img" src="<?php echo $floor3_slide_img_url; ?>" alt="">
