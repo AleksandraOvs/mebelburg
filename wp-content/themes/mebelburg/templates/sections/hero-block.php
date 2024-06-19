@@ -75,6 +75,6 @@
 
         ?>
 
-        <a href="/" class="button">Все акции</a>
+        <a href="<?php echo site_url('sales')?>" class="button">Все акции</a>
     </div>
 </section>
