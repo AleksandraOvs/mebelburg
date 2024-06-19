@@ -2309,6 +2309,17 @@ h1.tribe-events-single-event-title {
   padding: 170px 0 80px 0;
 }
 
+.tribe-common .tribe-common-c-btn-border, .tribe-common a.tribe-common-c-btn-border {
+  background-color: var(--tec-color-background);
+  border: 1px solid var(--beige);
+  border-radius: 30px;
+  text-align: center;
+  transition: var(--tec-transition);
+  color: var(--beige);
+  padding: 11px 20px;
+  width: 100%;
+}
+
 @media(min-width: 1440px) {
   .swiper-wrapper.cats-slider__wrapper {
     transform: none !important;
