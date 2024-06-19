@@ -43,8 +43,8 @@ function site_breadcrumbs()
             echo 'Еда';
 
 
-        } elseif (is_archive()){
-            echo 'Новости';
+        // } elseif (is_archive()){
+        //     echo 'Новости';
 
         } elseif (is_page('advertising')){
             echo 'Реклама';
