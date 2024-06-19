@@ -2039,6 +2039,13 @@ p.footer-address {
 
 .swiper-slide.shops-cat {
   width: auto !important;
+  transition: all .5s linear;
+}
+
+.swiper-slide.shops-cat:hover {
+  background: var(--beige);
+  color: #fff;
+  transition: all .5s linear;
 }
 
 #more-shops {
