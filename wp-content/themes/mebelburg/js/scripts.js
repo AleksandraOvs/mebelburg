@@ -38,11 +38,21 @@ document.addEventListener("DOMContentLoaded", () => {
         var text = $(this).text().trim().split(" ");
         var first = text.shift();
         return (text.length >= 0 ? "<span class='first-word'>" + first + "</span> " : first) + text.join(" ");
-        
+
     });
 
-    
+    if (window.innerWidth <= 768) {
+        const policyLink = document.querySelector('.policy-link');
+        policyLink.textContent = 'Политика';
+    }
+    if (window.innerWidth <= 480) {
+    const siteDev =  document.querySelector('.sitedev-link');
+    siteDev.textContent = 'Разработка';
+    }
 }
+
+
+
 );
 
 

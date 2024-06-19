@@ -70,6 +70,13 @@ function site_carbon()
                 ->help_text('вставьте шорткод для формы обратной связи в это поле')
                 ->set_width(33),
 
+        ))
+
+        ->add_tab(__('Файлы'), array(
+
+            Field::make("file", "crb_politics_file", "Файл политики (PDF)")
+                ->set_value_type('url') // сохранить в метаполе ссылку на файл
+
         ));
 
     Container::make('theme_options', 'Первый экран')
@@ -193,5 +200,82 @@ function site_carbon()
         ->add_tab(__('Режим работы'), array(
             Field::make('rich_text', 'crb_contact_shed', 'Режим работы')
                 ->help_text('слова в теге span открашиваются в #663780 (фиолетовый цвет)')
+        ));
+
+    Container::make('post_meta', 'Схемы и планы')
+        ->show_on_template('page-scheme.php')
+        ->add_tab(__('1 этаж'), array(
+            Field::make('image', 'crb_scheme1f_img', 'Изображение 1 этажа'),
+            Field::make('complex', 'crb_scheme1f_list', 'Расшифровка схемы')
+                ->add_fields(array(
+                    Field::make('text', 'crb_scheme1f_list_number', 'Подпись к цифре')
+                        ->set_width(50),
+                    Field::make('text', 'crb_scheme1f_list_desc', 'Подпись к цифре')
+                        ->set_width(50),
+                ))
+        ))
+
+        ->add_tab(__('2 этаж'), array(
+            Field::make('image', 'crb_scheme2f_img', 'Изображение 2 этажа'),
+            Field::make('complex', 'crb_scheme2f_list', 'Расшифровка схемы')
+                ->add_fields(array(
+                    Field::make('text', 'crb_scheme2f_list_number', 'Подпись к цифре')
+                        ->set_width(50),
+                    Field::make('text', 'crb_scheme2f_list_desc', 'Подпись к цифре')
+                        ->set_width(50),
+                ))
+        ))
+
+        ->add_tab(__('3 этаж'), array(
+            Field::make('image', 'crb_scheme3f_img', 'Изображение 3 этажа'),
+            Field::make('complex', 'crb_scheme3f_list', 'Расшифровка схемы')
+                ->add_fields(array(
+                    Field::make('text', 'crb_scheme3f_list_number', 'Подпись к цифре')
+                        ->set_width(50),
+                    Field::make('text', 'crb_scheme3f_list_desc', 'Подпись к цифре')
+                        ->set_width(50),
+                ))
+        ));
+
+    Container::make('post_meta', 'Схемы и планы')
+        ->show_on_template('page-plan.php')
+        ->add_tab(__('План земельного участка_слайд1'), array(
+            Field::make('image', 'crb_plan1_img', 'Изображение 1 слайда'),
+            Field::make('rich_text', 'crb_plan1_list_description', 'Описание')
+            ->set_width(30),
+            Field::make('complex', 'crb_plan1_list', 'Расшифровка схемы')
+                ->add_fields(array(
+                    Field::make('text', 'crb_plan1_list_number', 'Подпись к цифре')
+                        ->set_width(50),
+                    Field::make('text', 'crb_plan1_list_desc', 'Подпись к цифре')
+                        ->set_width(50),
+                ))
+        ))
+
+        ->add_tab(__('План земельного участка_слайд2'), array(
+            Field::make('image', 'crb_plan2_img', 'Изображение 2 слайда'),
+            Field::make('rich_text', 'crb_plan2_list_description', 'Описание')
+            ->set_width(30),
+            Field::make('complex', 'crb_plan2_list', 'Расшифровка схемы')
+                ->add_fields(array(
+                   
+                    Field::make('text', 'crb_plan2_list_number', 'Подпись к цифре')
+                        ->set_width(50),
+                    Field::make('text', 'crb_plan2_list_desc', 'Подпись к цифре')
+                        ->set_width(50),
+                ))
+        ))
+
+        ->add_tab(__('План земельного участка_слайд3'), array(
+            Field::make('image', 'crb_plan3_img', 'Изображение 3 слайда'),
+            Field::make('rich_text', 'crb_plan3_list_description', 'Описание')
+            ->set_width(30),
+            Field::make('complex', 'crb_plan3_list', 'Расшифровка схемы')
+                ->add_fields(array(
+                    Field::make('text', 'crb_plan3_list_number', 'Подпись к цифре')
+                        ->set_width(30),
+                    Field::make('text', 'crb_plan3_list_desc', 'Подпись к цифре')
+                        ->set_width(30),
+                ))
         ));
 }
