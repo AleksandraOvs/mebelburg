@@ -631,7 +631,7 @@ ul.sale-block li img {
 .sale-block__item__content__head {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .item__link {
