@@ -768,7 +768,7 @@ ul.section-adv__grid li:nth-child(6) {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 30px 20px;
+  padding: 18px;
   z-index: 2;
 }
 
@@ -2895,6 +2895,10 @@ ul.section-plan__grid li:nth-child(5) { grid-area: 3 / 1 / 4 / 5; }
   .page-section__description {
     width: 80%;
   }
+
+  ul.section-adv__grid li:first-child .section-adv__grid__item__content .section-adv__grid__item__content__bottom {
+    width: 60%;
+}
 
   #more-shops {
     margin-top: 55px;
