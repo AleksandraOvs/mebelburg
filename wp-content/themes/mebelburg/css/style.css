@@ -3205,7 +3205,7 @@ section.page-section._page-enter .container {
   }
 
   .sale-block__item__content__bottom {
-    width: 80%;
+    width:max-content;
   }
 
   input.wpcf7-form-control.wpcf7-submit.has-spinner {
