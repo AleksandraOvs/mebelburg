@@ -1102,7 +1102,7 @@ h4.psl__item__content__name {
 .psl__item__content__more {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   padding-left: 15px;
 }
