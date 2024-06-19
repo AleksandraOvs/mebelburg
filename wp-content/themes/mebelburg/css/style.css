@@ -1109,6 +1109,11 @@ h4.psl__item__content__name {
 
 .psl__item__content__more__cat {
   width: calc(100% - 100px);
+  line-height: 100%;
+}
+
+.psl__item__content__more__cat span {
+  line-height: 100%;
 }
 
 .psl__item__content__more__cat .shop__cat {
