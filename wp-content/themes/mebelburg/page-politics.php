@@ -15,7 +15,7 @@
         </div>
         <div class="page-content">
             <div class="page__title">
-                <h2><span class="bold">Политика в отношении обработки</span> персональных данных</h2>
+                <h2><span class="bold">Политика в отношении&nbsp;обработки</span> персональных данных</h2>
             </div>
             <div class="page-content__fixed">
                 <div class="download-politics">
