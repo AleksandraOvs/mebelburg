@@ -2250,6 +2250,12 @@ ul.food-block__list .food-block__list__item:nth-child(odd) {
   padding-top: 170px;
 }
 
+#tribe-events-pg-template {
+  margin: 0 auto;
+  max-width: 1048px;
+  padding: 170px 0 80px 0;
+}
+
 @media(min-width: 1440px) {
   .swiper-wrapper.cats-slider__wrapper {
     transform: none !important;
