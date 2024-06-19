@@ -914,6 +914,12 @@ section.page-section {
 }
 
 /*politics*/
+
+.page__title._policy-title{
+  width: 100%;
+}
+
+
 .download-politics__img{
   width: 40px;
   height: 50px;

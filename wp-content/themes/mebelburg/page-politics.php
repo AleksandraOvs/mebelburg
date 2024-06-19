@@ -14,7 +14,7 @@
             </ul>
         </div>
         <div class="page-content">
-            <div class="page__title">
+            <div class="page__title _policy-title">
                 <h2><span class="bold">Политика в отношении&nbsp;обработки</span> персональных данных</h2>
             </div>
             <div class="page-content__fixed">
