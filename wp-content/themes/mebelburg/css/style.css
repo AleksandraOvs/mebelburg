@@ -2154,7 +2154,11 @@ li.food-block__list__item {
 .food-block__logo {
   width: 245px;
   height: 115px;
-  margin: 0 auto 40px;
+  margin: 0 auto 30px;
+}
+
+p.food-description {
+  margin-top: 25px;
 }
 
 h3.food-title {
@@ -2210,6 +2214,7 @@ li.food-block__icon__item {
 p.food-icon__title {
   font-style: italic;
   font-size: 14px;
+  line-height: 100%;
 }
 
 li.food-block__icon__item img {
@@ -3232,6 +3237,12 @@ section.page-section._page-enter .container {
     width: 100%;
   }
 
+  li.food-block__icon__item p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 100%;
+}
+
   .footer__inner__bottom__messengers {
     position: absolute;
     top: 0;
@@ -3250,6 +3261,10 @@ section.page-section._page-enter .container {
     gap: 30px;
     margin-top: 20px;
     font-size: 12px !important;
+  }
+
+  li.food-block__icon__item {
+    padding: 12px;
   }
 
   p.footer-address {
