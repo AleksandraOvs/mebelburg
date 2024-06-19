@@ -30,47 +30,57 @@ get_header() ?>
         </div>
 
         <div class="page-section__content _page-scheme__content">
-            <ul class="section-advertising__grid">
-                <li class="section-advertising__grid__item">
-                    <img class="section-advertising__grid__item__img" src="/" alt="">
-                    <div class="section-advertising__grid__item__content bg-beige">
-                        <div class="section-advertising__grid__item__content__top color-white">
+            <ul class="section-plan__grid">
+                <li class="section-plan__grid__item">
+                    <img class="section-plan__grid__item__img" src="/" alt="">
+                    <div class="section-plan__grid__item__content bg-beige">
+                        <div class="section-plan__grid__item__content__top color-white">
                             <p>30 236 м<sup>2</sup></p>
                         </div>
-                        <div class="section-advertising__grid__item__content__bottom color-white">
+                        <div class="section-plan__grid__item__content__bottom color-white">
                             <p>общая площадь интерьерно-выставочного центра</p>
                         </div>
                     </div>
                 </li>
-                <li class="section-advertising__grid__item">
-                    <img class="section-advertising__grid__item__img" src="<?php echo get_stylesheet_directory_uri() . '/images/advpic02.png' ?>" alt="">
-                    <div class="section-advertising__grid__item__content">
-                        <div class="section-advertising__grid__item__content__top color-white">
+                <li class="section-plan__grid__item">
+                    <img class="section-plan__grid__item__img" src="<?php echo get_stylesheet_directory_uri() . '/images/adv6.png' ?>" alt="">
+                    <div class="section-plan__grid__item__content">
+                        <div class="section-plan__grid__item__content__top color-white">
                             <p>17 000 м<sup>2</sup></p>
                         </div>
-                        <div class="section-advertising__grid__item__content__bottom color-white">
+                        <div class="section-plan__grid__item__content__bottom color-white">
                             <p>площадь магазинов и&nbsp;экспозиций</p>
                         </div>
                     </div>
                 </li>
-                <li class="section-advertising__grid__item">
-                    <img class="section-advertising__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/advpic03.png' ?>" alt="">
-                    <div class="section-advertising__grid__item__content">
-                        <div class="section-advertising__grid__item__content__top">
-                            <p>100 000+</p>
+                <li class="section-plan__grid__item border" style="background-color:#fff; background-image:url(<?php echo get_stylesheet_directory_uri() . '/images/adv1.svg' ?>); background-repeat:no-repeat; background-position: center;">
+                    <div class="section-plan__grid__item__content">
+                        <div class="section-plan__grid__item__content__top">
+                            <p>03</p>
                         </div>
-                        <div class="section-advertising__grid__item__content__bottom ">
-                            <p>человек — потенциальные посетители среди жителей ближайших ЖК</p>
+                        <div class="section-plan__grid__item__content__bottom ">
+                            <p>этажа товаров для вашего дома</p>
                         </div>
                     </div>
                 </li>
-                <li class="section-advertising__grid__item bg-white border-black">
-                    <div class="section-advertising__grid__item__content">
-                        <div class="section-advertising__grid__item__content__top color-white">
-                            <p class="color-beige">850 000+</p>
+                <li class="section-plan__grid__item">
+                    <img class="section-plan__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/parking1.jpg' ?>" alt="">
+                    <div class="section-plan__grid__item__content">
+                        <div class="section-plan__grid__item__content__top color-white">
+                            <p>252 м/м</p>
                         </div>
-                        <div class="section-advertising__grid__item__content__bottom">
-                            <p>человек — потенциальные посетители среди жителей ближайших ЖК</p>
+                        <div class="section-plan__grid__item__content__bottom color-white">
+                            <p>Наземная парковка</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="section-plan__grid__item border-black" style="background: #663780;">
+                    <div class="section-plan__grid__item__content">
+                        <div class="section-plan__grid__item__content__top color-white">
+                            <p>184 м/м</p>
+                        </div>
+                        <div class="section-plan__grid__item__content__bottom color-white">
+                            <p>Подземный паркинг</p>
                         </div>
                     </div>
                 </li>
@@ -105,29 +115,30 @@ get_header() ?>
                             </div>
 
                             <div class="plan-description">
-                            <div class="plan-description__text">
-                            <?php if ($plan1_desc = carbon_get_post_meta(get_the_ID(), 'crb_plan1_list_description')) {
-                                ?>
-                                    <p class="plan-list__description">
-                                        <?php echo $plan1_desc ?>
-                                    </p>
-                                <?php } ?>
-                            </div>
-                            
+                                <div class="plan-description__text">
+                                    <?php if ($plan1_desc = carbon_get_post_meta(get_the_ID(), 'crb_plan1_list_description')) {
+                                    ?>
+                                        <p class="plan-list__description">
+                                            <?php echo $plan1_desc ?>
+                                        </p>
+                                    <?php } ?>
+                                </div>
 
-                            <ul class="plan-slider__slide__number-list plan-list">
-                               
-                                <?php
-                                $plan1_slide_numbers =
-                                    carbon_get_post_meta(get_the_ID(), 'crb_plan1_list');
-                                foreach ($plan1_slide_numbers as $plan_first) {
-                                    echo '<li><div class="number-list__num">' . $plan_first['crb_plan1_list_number'] . '</div><span>' . $plan_first['crb_plan1_list_desc'] . '</span></li>';
-                                }
-                                ?>
-                            </ul>
-                            </div>
 
+                                <ul class="plan-slider__slide__number-list plan-list">
+
+                                    <?php
+                                    $plan1_slide_numbers =
+                                        carbon_get_post_meta(get_the_ID(), 'crb_plan1_list');
+                                    foreach ($plan1_slide_numbers as $plan_first) {
+                                        echo '<li><div class="number-list__num">' . $plan_first['crb_plan1_list_number'] . '</div><span>' . $plan_first['crb_plan1_list_desc'] . '</span></li>';
+                                    }
+                                    ?>
+                                </ul>
+                            </div>
                         </div>
+
+                        <!-- </div> -->
                     <?php
                     }
                     //  }
@@ -153,7 +164,7 @@ get_header() ?>
                                     ?>
                                         <p class="plan-list__description">
                                             <?php echo $plan2_desc ?>
-                                    </p>
+                                        </p>
                                     <?php } ?>
                                 </div>
                                 <ul class="plan-slider__slide__number-list plan-list">
@@ -169,63 +180,65 @@ get_header() ?>
 
 
                         </div>
-                    <?php
+                        <?php
                     }
                     //  }
-                    ?>
+                        ?>
 
-                    <!-- 3 plan -->
-                    <?php
-                    if ($plan3_slide = carbon_get_post_meta(get_the_ID(), 'crb_plan3_img')) {
-                        //  foreach ($floors_slides as $floor_slide) {
-                    ?>
-                        <div class="swiper-slide floors-slider__slide">
-                            <div class="floors-slider__slide__img">
-                                <?php
-                                $plan3_slide_img_url = wp_get_attachment_image_url($plan3_slide, 'full');
-                                ?>
+                        <!-- 3 plan -->
+                        <?php
+                        if ($plan3_slide = carbon_get_post_meta(get_the_ID(), 'crb_plan3_img')) {
+                            //  foreach ($floors_slides as $floor_slide) {
+                        ?>
+                            <div class="swiper-slide floors-slider__slide">
+                                <div class="floors-slider__slide__img">
+                                    <?php
+                                    $plan3_slide_img_url = wp_get_attachment_image_url($plan3_slide, 'full');
+                                    ?>
 
-                                <img class="floors-slider__img" src="<?php echo $plan3_slide_img_url; ?>" alt="">
-                            </div>
-
-                            <div class="plan-description">
-                                <div class="plan-description__text">
-                                <?php if ($plan3_desc = carbon_get_post_meta(get_the_ID(), 'crb_plan3_list_description')) {
-                                ?>
-                                    <p class="plan-list__description">
-                                        <?php echo $plan3_desc ?>
-                                </p>
-                                <?php } ?>
+                                    <img class="floors-slider__img" src="<?php echo $plan3_slide_img_url; ?>" alt="">
                                 </div>
-                            </div>
 
-                            <ul class="plan-slider__slide__number-list plan-list">
-                                
-                                <?php
-                                $plan3_slide_numbers = carbon_get_post_meta(get_the_ID(), 'crb_plan3_list');
-                                foreach ($plan3_slide_numbers as $plan_third) {
-                                    echo '<li><div class="number-list__num">' . $plan_third['crb_plan3_list_number'] . '</div><span>' . $plan_third['crb_plan3_list_desc'] . '</span></li>';
-                                }
-                                ?>
-                            </ul>
+                                <div class="plan-description">
+                                    <div class="plan-description__text">
+                                        <?php if ($plan3_desc = carbon_get_post_meta(get_the_ID(), 'crb_plan3_list_description')) {
+                                        ?>
+                                            <p class="plan-list__description">
+                                                <?php echo $plan3_desc ?>
+                                            </p>
+                                        <?php } ?>
+                                    </div>
+
+                                     <ul class="plan-slider__slide__number-list plan-list">
+
+                                    <?php
+                                    $plan3_slide_numbers = carbon_get_post_meta(get_the_ID(), 'crb_plan3_list');
+                                    foreach ($plan3_slide_numbers as $plan_third) {
+                                        echo '<li><div class="number-list__num">' . $plan_third['crb_plan3_list_number'] . '</div><span>' . $plan_third['crb_plan3_list_desc'] . '</span></li>';
+                                    }
+                                    ?>
+                                </ul>
+                                </div>
+
+                               
+
+                                <!-- y -->
+                            <?php
+                        }
+                        //  }
+                            ?>
+
+                            </div> 
+                            <div class="floors-slider__button-next">
+                                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 1L19 6L14 11" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M19 6H1" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
 
                         </div>
-                    <?php
-                    }
-                    //  }
-                    ?>
-
                 </div>
-                <div class="floors-slider__button-next">
-                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 1L19 6L14 11" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M19 6H1" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
-
             </div>
-        </div>
-    </div>
 
 </section>
 
