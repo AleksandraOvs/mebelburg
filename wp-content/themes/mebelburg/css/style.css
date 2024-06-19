@@ -2950,7 +2950,7 @@ section.page-section._page-enter .container {
 
   ul.section-adv__grid li:first-child .section-adv__grid__item__content .section-adv__grid__item__content__bottom,
   ul.section-adv__grid li:nth-child(6) .section-adv__grid__item__content .section-adv__grid__item__content__bottom {
-    width: 100%;
+    width: 80%;
   }
 
   .footer__inner__bottom__right {
