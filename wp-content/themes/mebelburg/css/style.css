@@ -3571,6 +3571,11 @@ section.page-section._page-enter .container {
     min-height: auto;
     max-height: 336px;
   }
+
+  .footer-bottom__logo {
+    width: 173px;
+    height: 32px;
+}
 }
 
 
