@@ -3107,7 +3107,7 @@ ul.floors-slider__slide__number-list {
     display: grid;
     grid-template-columns: 170px 1fr;
     column-gap: 0;
-    row-gap: 50px;
+    row-gap: unset;
   }
 
   ul.sale-block__list {
