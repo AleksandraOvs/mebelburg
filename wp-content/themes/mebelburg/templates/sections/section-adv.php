@@ -51,7 +51,7 @@
                 <div class="section-adv__grid__item__content">
                     <!-- <div class="section-adv__grid__item__content__top"></div> -->
                     <div class="section-adv__grid__item__content__bottom">
-                        <p class="color-white">Мебель для любых комнат — от диванов до&nbsp;кухонь и&nbsp;гардеробных</p></div>
+                        <p class="color-white">Мебель для любых комнат — от&nbsp;диванов до&nbsp;кухонь и&nbsp;гардеробных</p></div>
                 </div>
             </li>
             <li class="section-adv__grid__item bg-purple" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/images/adv4.svg' ?>); background-repeat:no-repeat; background-position: center;">
