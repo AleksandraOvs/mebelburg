@@ -3506,7 +3506,7 @@ section.page-section._page-enter .container {
   }
 
   .footer__inner__bottom {
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 66% 25%;
   }
 
   .footer-bottom__copyright {
