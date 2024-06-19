@@ -3009,8 +3009,8 @@ ul.section-plan__grid li:nth-child(5) { grid-area: 3 / 1 / 4 / 5; }
   }
 
   .item__link {
-    top: 12px;
-    right: 12px;
+    top: 0px;
+    right: 0px;
     width: 32px;
     height: 32px;
     transition: all .5s ease-in-out;
