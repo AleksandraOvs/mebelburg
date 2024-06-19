@@ -749,6 +749,7 @@ ul.section-adv__grid li:nth-child(6) {
   border-radius: 10px;
   overflow: hidden;
  height: 55vh;
+ max-height: 400px;
     /*min-height: 400px; */
   transition: all .5s ease-in-out;
 }
