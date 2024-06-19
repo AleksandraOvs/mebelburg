@@ -2916,6 +2916,10 @@ ul.section-plan__grid li:nth-child(5) { grid-area: 3 / 1 / 4 / 5; }
     height: 100%;
   }
 
+  ul.section-adv__grid li:first-child .section-adv__grid__item__content .section-adv__grid__item__content__bottom, ul.section-adv__grid li:nth-child(6) .section-adv__grid__item__content .section-adv__grid__item__content__bottom {
+    width: 100%;
+}
+
   .footer__inner__bottom__right {
     display: flex;
     align-items: center;
