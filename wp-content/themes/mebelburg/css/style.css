@@ -280,6 +280,7 @@ a.header__inner__burger svg {
   width: 70%;
   height: 55px;
   display: block;
+  transform: translateX(-10px);
 }
 
 .header__inner__logo img {
@@ -2393,6 +2394,10 @@ section.page-section._page-enter .container {
 
 
 @media (max-width: 1240px) {
+  .header__inner__logo {
+    transform: none;
+  }
+
   .header__inner__logo_mob {
     display: block;
     width: 200px;
