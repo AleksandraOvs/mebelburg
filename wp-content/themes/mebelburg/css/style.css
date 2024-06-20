@@ -3027,6 +3027,17 @@ ul.plan-slider__slide__number-list.plan-list li span {
     width: 80%;
   }
 
+  .plan-description {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  
+  .plan-description__text {
+    width: 40%;
+  }
+  
+
   .footer__inner__bottom__right {
     display: flex;
     align-items: center;
