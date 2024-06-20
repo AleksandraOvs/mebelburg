@@ -1775,7 +1775,7 @@ ul.plan-slider__slide__number-list.plan-list li {
 }
 
 .plan-description__text {
-  width: 80%;
+  width: 50%;
   font-size: 14px;
   line-height: 120%;
 }
@@ -2944,6 +2944,10 @@ section.page-section._page-enter .container {
     display: grid;
     grid-template-columns: 30% 70%;
     margin-top: 40px;
+}
+
+.plan-description__text {
+  width: 80%;
 }
 
 ul.plan-slider__slide__number-list.plan-list li span {
