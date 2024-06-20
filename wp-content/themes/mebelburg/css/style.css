@@ -1780,6 +1780,11 @@ ul.plan-slider__slide__number-list.plan-list li {
   line-height: 120%;
 }
 
+p.plan-list__description {
+  font-size: 14px;
+  line-height: 120%;
+}
+
 ul.section-plan__grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

@@ -91,35 +91,35 @@ get_header() ?>
             </div>
 
             <div class="swiper floors-slider">
-                <div class="floors-slider__button-prev">
+                <!-- <div class="floors-slider__button-prev">
                     <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 1L1 6L6 11" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M1 6H19" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                </div>
-                <div class="swiper-wrapper floors-slider__wrapper">
+                </div> -->
+                <div class="floors-slider__wrapper">
 
                     <!-- 1 plan -->
                     <?php
-                    if ($plan1_slide = carbon_get_post_meta(get_the_ID(), 'crb_plan1_img')) {
+                    if ($plan = carbon_get_post_meta(get_the_ID(), 'crb_plan_img')) {
                         //  foreach ($floors_slides as $floor_slide) {
                     ?>
                         <div class="swiper-slide floors-slider__slide">
                             <div class="floors-slider__slide__img">
                                 <?php
-                                $plan1_slide_img_url = wp_get_attachment_image_url($plan1_slide, 'full');
+                                $plan_slide_img_url = wp_get_attachment_image_url($plan, 'full');
                                 ?>
 
-                                <img class="floors-slider__img" src="<?php echo $plan1_slide_img_url; ?>" alt="">
+                                <img class="floors-slider__img" src="<?php echo $plan_slide_img_url; ?>" alt="">
                             </div>
 
                             <div class="plan-description">
                                 <div class="plan-description__text">
-                                    <?php if ($plan1_desc = carbon_get_post_meta(get_the_ID(), 'crb_plan1_list_description')) {
+                                    <?php if ($plan_desc = carbon_get_post_meta(get_the_ID(), 'crb_plan_list_description')) {
                                     ?>
                                         <p class="plan-list__description">
-                                            <?php echo $plan1_desc ?>
+                                            <?php echo $plan_desc ?>
                                         </p>
                                     <?php } ?>
                                 </div>
@@ -128,10 +128,10 @@ get_header() ?>
                                 <ul class="plan-slider__slide__number-list plan-list">
 
                                     <?php
-                                    $plan1_slide_numbers =
-                                        carbon_get_post_meta(get_the_ID(), 'crb_plan1_list');
-                                    foreach ($plan1_slide_numbers as $plan_first) {
-                                        echo '<li><div class="number-list__num">' . $plan_first['crb_plan1_list_number'] . '</div><span>' . $plan_first['crb_plan1_list_desc'] . '</span></li>';
+                                    $plan_numbers =
+                                        carbon_get_post_meta(get_the_ID(), 'crb_plan_list');
+                                    foreach ($plan_numbers as $plan_number) {
+                                        echo '<li><div class="number-list__num">' . $plan_number['crb_plan_list_number'] . '</div><span>' . $plan_number['crb_plan_list_desc'] . '</span></li>';
                                     }
                                     ?>
                                 </ul>
@@ -144,97 +144,15 @@ get_header() ?>
                     //  }
                     ?>
 
-                    <!-- 2 plan -->
-                    <?php
-                    if ($plan2_slide = carbon_get_post_meta(get_the_ID(), 'crb_plan2_img')) {
-                        //  foreach ($floors_slides as $floor_slide) {
-                    ?>
-                        <div class="swiper-slide floors-slider__slide">
-                            <div class="floors-slider__slide__img">
-                                <?php
-                                $plan2_slide_img_url = wp_get_attachment_image_url($plan2_slide, 'full');
-                                ?>
-
-                                <img class="floors-slider__img" src="<?php echo $plan2_slide_img_url; ?>" alt="">
-                            </div>
-
-                            <div class="plan-description">
-                                <div class="plan-description__text">
-                                    <?php if ($plan2_desc = carbon_get_post_meta(get_the_ID(), 'crb_plan2_list_description')) {
-                                    ?>
-                                        <p class="plan-list__description">
-                                            <?php echo $plan2_desc ?>
-                                        </p>
-                                    <?php } ?>
-                                </div>
-                                <ul class="plan-slider__slide__number-list plan-list">
-                                    <?php
-                                    $plan2_slide_numbers = carbon_get_post_meta(get_the_ID(), 'crb_plan2_list');
-                                    foreach ($plan2_slide_numbers as $plan_second) {
-                                        echo '<li><div class="number-list__num">' . $plan_second['crb_plan2_list_number'] . '</div><span>' . $plan_second['crb_plan2_list_desc'] . '</span></li>';
-                                    }
-                                    ?>
-                                </ul>
-                            </div>
-
-
-
-                        </div>
-                        <?php
-                    }
-                    //  }
-                        ?>
-
-                        <!-- 3 plan -->
-                        <?php
-                        if ($plan3_slide = carbon_get_post_meta(get_the_ID(), 'crb_plan3_img')) {
-                            //  foreach ($floors_slides as $floor_slide) {
-                        ?>
-                            <div class="swiper-slide floors-slider__slide">
-                                <div class="floors-slider__slide__img">
-                                    <?php
-                                    $plan3_slide_img_url = wp_get_attachment_image_url($plan3_slide, 'full');
-                                    ?>
-
-                                    <img class="floors-slider__img" src="<?php echo $plan3_slide_img_url; ?>" alt="">
-                                </div>
-
-                                <div class="plan-description">
-                                    <div class="plan-description__text">
-                                        <?php if ($plan3_desc = carbon_get_post_meta(get_the_ID(), 'crb_plan3_list_description')) {
-                                        ?>
-                                            <p class="plan-list__description">
-                                                <?php echo $plan3_desc ?>
-                                            </p>
-                                        <?php } ?>
-                                    </div>
-
-                                     <ul class="plan-slider__slide__number-list plan-list">
-
-                                    <?php
-                                    $plan3_slide_numbers = carbon_get_post_meta(get_the_ID(), 'crb_plan3_list');
-                                    foreach ($plan3_slide_numbers as $plan_third) {
-                                        echo '<li><div class="number-list__num">' . $plan_third['crb_plan3_list_number'] . '</div><span>' . $plan_third['crb_plan3_list_desc'] . '</span></li>';
-                                    }
-                                    ?>
-                                </ul>
-                                </div>
-
-                               
-
-                                <!-- y -->
-                            <?php
-                        }
-                        //  }
-                            ?>
+                   
 
                             </div> 
-                            <div class="floors-slider__button-next">
+                            <!-- <div class="floors-slider__button-next">
                                 <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14 1L19 6L14 11" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M19 6H1" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                            </div>
+                            </div> -->
 
                         </div>
                 </div>
