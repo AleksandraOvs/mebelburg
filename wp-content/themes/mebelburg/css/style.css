@@ -3314,6 +3314,21 @@ ul.plan-slider__slide__number-list.plan-list li span {
     line-height: 100%;
 }
 
+.plan-description__text {
+  width: 50%;
+}
+
+.plan-slider__slide__number-list.plan-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.plan-description__text {
+  width: 80%;
+}
+
   .footer__inner__bottom__messengers {
     position: absolute;
     top: 0;
