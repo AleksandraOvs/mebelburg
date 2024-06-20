@@ -2946,6 +2946,10 @@ section.page-section._page-enter .container {
     margin-top: 40px;
 }
 
+ul.plan-slider__slide__number-list.plan-list li span {
+  font-size: 18px;
+}
+
 
   /* .footer__inner__bottom__left {
   justify-content: unset;
