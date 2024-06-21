@@ -11,6 +11,10 @@
                 <h2><?php the_title() ?></h2>
             </div>
 
+            <div class="page-section__content">
+                <?php the_title() ?>
+            </div>
+
             
         </div>
 
