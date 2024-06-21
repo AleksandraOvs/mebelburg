@@ -21,7 +21,7 @@ get_header() ?>
             <?php
             if ($map_code = carbon_get_post_meta(get_the_ID(), 'crb_contacts_map')) {
             ?>
-                <div class="page-contacts__map">
+                <div id="map" class="page-contacts__map">
                     <?php echo $map_code; ?>
 
                 </div>
