@@ -3623,6 +3623,21 @@ ul.plan-slider__slide__number-list.plan-list li span {
     max-width: 90%;
   }
 
+  .swiper-slide.floors-slider__slide a {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 480px;
+}
+
+.hero-slider__button-prev, .floors-slider__button-prev {
+  left: 0;
+}
+
+.hero-slider__button-right, .floors-slider__button-right {
+  right: 0;
+}
+
   .footer-menu {
     list-style: none;
     columns: 3;
