@@ -12,7 +12,7 @@
 
         <div class="page-section__header">
             <ul class="breadcrumbs__list">
-                <?php echo site_breadcrumbs(); ?>
+                <?php echo site_breadcrumbs(); ?>Новости
             </ul>
 
             <div class="page-section__title">
