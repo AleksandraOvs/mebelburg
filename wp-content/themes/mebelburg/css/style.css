@@ -206,6 +206,16 @@ li.header__top__messengers__item {
   align-items: center;
 }
 
+li.header__top__messengers__item a {
+  color: #fff;
+  transition: all .5s linear;
+}
+
+li.header__top__messengers__item a:hover{
+  color: var(--beige);
+  transition: all .5s linear;
+}
+
 li.header__top__messengers__item img {
   width: 16px;
   height: 16px;

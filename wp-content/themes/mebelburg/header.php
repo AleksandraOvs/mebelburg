@@ -73,10 +73,14 @@
                         <?php
                         if (carbon_get_theme_option('crb_header_map') && $crb_map_icon = carbon_get_theme_option('crb_header_map_icon')) {
                             $crb_map_icon_url = wp_get_attachment_image_url($crb_map_icon, 'full');
+                            $crb_map_link = carbon_get_theme_option('crb_link_map');
 
-                            echo '<li class="header__top__messengers__item"><img src="' . $crb_map_icon_url . '" />
-
-                                    <span class="contact-link__name">' . carbon_get_theme_option('crb_header_map') . '</li>';
+                            echo '<li class="header__top__messengers__item"><img src="' . $crb_map_icon_url . '" />';
+                        ?>
+                            <a href=" <?php if ($crb_map_link) {
+                                            echo site_url($crb_map_link);
+                                        } ?>" class="contact-link__name"><?php echo carbon_get_theme_option('crb_header_map') ?> </a></li>
+                        <?php
                         }
                         ?>
                         <?php

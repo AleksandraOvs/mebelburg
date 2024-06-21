@@ -2,7 +2,7 @@
 $shops_query = new WP_Query(array(
     'post_type' => 'shops',
     'order' => 'ASC',
-    'posts_per_page' => 15
+    'posts_per_page' => 18
     //'cat' => '3',
     //'posts_per_page' => 2,
 ));

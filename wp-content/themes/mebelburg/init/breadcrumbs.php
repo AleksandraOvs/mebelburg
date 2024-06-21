@@ -49,7 +49,7 @@ function site_breadcrumbs()
         } elseif (is_page('advertising')){
             echo 'Реклама';
 
-        } elseif (is_page(191)){
+        } elseif (is_page('news')){
             echo 'Новости';
 
         }elseif (is_tag()) {

@@ -31,9 +31,14 @@ function site_carbon()
                 )),
 
             Field::make('text', 'crb_header_map', 'Заголовок')
-                ->set_width(50),
+                ->set_width(33),
             Field::make('image', 'crb_header_map_icon', 'Иконка')
-                ->set_width(50),
+                ->set_width(33),
+            Field::make('text', 'crb_link_map', 'Ссылка')
+            ->help_text('слаг страницы, например /contacts')
+                ->set_width(33),
+
+
 
             Field::make('text', 'crb_header_shed', 'Часы работы')
                 ->set_width(50),
@@ -235,14 +240,14 @@ function site_carbon()
                     Field::make('text', 'crb_scheme3f_list_desc', 'Подпись к цифре')
                         ->set_width(50),
                 ))
-                ));
+        ));
 
     Container::make('post_meta', 'Схемы и планы')
         ->show_on_template('page-plan.php')
         ->add_tab(__('План земельного участка'), array(
             Field::make('image', 'crb_plan_img', 'Изображение 1 слайда'),
             Field::make('rich_text', 'crb_plan_list_description', 'Описание')
-            ->set_width(30),
+                ->set_width(30),
             Field::make('complex', 'crb_plan_list', 'Расшифровка схемы')
                 ->add_fields(array(
                     Field::make('text', 'crb_plan_list_number', 'Подпись к цифре')
@@ -250,5 +255,5 @@ function site_carbon()
                     Field::make('text', 'crb_plan_list_desc', 'Подпись к цифре')
                         ->set_width(50)
                 ))
-                ));
+        ));
 }
