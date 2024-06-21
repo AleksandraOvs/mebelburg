@@ -49,10 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const siteDev =  document.querySelector('.sitedev-link');
     siteDev.textContent = 'Разработка';
     }
-}
 
 
-
-);
+});
 
 

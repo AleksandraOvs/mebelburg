@@ -111,7 +111,8 @@ get_header() ?>
                                 $plan_slide_img_url = wp_get_attachment_image_url($plan, 'full');
                                 ?>
 
-                                <img class="floors-slider__img" src="<?php echo $plan_slide_img_url; ?>" alt="">
+                                <a href="<?php echo $plan_slide_img_url; ?>" data-fancybox data-src="<?php echo $plan_slide_img_url; ?>" class="popup-pic"><img class="floors-slider__img" src="<?php echo $plan_slide_img_url; ?>" alt="">
+
                             </div>
 
                             <div class="plan-description">

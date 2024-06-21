@@ -1684,7 +1684,7 @@ ul.section-rent__causes__list li:nth-child(4) .causes-list__content .section-ren
   height: 80vh;
   max-height: 870px;
   padding: 18px;
-  background: rgba(0, 0, 0, 0.25);
+  background: #fff;
   border-radius: 10px;
 }
 
