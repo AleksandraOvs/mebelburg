@@ -104,16 +104,14 @@ get_header() ?>
                     <?php
                     if ($plan = carbon_get_post_meta(get_the_ID(), 'crb_plan_img')) {
                         //  foreach ($floors_slides as $floor_slide) {
+                         $plan_slide_img_url = wp_get_attachment_image_url($plan, 'full');
                     ?>
                         <div class="swiper-slide floors-slider__slide">
-                            <div class="floors-slider__slide__img">
-                                <?php
-                                $plan_slide_img_url = wp_get_attachment_image_url($plan, 'full');
-                                ?>
+                            <a href="<?php echo $plan_slide_img_url; ?>" data-fancybox data-src="<?php echo $plan_slide_img_url; ?>" class="floors-slider__slide__img">
 
-                                <a href="<?php echo $plan_slide_img_url; ?>" data-fancybox data-src="<?php echo $plan_slide_img_url; ?>" class="popup-pic"><img class="floors-slider__img" src="<?php echo $plan_slide_img_url; ?>" alt="">
+                                <img class="floors-slider__img" src="<?php echo $plan_slide_img_url; ?>" alt="">
 
-                            </div>
+                            </a>
 
                             <div class="plan-description">
                                 <div class="plan-description__text">
@@ -145,19 +143,19 @@ get_header() ?>
                     //  }
                     ?>
 
-                   
 
-                            </div> 
-                            <!-- <div class="floors-slider__button-next">
+
+                </div>
+                <!-- <div class="floors-slider__button-next">
                                 <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14 1L19 6L14 11" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M19 6H1" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div> -->
 
-                        </div>
-                </div>
             </div>
+        </div>
+    </div>
 
 </section>
 

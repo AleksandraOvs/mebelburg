@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
     siteDev.textContent = 'Разработка';
     }
 
+    // Fancybox.bind('[data-fancybox]', {
+    //     //
+    //   }); 
 
 });
 

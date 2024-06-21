@@ -40,19 +40,19 @@ get_header() ?>
                 </div>
                 <div class="swiper-wrapper floors-slider__wrapper">
 
-                <!-- 1 floor -->
+                    <!-- 1 floor -->
                     <?php
                     if ($floor1_slide = carbon_get_post_meta(get_the_ID(), 'crb_scheme1f_img')) {
                         //  foreach ($floors_slides as $floor_slide) {
+                        $floor1_slide_img_url = wp_get_attachment_image_url($floor1_slide, 'full');
                     ?>
+
                         <div class="swiper-slide floors-slider__slide">
-                            <div class="floors-slider__slide__img">
-                                <?php
-                                $floor1_slide_img_url = wp_get_attachment_image_url($floor1_slide, 'full');
-                                ?>
+                            <a data-fancybox="gallery" data-src="<?php echo $floor1_slide_img_url; ?>">
 
                                 <img class="floors-slider__img" src="<?php echo $floor1_slide_img_url; ?>" alt="">
-                            </div>
+                            </a>
+
 
 
                             <div class="floors-slider__slide__floor">
@@ -78,15 +78,14 @@ get_header() ?>
                     <?php
                     if ($floor2_slide = carbon_get_post_meta(get_the_ID(), 'crb_scheme2f_img')) {
                         //  foreach ($floors_slides as $floor_slide) {
+                        $floor2_slide_img_url = wp_get_attachment_image_url($floor2_slide, 'full');
                     ?>
                         <div class="swiper-slide floors-slider__slide">
-                            <div class="floors-slider__slide__img">
-                                <?php
-                                $floor2_slide_img_url = wp_get_attachment_image_url($floor2_slide, 'full');
-                                ?>
+                            <a data-fancybox="gallery" data-src="<?php echo $floor2_slide_img_url; ?>">
 
                                 <img class="floors-slider__img" src="<?php echo $floor2_slide_img_url; ?>" alt="">
-                            </div>
+                            </a>
+
 
 
                             <div class="floors-slider__slide__floor">
@@ -112,15 +111,15 @@ get_header() ?>
                     <?php
                     if ($floor3_slide = carbon_get_post_meta(get_the_ID(), 'crb_scheme3f_img')) {
                         //  foreach ($floors_slides as $floor_slide) {
+                        $floor3_slide_img_url = wp_get_attachment_image_url($floor3_slide, 'full');
                     ?>
                         <div class="swiper-slide floors-slider__slide">
-                            <div class="floors-slider__slide__img">
-                                <?php
-                                $floor3_slide_img_url = wp_get_attachment_image_url($floor3_slide, 'full');
-                                ?>
+                            <a data-fancybox="gallery" data-src="<?php echo $floor3_slide_img_url; ?>">
 
                                 <img class="floors-slider__img" src="<?php echo $floor3_slide_img_url; ?>" alt="">
-                            </div>
+                            </a>
+
+
 
 
                             <div class="floors-slider__slide__floor">

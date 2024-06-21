@@ -1680,7 +1680,7 @@ ul.section-rent__causes__list li:nth-child(4) .causes-list__content .section-ren
   background: #fff;
 }
 
-.floors-slider__slide__img {
+.floors-slider__slide a {
   height: 80vh;
   max-height: 870px;
   padding: 18px;
@@ -1701,6 +1701,19 @@ ul.section-rent__causes__list li:nth-child(4) .causes-list__content .section-ren
 .floors-slider__slide__floor {
   margin: 35px auto 0;
   text-align: center;
+}
+
+.swiper-slide.floors-slider__slide a {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.swiper-slide.floors-slider__slide a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .floors-slider__slide__floor p {
