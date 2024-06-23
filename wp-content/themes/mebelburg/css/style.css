@@ -2072,9 +2072,9 @@ p.footer-address {
   color: #fff;
 }
 
-.swiper-wrapper.cats-slider__wrapper {
+/* .swiper-wrapper.cats-slider__wrapper {
   justify-content: center;
-}
+} */
 
 .swiper-slide.shops-cat {
   width: auto !important;
