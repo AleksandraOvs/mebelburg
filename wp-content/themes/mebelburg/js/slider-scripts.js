@@ -25,4 +25,5 @@ const swiper = new Swiper('.hero-slider', {
   const swiperCats = new Swiper('.cats-slider', {
     loop: true,
     spaceBetween: 5,
+    centeredSlides: true
   });
