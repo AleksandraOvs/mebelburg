@@ -3,7 +3,13 @@
     $shop_img = carbon_get_post_meta(get_the_ID(), 'crb_shop_item');
     $shop_img_id = wp_get_attachment_image_url($shop_img, 'full');
 
+    if ($shop_img_id){
     echo '<div class="page-shops__list__item__logo"><img class="shop__logo" src="' .  $shop_img_id  . '" alt=""></div>';
+    }else {
+        ?>
+        <div class="page-shops__list__item__logo"><img class="shop__logo" src=" <?php echo get_stylesheet_directory_uri()?>/images/svg/placeholder.svg" alt=""></div> 
+        <?php
+    }
     ?>
 
     <div class="page-shops__list__item__content">
