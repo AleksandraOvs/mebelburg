@@ -2169,6 +2169,7 @@ section.page-section._e404 {
   font-weight: 500;
   font-size: 23.75vw;
   line-height: 100%;
+  margin-top: 5%;
 }
 
 ._e404__inner__error span {
@@ -2299,7 +2300,7 @@ ul.food-block__list .food-block__list__item:nth-child(odd) {
 ._e404__inner__text {
   width: 33vw;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 
 ._e404__inner__text .button {
@@ -2830,6 +2831,7 @@ section.page-section._page-enter .container {
         margin-top: 15%;
   }
 
+
   .error-text {
     width: 98px;
     height: 98px;
@@ -2838,7 +2840,7 @@ section.page-section._page-enter .container {
   ._e404__inner__text {
     width: 70vw;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 40px;
   }
 
   .error-text {
@@ -3501,7 +3503,8 @@ ul.plan-slider__slide__number-list.plan-list li span {
 
   ._e404__inner__text {
     width: 100%;
-  }
+    margin-bottom: 40px;
+}
 
   .error-text {
     width: 75px;
@@ -3708,7 +3711,7 @@ ul.plan-slider__slide__number-list.plan-list li span {
   }
 
   ._e404__inner__error {
-    margin-top: 25%;
+    margin-top: 60%;
 }
 }
 
