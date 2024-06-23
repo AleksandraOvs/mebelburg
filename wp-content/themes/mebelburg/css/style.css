@@ -2077,7 +2077,7 @@ p.footer-address {
 }
 
 .swiper-slide.shops-cat {
-  width: auto !important;
+  width: max-content !important;
   transition: all .5s linear;
 }
 
