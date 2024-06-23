@@ -12,7 +12,7 @@
             </div>
 
             <div class="page-section__content">
-                <?php the_title() ?>
+                <?php the_content() ?>
             </div>
 
             
