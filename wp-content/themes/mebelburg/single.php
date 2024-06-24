@@ -7,7 +7,7 @@
                 <?php echo site_breadcrumbs(); ?>
             </ul>
 
-            <div class="page-section__title _single-template__title">
+            <div class="page__title _single-template__title">
                 <h2><?php the_title() ?></h2>
                 <p class="_single-template__time"><?php the_time('j.m.Y'); ?></p>
             </div>
