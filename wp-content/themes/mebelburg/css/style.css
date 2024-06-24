@@ -2261,6 +2261,7 @@ p.food-icon__title {
 li.food-block__icon__item img {
   width: 75px;
   height: 75px;
+  transform: translateY(-20px);
 }
 
 .food-block__shedule {
