@@ -3668,6 +3668,10 @@ ul.plan-slider__slide__number-list.plan-list li span {
   display: none;
 }
 
+li.food-block__icon__item img {
+  transform: none;
+}
+
   .footer-menu {
     list-style: none;
     columns: 3;
