@@ -35,12 +35,12 @@
 
             if (have_posts()) {
             ?>
-                <ul class="news-block__list">
+                <ul class="post-block__list">
                     <?php
                     while (have_posts()) {
                         the_post();
                     ?>
-                        <?php get_template_part('templates/sale-item'); ?>
+                        <?php get_template_part('templates/post-item'); ?>
                     <?php
                     }
                     ?>
@@ -52,7 +52,7 @@
             wp_reset_postdata();
 
             ?>
-           <?php get_template_part('templates/loadmore') ?>
+           <?php //get_template_part('templates/loadmore') ?>
             
             </div>
             
