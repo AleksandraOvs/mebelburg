@@ -3114,12 +3114,12 @@ ul.plan-slider__slide__number-list.plan-list li span {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 20%;
+    gap: 28%;
   }
 
   .footer__inner__bottom {
-    grid-template-columns: 60% 40%;
-  }
+    grid-template-columns: 50% 40%;
+}
 }
 
 @media (max-width: 740px) {
