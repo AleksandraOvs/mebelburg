@@ -1,7 +1,7 @@
 <?php get_header() ?>
 
 <section class="page-section _single-template" style="padding-top: 150px;">
-    <div class="container">
+    <div class="fixed-container">
         <div class="page-section__header">
             <ul class="breadcrumbs__list">
                 <?php echo site_breadcrumbs(); ?>
