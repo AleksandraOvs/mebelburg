@@ -3178,6 +3178,11 @@ ul.plan-slider__slide__number-list.plan-list li span {
     padding: 85px 0;
   }
 
+  
+li.food-block__icon__item img {
+  transform: none;
+}
+
   p {
     font-size: 14px;
   }
@@ -3666,10 +3671,6 @@ ul.plan-slider__slide__number-list.plan-list li span {
 
 .hero-slider__button-prev, .hero-slider__button-next {
   display: none;
-}
-
-li.food-block__icon__item img {
-  transform: none;
 }
 
   .footer-menu {
