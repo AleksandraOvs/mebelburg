@@ -964,7 +964,7 @@ section.page-section {
 /*single */
 
 .page-section__title._single-template__title {
-  max-width: 75%;
+  max-width: 85%;
   margin: 60px auto 30px;
 }
 
