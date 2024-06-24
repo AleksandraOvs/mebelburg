@@ -42,6 +42,9 @@ function site_breadcrumbs()
         } elseif (is_post_type_archive('food')){
             echo 'Еда';
 
+        } elseif (is_post_type_archive('events')){
+            echo 'Мероприятия';
+
 
         // } elseif (is_archive()){
         //     echo 'Новости';
