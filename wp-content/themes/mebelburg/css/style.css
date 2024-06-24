@@ -3663,6 +3663,10 @@ ul.plan-slider__slide__number-list.plan-list li span {
   right: 0;
 }
 
+.hero-slider__button-prev, .hero-slider__button-next {
+  display: none;
+}
+
   .footer-menu {
     list-style: none;
     columns: 3;
