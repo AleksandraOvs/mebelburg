@@ -2445,9 +2445,11 @@ ul.tribe-events-sub-nav li a {
 }
 
 ul.tribe-events-sub-nav {
-  margin-top:40px;
+  margin-top: 40px !important;
+  padding-top: 40px !important;
+  border-top: 1px solid #ccc;
   display: grid;
-    grid-template-columns: 48% 48%;
+  grid-template-columns: 48% 48%;
   justify-content: space-between;
 }
 
