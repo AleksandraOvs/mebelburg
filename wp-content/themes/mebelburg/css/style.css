@@ -2337,6 +2337,10 @@ ul.food-block__list .food-block__list__item:nth-child(odd) {
 
 /*events calendar */
 
+div#tribe-events-content {
+  padding: 0 20px;
+}
+
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
   padding-top: 170px;
 }
@@ -3781,6 +3785,10 @@ ul.floors-slider__slide__number-list li span {
 
   ul.breadcrumbs__list {
     display: none;
+  }
+
+  div#tribe-events-content {
+    padding: 0 20px;
   }
 
   .enter__title:before {
