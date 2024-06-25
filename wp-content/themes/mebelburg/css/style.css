@@ -2566,6 +2566,12 @@ li.tribe-events-nav-next a:hover:after {
 
 }
 
+@media (min-width: 1600px){
+  .section-rent__grid__item__content__bottom, .section-advertising__grid__item__content__bottom, .section-plan__grid__item__content__bottom {
+    max-width: 60%;
+}
+}
+
 @media (max-width: 1400px) {
 
   li.food-block__icon__item {
