@@ -130,7 +130,7 @@ get_header() ?>
                                 <?php
                                 $floor3_slide_numbers = carbon_get_post_meta(get_the_ID(), 'crb_scheme3f_list');
                                 foreach ($floor3_slide_numbers as $number_third) {
-                                    echo '<li><div class="number-list__num">' . $number_third['crb_scheme2f_list_number'] . '</div><span>' . $number_third['crb_scheme2f_list_desc'] . '</span></li>';
+                                    echo '<li><div class="number-list__num">' . $number_third['crb_scheme3f_list_number'] . '</div><span>' . $number_third['crb_scheme3f_list_desc'] . '</span></li>';
                                 }
                                 ?>
                             </ul>
