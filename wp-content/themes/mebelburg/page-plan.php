@@ -43,7 +43,7 @@ get_header() ?>
                     </div>
                 </li>
                 <li class="section-plan__grid__item">
-                    <img class="section-plan__grid__item__img" src="<?php echo get_stylesheet_directory_uri() . '/images/adv6.png' ?>" alt="">
+                    <img class="section-plan__grid__item__img" src="<?php echo get_stylesheet_directory_uri() . '/images/adv6.jpg' ?>" alt="">
                     <div class="section-plan__grid__item__content">
                         <div class="section-plan__grid__item__content__top color-white">
                             <p>17 000 м<sup>2</sup></p>
