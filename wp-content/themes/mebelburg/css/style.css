@@ -2413,6 +2413,18 @@ p.tribe-events-back a {
   text-shadow: none;
 }
 
+li.tribe-events-nav-previous a, li.tribe-events-nav-next a {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black);
+  transition: all .3s linear;
+}
+
+li.tribe-events-nav-previous a:hover, li.tribe-events-nav-next a:hover{
+  color: var(--beige);
+  transition: all .3s linear;
+}
+
 @media(min-width: 1440px) {
   .swiper-wrapper.cats-slider__wrapper {
     transform: none !important;
