@@ -41,7 +41,7 @@
                     while (have_posts()) {
                         the_post();
                     ?>
-                        <?php get_template_part('templates/sale-item'); ?>
+                        <?php get_template_part('templates/post-item'); ?>
                     <?php
                     }
                     ?>
