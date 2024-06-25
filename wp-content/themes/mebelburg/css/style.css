@@ -2449,19 +2449,13 @@ li.tribe-events-nav-next a span
   display: none;
 }
 
-li.tribe-events-nav-previous a:before {
-  content: '';
-  width: 20px;
-  height: 15px;
-  background: url(../images/svg/arrow-prev.svg);
-}
 
 li.tribe-events-nav-previous a:before {
   content: '';
   width: 20px;
   height: 15px;
   display: block;
-  background: url(../images/svg/arrow-prev.svg);
+  background: url(../images/svg/arrow-prev-black.svg);
 }
 
 li.tribe-events-nav-next a:before {
@@ -2469,7 +2463,7 @@ li.tribe-events-nav-next a:before {
   width: 20px;
   height: 15px;
   display: block;
-  background: url(../images/svg/arrow-prev.svg);
+  background: url(../images/svg/arrow-prev-black.svg);
 }
 
 @media(min-width: 1440px) {
