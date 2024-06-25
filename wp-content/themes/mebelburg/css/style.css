@@ -2546,6 +2546,13 @@ li.tribe-events-nav-next a:hover:after {
   transition: all .5s ease-in-out;
 }
 
+#tribe-events-footer .tribe-events-sub-nav .tribe-events-nav-next, #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next {
+  float: none;
+  margin-left: 0;
+  margin: 0 !important;
+  text-align: right;
+}
+
 @media(min-width: 1440px) {
   .swiper-wrapper.cats-slider__wrapper {
     transform: none !important;
