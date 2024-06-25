@@ -117,7 +117,7 @@ get_header() ?>
                             </div>
                         </div>
                         <div class="section-rent__causes__list__item__bottom">
-                            <p>Удачное соседство с&nbsp;гипермаркетами «Лента» и «Leroy&nbsp;Merlin»</p>
+                            <p>Удачное соседство с&nbsp;гипермаркетами «Лента» и&nbsp;«Leroy&nbsp;Merlin»</p>
                         </div>
                     </div>
                 </li>
