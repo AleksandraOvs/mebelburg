@@ -3429,6 +3429,10 @@ ul.floors-slider__slide__number-list li span {
   font-size: 14px;
 }
 
+.number-list__num {
+  font-size:12px;
+}
+
   .footer__inner__bottom__messengers {
     position: absolute;
     top: 0;
