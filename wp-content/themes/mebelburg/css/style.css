@@ -2460,10 +2460,12 @@ li.tribe-events-nav-previous a {
 
 li.tribe-events-nav-next a {
   text-align: right;
+  padding-right: 15px;
 }
 
 li.tribe-events-nav-next a {
   justify-content: flex-end;
+  padding-left: 15px;
 }
 
 .tribe-events-sub-nav .tribe-events-nav-next, #tribe-events-footer .tribe-events-sub-nav .tribe-events-nav-previous, #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next, #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-previous {
