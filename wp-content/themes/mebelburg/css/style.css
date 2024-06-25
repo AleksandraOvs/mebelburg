@@ -1233,6 +1233,10 @@ section.page-section._page-rent,
   max-width: 80%;
 }
 
+.section-plan__grid__item__content p {
+  user-select: none;
+}
+
 .section-rent__causes {
   margin-top: 12vh;
 }
