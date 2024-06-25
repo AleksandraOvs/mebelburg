@@ -2425,6 +2425,19 @@ li.tribe-events-nav-previous a:hover, li.tribe-events-nav-next a:hover{
   transition: all .3s linear;
 }
 
+ul.tribe-events-sub-nav li {
+  border: 1px solid var(--beige);
+  padding: 18px;
+  border-radius: 30px;
+}
+
+ul.tribe-events-sub-nav {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  /* border: 1px solid var(--beige); */
+  justify-content: space-between;
+}
+
 @media(min-width: 1440px) {
   .swiper-wrapper.cats-slider__wrapper {
     transform: none !important;
