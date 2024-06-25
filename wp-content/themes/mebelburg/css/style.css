@@ -2463,7 +2463,7 @@ li.tribe-events-nav-next a:before {
   width: 20px;
   height: 15px;
   display: block;
-  background: url(../images/svg/arrow-prev-black.svg);
+  background: url(../images/svg/arrow-next-black.svg);
 }
 
 @media(min-width: 1440px) {
