@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+//document.addEventListener("DOMContentLoaded", () => {
 
     let body = $('body');
     let menu = $('.container nav');
@@ -54,6 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
     //     //
     //   }); 
 
-});
+//});
 
 
