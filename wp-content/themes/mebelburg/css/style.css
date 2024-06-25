@@ -2427,9 +2427,10 @@ li.tribe-events-nav-previous a:hover, li.tribe-events-nav-next a:hover{
 
 ul.tribe-events-sub-nav li a {
   display: block;
-  border: 1px solid var(--beige);
-  padding: 18px;
-  border-radius: 30px;
+    border: 1px solid var(--beige);
+    padding: 18px;
+    border-radius: 30px;
+    height: 100%;
 }
 
 ul.tribe-events-sub-nav {
