@@ -2455,22 +2455,26 @@ li.tribe-events-nav-previous a:before {
   content: '';
   width: 30px;
   height: 30px;
-  background-color: var(--black);
+  background-color: var(--beige);
   display: block;
   background-image: url(../images/svg/arrow-prev.svg);
   background-repeat: no-repeat;
+  background-position: center;
+    background-size: 40%;
   border-radius: 100%;
 }
 
 li.tribe-events-nav-next a:after {
   content: '';
-  width: 30px;
-  height: 30px;
-  background-color: var(--black);
-  display: block;
-  background-image: url(../images/svg/arrow-next.svg);
-  background-repeat: no-repeat;
-  border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--beige);
+    display: block;
+    background-image: url(../images/svg/arrow-next.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    border-radius: 100%;
 }
 
 @media(min-width: 1440px) {
