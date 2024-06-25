@@ -12,6 +12,12 @@
             <div class="page-section__title">
                 <h2><?php single_cat_title(); ?></h2>
             </div>
+
+            <div class="page-section__description">
+                <p>
+                Отчёты о прошедших мероприятиях, информация о важных событиях центра
+                </p>
+            </div>
         </div>
     </div>
 
@@ -40,7 +46,7 @@
                 wp_reset_postdata();
 
                 ?>
-                <?php get_template_part('templates/loadmore') ?>
+                <?php //get_template_part('templates/loadmore') ?>
 
             </div>
 
