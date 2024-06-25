@@ -2433,7 +2433,7 @@ ul.tribe-events-sub-nav li a {
   position: relative;
     display: flex;
     /* flex-direction: column; */
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     text-align: center;
     align-items: center;
     gap: 10px;
@@ -2449,6 +2449,15 @@ ul.tribe-events-sub-nav {
   display: grid;
     grid-template-columns: 48% 48%;
   justify-content: space-between;
+}
+
+li.tribe-events-nav-next a {
+  justify-content: flex-end;
+}
+
+
+li.tribe-events-nav-previous a {
+  justify-content: flex-start;
 }
 
 li.tribe-events-nav-previous a span,
