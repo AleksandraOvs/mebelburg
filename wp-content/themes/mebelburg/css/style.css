@@ -2535,14 +2535,12 @@ li.tribe-events-nav-next:hover a:before{
 
 li.tribe-events-nav-previous a:hover:before {
   transform: translateX(-5px);
-  background: var(--black);
   transition: all .5s ease-in-out;
 }
 
 
 li.tribe-events-nav-next a:hover:after {
   transform: translateX(5px);
-  background: var(--black);
   transition: all .5s ease-in-out;
 }
 
