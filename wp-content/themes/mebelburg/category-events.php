@@ -6,7 +6,7 @@
         <div class="page-section__header">
             <ul class="breadcrumbs__list">
                 <?php echo site_breadcrumbs(); ?>
-                
+
             </ul>
 
             <div class="page-section__title">
@@ -19,33 +19,33 @@
         <div class="page-section__content">
 
             <div class="container">
- <?php
+                <?php
 
-            if (have_posts()) {
-            ?>
-                <ul class="post-block__list">
-                    <?php
-                    while (have_posts()) {
-                        the_post();
-                    ?>
-                        <?php get_template_part('templates/post-item'); ?>
-                    <?php
-                    }
-                    ?>
-                </ul>
-            <?php
-            } else {
-            }
+                if (have_posts()) {
+                ?>
+                    <ul class="post-block__list">
+                        <?php
+                        while (have_posts()) {
+                            the_post();
+                        ?>
+                            <?php get_template_part('templates/post-item'); ?>
+                        <?php
+                        }
+                        ?>
+                    </ul>
+                <?php
+                } else {
+                }
 
-            wp_reset_postdata();
+                wp_reset_postdata();
 
-            ?>
-           <?php get_template_part('templates/loadmore') ?>
-            
+                ?>
+                <?php get_template_part('templates/loadmore') ?>
+
             </div>
-            
 
-           
+
+
 
         </div>
     </div>
