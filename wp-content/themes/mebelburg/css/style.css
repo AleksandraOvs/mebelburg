@@ -2337,7 +2337,7 @@ ul.food-block__list .food-block__list__item:nth-child(odd) {
 
 /*events calendar */
 
-.page-section__description ._events-desc {
+.page-section__description._events-desc {
   width: 60%;
 }
 
