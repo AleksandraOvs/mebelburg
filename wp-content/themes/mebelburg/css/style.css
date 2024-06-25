@@ -3411,6 +3411,13 @@ li.food-block__icon__item img {
   width: 80%;
 }
 
+.swiper-slide.floors-slider__slide a {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 480px;
+}
+
   .footer__inner__bottom__messengers {
     position: absolute;
     top: 0;
@@ -3654,12 +3661,12 @@ li.food-block__icon__item img {
     max-width: 90%;
   }
 
-  .swiper-slide.floors-slider__slide a {
+  /* .swiper-slide.floors-slider__slide a {
     display: block;
     width: 100%;
     margin: 0 auto;
     height: 480px;
-}
+} */
 
 .hero-slider__button-prev, .floors-slider__button-prev {
   left: 0;
