@@ -68,7 +68,8 @@ get_header() ?>
                         <p class="color-beige">850 000+</p>
                     </div>
                     <div class="section-rent__grid__item__content__bottom">
-                        <p>человек — потенциальные посетители среди жителей ближайших ЖК</p>
+                        <p>человек — потенциальные посетители
+                        среди жителей ближайших районов СПб</p>
                     </div>
                 </div>
             </li>
@@ -116,7 +117,7 @@ get_header() ?>
                             </div>
                         </div>
                         <div class="section-rent__causes__list__item__bottom">
-                            <p>Удачное соседство с&nbsp;гипермаркетами «Лента» и «Leroy Merlin»</p>
+                            <p>Удачное соседство с&nbsp;гипермаркетами «Лента» и «Leroy&nbsp;Merlin»</p>
                         </div>
                     </div>
                 </li>
