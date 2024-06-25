@@ -3267,6 +3267,10 @@ ul.plan-slider__slide__number-list.plan-list li span {
   .plan-description__text {
     width: 40%;
   }
+
+  .page-section__description._events-desc {
+    width: 80%;
+}
   
 
   .footer__inner__bottom__right {
@@ -3858,6 +3862,10 @@ ul.floors-slider__slide__number-list li span {
 
 .hero-slider__button-prev, .hero-slider__button-next {
   display: none;
+}
+
+.page-section__description._events-desc {
+  width: 100%;
 }
 
   .footer-menu {
