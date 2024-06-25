@@ -36,7 +36,7 @@
 
             if (have_posts()) {
             ?>
-                <ul class="news-block__list">
+                <ul class="post-block__list">
                     <?php
                     while (have_posts()) {
                         the_post();
