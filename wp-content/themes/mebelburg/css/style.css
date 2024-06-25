@@ -2427,12 +2427,13 @@ li.tribe-events-nav-previous a:hover, li.tribe-events-nav-next a:hover{
 
 ul.tribe-events-sub-nav li a {
   position: relative;
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--beige);
-  padding: 18px;
-  border-radius: 30px;
-  height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--beige);
+    padding: 18px;
+    border-radius: 30px;
+    height: 100%;
 }
 
 ul.tribe-events-sub-nav {
@@ -2458,7 +2459,7 @@ li.tribe-events-nav-previous a:before {
   background: url(../images/svg/arrow-prev.svg);
 }
 
-li.tribe-events-nav-next a:before {
+li.tribe-events-nav-next a:after {
   content: '';
   width: 20px;
   height: 15px;
