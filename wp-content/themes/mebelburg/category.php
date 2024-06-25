@@ -5,7 +5,7 @@
 
         <div class="page-section__header">
             <ul class="breadcrumbs__list">
-                <?php echo site_breadcrumbs(); ?>Rfntujhbz
+                <?php echo site_breadcrumbs(); ?>
                 
             </ul>
 
