@@ -2425,7 +2425,8 @@ li.tribe-events-nav-previous a:hover, li.tribe-events-nav-next a:hover{
   transition: all .3s linear;
 }
 
-ul.tribe-events-sub-nav li {
+ul.tribe-events-sub-nav li a {
+  display: block;
   border: 1px solid var(--beige);
   padding: 18px;
   border-radius: 30px;
