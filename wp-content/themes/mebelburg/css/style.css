@@ -2426,14 +2426,17 @@ li.tribe-events-nav-previous a:hover, li.tribe-events-nav-next a:hover{
 }
 
 ul.tribe-events-sub-nav li a {
-  display: block;
-    border: 1px solid var(--beige);
-    padding: 18px;
-    border-radius: 30px;
-    height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--beige);
+  padding: 18px;
+  border-radius: 30px;
+  height: 100%;
 }
 
 ul.tribe-events-sub-nav {
+  margin-top:40px;
   display: grid;
   grid-template-columns: 30% 30%;
   /* border: 1px solid var(--beige); */
@@ -2444,6 +2447,29 @@ li.tribe-events-nav-previous a span,
 li.tribe-events-nav-next a span
 {
   display: none;
+}
+
+li.tribe-events-nav-previous a:before {
+  content: '';
+  width: 20px;
+  height: 15px;
+  background: url(../images/svg/arrow-prev.svg);
+}
+
+li.tribe-events-nav-previous a:before {
+  content: '';
+  width: 20px;
+  height: 15px;
+  display: block;
+  background: url(../images/svg/arrow-prev.svg);
+}
+
+li.tribe-events-nav-next a:before {
+  content: '';
+  width: 20px;
+  height: 15px;
+  display: block;
+  background: url(../images/svg/arrow-prev.svg);
 }
 
 @media(min-width: 1440px) {
