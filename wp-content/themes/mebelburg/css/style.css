@@ -2453,18 +2453,24 @@ li.tribe-events-nav-next a span
 
 li.tribe-events-nav-previous a:before {
   content: '';
-  width: 20px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--black);
   display: block;
-  background: url(../images/svg/arrow-prev.svg);
+  background-image: url(../images/svg/arrow-prev.svg);
+  background-repeat: no-repeat;
+  border-radius: 100%;
 }
 
 li.tribe-events-nav-next a:after {
   content: '';
-  width: 20px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--black);
   display: block;
-  background: url(../images/svg/arrow-next.svg);
+  background-image: url(../images/svg/arrow-next.svg);
+  background-repeat: no-repeat;
+  border-radius: 100%;
 }
 
 @media(min-width: 1440px) {
