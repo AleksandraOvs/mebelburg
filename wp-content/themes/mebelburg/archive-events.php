@@ -19,7 +19,7 @@
                 <h2>Мероприятия «МÖБЕЛЬБУРГ»</h2>
             </div>
 
-            <div class="page-section__description">
+            <div class="page-section__description _events-desc">
                 <p>
                 Бесплатные консультации дизайнеров интерьера, полезные лекции, встречи с&nbsp;профессионалами и&nbsp;праздники по&nbsp;хорошим поводам
                 </p>

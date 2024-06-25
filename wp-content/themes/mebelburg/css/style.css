@@ -2337,6 +2337,10 @@ ul.food-block__list .food-block__list__item:nth-child(odd) {
 
 /*events calendar */
 
+.page-section__description ._events-desc {
+  width: 60%;
+}
+
 #tribe-events-footer .tribe-events-sub-nav{
   overflow:visible !important;
 }
