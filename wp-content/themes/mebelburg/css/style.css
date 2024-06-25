@@ -1295,6 +1295,10 @@ section.page-section._page-adv h2 {
   padding: 18px;
 }
 
+.section-rent__grid__item__content p {
+  user-select: none;
+}
+
 /* 
 .section-rent__grid__item__content__top.color-white p sup {
   font-size: 40px;
