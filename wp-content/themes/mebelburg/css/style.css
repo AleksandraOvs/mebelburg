@@ -2971,6 +2971,10 @@ section.page-section._page-enter .container {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  ul.floors-slider__slide__number-list li span {
+    font-size: 18px;
+}
+
   .footer__inner__bottom {
     grid-template-columns: 50% 40%;
   }
@@ -3419,6 +3423,10 @@ li.food-block__icon__item img {
   width: 100%;
   margin: 0 auto;
   height: 480px;
+}
+
+ul.floors-slider__slide__number-list li span {
+  font-size: 14px;
 }
 
   .footer__inner__bottom__messengers {
