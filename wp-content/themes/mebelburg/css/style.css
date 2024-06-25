@@ -2425,6 +2425,10 @@ li.tribe-events-nav-previous a:hover, li.tribe-events-nav-next a:hover{
   transition: all .3s linear;
 }
 
+.tribe-events-sub-nav{
+  margin-top:40px;
+}
+
 ul.tribe-events-sub-nav li a {
   position: relative;
     display: flex;
