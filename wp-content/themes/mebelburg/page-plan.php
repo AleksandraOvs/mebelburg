@@ -74,7 +74,8 @@ get_header() ?>
                         </div>
                     </div>
                 </li>
-                <li class="section-plan__grid__item border-black" style="background: #663780;">
+                <li class="section-plan__grid__item border-black">
+                <img class="section-plan__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/parking.jpg' ?>" alt="">
                     <div class="section-plan__grid__item__content">
                         <div class="section-plan__grid__item__content__top color-white">
                             <p>184 м/м</p>
