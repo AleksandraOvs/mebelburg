@@ -2522,11 +2522,13 @@ li.tribe-events-nav-next:hover a:before{
 
 li.tribe-events-nav-previous a:hover:before {
   transform: translateX(-10px);
+  transition: transform .5s ease-in-out;
 }
 
 
 li.tribe-events-nav-next a:hover:after {
   transform: translateX(10px);
+  transition: transform .5s ease-in-out;
 }
 
 @media(min-width: 1440px) {
