@@ -2495,7 +2495,7 @@ li.tribe-events-nav-next:hover a{
 
 li.tribe-events-nav-previous:hover a:before,
 li.tribe-events-nav-next:hover a:before{
-  background: var(--black);
+  background: transparent;
   transition: all .5s ease-in-out;
 }
 
