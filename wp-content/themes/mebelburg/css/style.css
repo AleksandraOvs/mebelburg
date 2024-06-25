@@ -2433,8 +2433,8 @@ ul.tribe-events-sub-nav li a {
   position: relative;
     display: flex;
     /* flex-direction: column; */
-    /* justify-content: flex-start; */
-    text-align: center;
+    /* justify-content: flex-start; 
+    text-align: center;*/
     align-items: center;
     gap: 10px;
     /* border: 1px solid var(--beige); */
@@ -2449,6 +2449,14 @@ ul.tribe-events-sub-nav {
   display: grid;
     grid-template-columns: 48% 48%;
   justify-content: space-between;
+}
+
+li.tribe-events-nav-previous a {
+  text-align: left;
+}
+
+li.tribe-events-nav-next a {
+  text-align: right;
 }
 
 li.tribe-events-nav-next a {
