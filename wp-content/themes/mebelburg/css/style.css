@@ -2435,6 +2435,7 @@ ul.tribe-events-sub-nav li a {
     /* flex-direction: column; */
     /* justify-content: flex-start; 
     text-align: center;*/
+    background: transparent !important;
     align-items: center;
     gap: 10px;
     /* border: 1px solid var(--beige); */
@@ -2463,6 +2464,10 @@ li.tribe-events-nav-next a {
 
 li.tribe-events-nav-next a {
   justify-content: flex-end;
+}
+
+.tribe-events-sub-nav .tribe-events-nav-next, #tribe-events-footer .tribe-events-sub-nav .tribe-events-nav-previous, #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next, #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-previous {
+  width: auto !important;
 }
 
 
