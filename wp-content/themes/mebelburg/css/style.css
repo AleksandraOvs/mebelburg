@@ -2438,6 +2438,12 @@ ul.tribe-events-sub-nav {
   justify-content: space-between;
 }
 
+li.tribe-events-nav-previous a span,
+li.tribe-events-nav-next a span
+{
+  display: none;
+}
+
 @media(min-width: 1440px) {
   .swiper-wrapper.cats-slider__wrapper {
     transform: none !important;
