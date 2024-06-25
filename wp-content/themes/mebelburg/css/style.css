@@ -2481,8 +2481,8 @@ li.tribe-events-nav-next a:before {
     border-radius: 100%;
 }
 
-li.tribe-events-nav-previous:hover,
-li.tribe-events-nav-next:hover{
+li.tribe-events-nav-previous:hover a,
+li.tribe-events-nav-next:hover a{
   background: var(--beige);
   transition: all .5s ease-in-out;
 }
