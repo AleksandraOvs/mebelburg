@@ -2414,7 +2414,7 @@ p.tribe-events-back a {
 }
 
 li.tribe-events-nav-previous a, li.tribe-events-nav-next a {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--black);
   transition: all .3s linear;
