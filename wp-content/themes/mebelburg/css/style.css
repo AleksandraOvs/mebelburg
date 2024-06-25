@@ -2502,11 +2502,11 @@ li.tribe-events-nav-next a:after {
     border-radius: 100%;
 }
 
-li.tribe-events-nav-previous:hover a,
+/* li.tribe-events-nav-previous:hover a,
 li.tribe-events-nav-next:hover a{
   background: var(--beige);
   transition: all .5s ease-in-out;
-}
+} 
 
 li.tribe-events-nav-previous:hover a,
 li.tribe-events-nav-next:hover a{
@@ -2518,7 +2518,7 @@ li.tribe-events-nav-previous:hover a:before,
 li.tribe-events-nav-next:hover a:before{
   background: transparent;
   transition: all .5s ease-in-out;
-}
+}*/
 
 @media(min-width: 1440px) {
   .swiper-wrapper.cats-slider__wrapper {
