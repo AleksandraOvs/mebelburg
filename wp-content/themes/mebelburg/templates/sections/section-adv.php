@@ -50,7 +50,7 @@
                 </div>
             </li>
             <li class="section-adv__grid__item box6">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/images/adv6.png' ?>" alt="" class="section-adv__grid__item__img">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/images/adv6.jpg' ?>" alt="" class="section-adv__grid__item__img">
                 <div class="section-adv__grid__item__content">
                     <!-- <div class="section-adv__grid__item__content__top"></div> -->
                     <div class="section-adv__grid__item__content__bottom">
