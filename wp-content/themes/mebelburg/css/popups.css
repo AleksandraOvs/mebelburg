@@ -33,6 +33,8 @@
 
 .advice-block__inner.active{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     opacity: 1;
     transition: opacity .5s linear;
 }
@@ -57,16 +59,15 @@
 }
 
 .advice-block__inner__img {
-    position: absolute;
-    bottom: -50%;
-    width: 15%;
+    position: relative;
+    width: 20%;
     height: 170px;
     object-fit: contain;
     object-position: center;
 }
 
 .advice-block__text {
-    padding-left: 19%;
+    width: 80%;
 }
 
 .advice-block div p{
@@ -84,4 +85,13 @@
 
 .advice-block.close {
     display: none;
+}
+
+.advice-block__inner__img img {
+    position: absolute;
+    left: -60%;
+    width: 150px;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
