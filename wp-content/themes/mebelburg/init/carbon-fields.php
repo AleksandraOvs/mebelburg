@@ -84,11 +84,13 @@ function site_carbon()
 
         ));
 
+        
+
     Container::make('theme_options', 'Первый экран')
 
         ->set_page_menu_position(2)
         ->set_icon('dashicons-admin-generic')
-        ->add_fields(array(
+        ->add_tab(__('Главный слайдер'), array(
             Field::make('complex', 'crb_hero_slider', 'Слайдер на первом экране')
                 ->add_fields(array(
                     Field::make('rich_text', 'crb_hero_slider_header', 'Заголовок')
@@ -99,7 +101,22 @@ function site_carbon()
                         ->set_width(33)
 
                 ))
+        ))
+
+        ->add_tab(__('Советы'), array(
+
+            Field::make('complex', 'crb_advice_items', 'Советы от мишки Мё')
+                ->add_fields(array(
+                    Field::make('image', 'crb_advice_image', 'Изображение мишки Мё')
+                        ->set_width(40),
+                    Field::make('rich_text', 'crb_advice_text', 'Текст совета')
+                        ->set_width(60)
+                
+                ))
+
         ));
+
+
 
     Container::make('post_meta', 'Информация о магазине')
         ->show_on_post_type('shops')
