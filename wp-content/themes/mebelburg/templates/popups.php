@@ -1,5 +1,7 @@
+ <?php if ($advices = carbon_get_theme_option('crb_advice_items')) {
+    ?>
 <div class="advice-block hidden">
-    <?php if ($advices = carbon_get_theme_option('crb_advice_items')) {
+   <?php
         foreach ($advices as $advice) {
             $advice_image_url = wp_get_attachment_image_url($advice['crb_advice_image'], 'full');
     ?>
@@ -16,9 +18,7 @@
             </div>
     <?php
         }
-    }
-    ?>
-
+   ?>
 
     <button class="advice-close">
         <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,3 +26,7 @@
         </svg>
     </button>
 </div>
+
+<?php
+}
+?>
