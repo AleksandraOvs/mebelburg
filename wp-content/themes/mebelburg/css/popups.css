@@ -4,16 +4,18 @@
 }
 
 .advice-block {
-    position: relative;
     position: fixed;
+    display: flex;
+    align-items: center;
     z-index: 45;
     bottom: 30px;
     right: 30px;
     opacity: 1;
     background: #fff;
     padding: 18px;
+    min-height: 150px;
     border-radius: 30px;
-    width: 50%;
+    width: 25%;
     transition: all .5s linear;
 }
 
