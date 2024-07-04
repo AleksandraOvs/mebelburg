@@ -1146,6 +1146,10 @@ section.page-section._page-rent,
   padding-bottom: 0;
 }
 
+section.page-section._page-rent .container h5 {
+  margin-bottom: 20px;
+}
+
 .page-section__description.rent-description,
 .page-section__description.adv-description {
   display: flex;
