@@ -87,9 +87,9 @@ get_header() ?>
                 </li>
             </ul> -->
 
-            <div class="plan-section__title">
+            <!-- <div class="plan-section__title">
                 <h2>План земельного участка</h2>
-            </div>
+            </div> -->
 
             <div class="swiper floors-slider">
                 <!-- <div class="floors-slider__button-prev">
