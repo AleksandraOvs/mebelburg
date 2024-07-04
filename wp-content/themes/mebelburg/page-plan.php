@@ -30,7 +30,7 @@ get_header() ?>
         </div>
 
         <div class="page-section__content _page-scheme__content">
-            <ul class="section-plan__grid">
+            <!-- <ul class="section-plan__grid">
                 <li class="section-plan__grid__item">
                     <img class="section-plan__grid__item__img" src="/" alt="">
                     <div class="section-plan__grid__item__content bg-beige">
@@ -85,7 +85,7 @@ get_header() ?>
                         </div>
                     </div>
                 </li>
-            </ul>
+            </ul> -->
 
             <div class="plan-section__title">
                 <h2>План земельного участка</h2>
