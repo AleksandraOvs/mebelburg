@@ -91,7 +91,7 @@ get_header() ?>
                         <p>180 000+</p>
                     </div>
                     <div class="section-rent__grid__item__content__bottom ">
-                        <p>человек — в зоне ближайших ЖК</p>
+                        <p>человек в зоне ближайших ЖК</p>
                     </div>
                 </div>
             </li>
