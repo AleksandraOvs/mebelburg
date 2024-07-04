@@ -50,6 +50,40 @@ get_header() ?>
                     </div>
                 </div>
             </li>
+
+                <li class="section-plan__grid__item border" style="background-color:#fff; background-image:url(<?php echo get_stylesheet_directory_uri() . '/images/adv1.svg' ?>); background-repeat:no-repeat; background-position: center;">
+                    <div class="section-plan__grid__item__content">
+                        <div class="section-plan__grid__item__content__top">
+                            <p>03</p>
+                        </div>
+                        <div class="section-plan__grid__item__content__bottom ">
+                            <p>этажа товаров для вашего дома</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="section-plan__grid__item">
+                    <img class="section-plan__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/parking1.jpg' ?>" alt="">
+                    <div class="section-plan__grid__item__content">
+                        <div class="section-plan__grid__item__content__top color-white">
+                            <p>252 м/м</p>
+                        </div>
+                        <div class="section-plan__grid__item__content__bottom color-white">
+                            <p>Наземная парковка</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="section-plan__grid__item border-black">
+                <img class="section-plan__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/parking.jpg' ?>" alt="">
+                    <div class="section-plan__grid__item__content">
+                        <div class="section-plan__grid__item__content__top color-white">
+                            <p>184 м/м</p>
+                        </div>
+                        <div class="section-plan__grid__item__content__bottom color-white">
+                            <p>Подземный паркинг</p>
+                        </div>
+                    </div>
+                </li>
+           
             <li class="section-rent__grid__item">
                 <img class="section-rent__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/rentpic02.jpg' ?>" alt="">
                 <div class="section-rent__grid__item__content">
