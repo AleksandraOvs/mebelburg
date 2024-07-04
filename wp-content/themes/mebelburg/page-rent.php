@@ -88,10 +88,10 @@ get_header() ?>
                 <img class="section-rent__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/rentpic02.jpg' ?>" alt="">
                 <div class="section-rent__grid__item__content">
                     <div class="section-rent__grid__item__content__top">
-                        <p>100 000+</p>
+                        <p>180 000+</p>
                     </div>
                     <div class="section-rent__grid__item__content__bottom ">
-                        <p>человек — потенциальные посетители среди жителей ближайших ЖК</p>
+                        <p>человек — в зоне ближайших ЖК</p>
                     </div>
                 </div>
             </li>
@@ -101,8 +101,7 @@ get_header() ?>
                         <p class="color-beige">850 000+</p>
                     </div>
                     <div class="section-rent__grid__item__content__bottom">
-                        <p>человек — потенциальные посетители
-                        среди жителей ближайших районов СПб</p>
+                        <p>человек в ближайшейторговой зоне</p>
                     </div>
                 </div>
             </li>
