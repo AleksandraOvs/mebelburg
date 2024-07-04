@@ -1195,6 +1195,10 @@ ul.section-rent__grid li:nth-child(5) { grid-area: 2 / 5 / 3 / 7; }
 ul.section-rent__grid li:nth-child(6) { grid-area: 3 / 1 / 4 / 4; }
 ul.section-rent__grid li:nth-child(7){ grid-area: 3 / 4 / 4 / 7; }
 
+li.section-plan__grid__item.border-black .section-plan__grid__item__content {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+}
 
 .section-rent__grid__item,
 .section-advertising__grid__item,
