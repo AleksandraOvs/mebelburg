@@ -62,7 +62,7 @@ get_header() ?>
                     </div>
                 </li>
                 <li class="section-plan__grid__item">
-                    <img class="section-plan__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/parking1.jpg' ?>" alt="">
+                    <img class="section-plan__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/0851.jpg' ?>" alt="">
                     <div class="section-plan__grid__item__content">
                         <div class="section-plan__grid__item__content__top color-white">
                             <p>252 м/м</p>

@@ -1200,6 +1200,11 @@ li.section-plan__grid__item.border-black .section-plan__grid__item__content {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+ul.section-rent__grid li:nth-child(4) .section-plan__grid__item__content {
+  background: rgba(0, 0, 0, .7);
+  background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
+}
+
 .section-rent__grid__item,
 .section-advertising__grid__item,
 .section-plan__grid__item {

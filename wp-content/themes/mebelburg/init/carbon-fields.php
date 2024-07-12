@@ -132,7 +132,8 @@ function site_carbon()
         ));
 
     Container::make('post_meta', 'Информация об акции')
-        ->show_on_post_type('sales')
+        //->show_on_post_type('sales')
+        ->show_on_category('sales')
         ->add_fields(array(
             Field::make('image', 'crb_sale_img', 'Фото')
                 ->set_width(33),

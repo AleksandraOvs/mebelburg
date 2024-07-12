@@ -8,7 +8,7 @@ $sale_img_id = wp_get_attachment_image_url($sale_img, 'full');
         <?php
     }
 ?>
-    <div class="sale-block__item__content">
+    <a href="<?php the_permalink() ?>" class="sale-block__item__content">
         <div class="sale-block__item__content__head">
 
                 <?php 
@@ -36,5 +36,5 @@ $sale_img_id = wp_get_attachment_image_url($sale_img, 'full');
                     ?>
         <div class="sale-block__item__content__bottom"><?php echo $sale_desc ?></div>
         <?php } ?>
-    </div>
+                </a>
 </li>
