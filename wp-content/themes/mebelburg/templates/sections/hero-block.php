@@ -50,8 +50,8 @@
 
         <?php
          $args = array(
-            'post_type' => 'sales',
-            //'cat' => '2',
+            //'post_type' => 'sales',
+            'category_name' => 'sales',
             'posts_per_page' => 2,
         );
 
