@@ -135,8 +135,8 @@ function site_carbon()
         //->show_on_post_type('sales')
         ->show_on_category('sales')
         ->add_fields(array(
-            Field::make('image', 'crb_sale_img', 'Фото')
-                ->set_width(33),
+            // Field::make('image', 'crb_sale_img', 'Фото')
+            //     ->set_width(33),
             Field::make('text', 'crb_sale_date', 'Дата акции')
                 ->set_width(33),
             // Field::make('text', 'crb_shop_item_cat', 'Категория магазина')
