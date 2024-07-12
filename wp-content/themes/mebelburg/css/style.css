@@ -3658,19 +3658,19 @@ ul.floors-slider__slide__number-list li span {
 
 .section-rent__grid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
-ul.section-rent__grid li:first-child { grid-area: 1 / 1 / 2 / 3; }
-ul.section-rent__grid li:nth-child(2) { grid-area: 1 / 3 / 2 / 5; }
-ul.section-rent__grid li:nth-child(3) { grid-area: 2 / 1 / 3 / 5; }
-ul.section-rent__grid li:nth-child(4) { grid-area: 3 / 1 / 4 / 3; }
-ul.section-rent__grid li:nth-child(5) { grid-area: 3 / 3 / 4 / 5; }
-ul.section-rent__grid li:nth-child(6) { grid-area: 4 / 1 / 5 / 3; }
-ul.section-rent__grid li:nth-child(7){ grid-area: 4 / 3 / 5 / 5; }
+ul.section-rent__grid li:first-child { grid-area: unset }
+ul.section-rent__grid li:nth-child(2) { grid-area: unset }
+ul.section-rent__grid li:nth-child(3) { grid-area: unset }
+ul.section-rent__grid li:nth-child(4) { grid-area: unset }
+ul.section-rent__grid li:nth-child(5) { grid-area: unset }
+ul.section-rent__grid li:nth-child(6) { grid-area: unset }
+ul.section-rent__grid li:nth-child(7){ grid-area: unset }
 
   p.footer-address {
     font-size: 12px;
