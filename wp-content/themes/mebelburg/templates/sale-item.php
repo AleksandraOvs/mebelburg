@@ -6,6 +6,10 @@ $sale_img_id = wp_get_attachment_image_url($sale_img, 'full');
         ?>
         <img src="<?php echo $sale_img_id ?>" alt="">
         <?php
+    }else {
+        ?>
+        <img src=" <?php echo get_stylesheet_directory_uri()?>/images/svg/placeholder.svg" alt="">
+        <?php
     }
 ?>
     <a href="<?php the_permalink() ?>" class="sale-block__item__content">
