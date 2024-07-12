@@ -1,11 +1,11 @@
 <li class="sale-block__item">
 <?php
-$sale_img = carbon_get_post_meta(get_the_ID(), 'crb_sale_img');
-$sale_img_id = wp_get_attachment_image_url($sale_img, 'full');
-    if ($sale_img){
-        ?>
-        <img src="<?php echo $sale_img_id ?>" alt="">
-        <?php
+//$sale_img = carbon_get_post_meta(get_the_ID(), 'crb_sale_img');
+//$sale_img_id = wp_get_attachment_image_url($sale_img, 'full');
+if( has_post_thumbnail() ) {
+       
+        the_post_thumbnail();
+       
     }else {
         ?>
         <img src=" <?php echo get_stylesheet_directory_uri()?>/images/svg/placeholder.svg" alt="">
