@@ -108,6 +108,7 @@ function loadmore_posts(){
     $args = array(
         'paged' => $paged,
         'post_status' => 'publish',
+        'category_name' => 'news',
         //'post_type' => 'post',
         'posts_per_page' => 6
     );
