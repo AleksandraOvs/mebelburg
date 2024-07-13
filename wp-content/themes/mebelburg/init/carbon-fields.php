@@ -104,10 +104,11 @@ function site_carbon()
         ))
 
         ->add_tab(__('Советы'), array(
-            Field::make('image', 'crb_advice_image', 'Изображение мишки Мё')
-            ->set_width(40),
+
             Field::make('complex', 'crb_advice_items', 'Советы от мишки Мё')
                 ->add_fields(array(
+                    Field::make('image', 'crb_advice_image', 'Изображение мишки Мё')
+                        ->set_width(40),
                     Field::make('rich_text', 'crb_advice_text', 'Текст совета')
                         ->set_width(60)
                 
