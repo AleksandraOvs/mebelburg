@@ -128,7 +128,7 @@
 
     .advice-block__inner__img img {
         position: absolute;
-        left: -20px;
+        left: -50px;
         width: 150px;
     }
 }
@@ -151,7 +151,7 @@
 
     .advice-block__inner__img img {
         position: absolute;
-        left: 0;
+        left: -20px;
         width: 100px;
         height: 100%;
     }
