@@ -2125,7 +2125,7 @@ p.footer-address {
   transition: all .5s linear;
 }
 
-#more-shops {
+div#more_news, div#more_sales, div#more_shops {
   margin-top: 75px;
 }
 
@@ -3281,7 +3281,7 @@ ul.plan-slider__slide__number-list.plan-list li span {
     width: 65%;
   }
 
-  #more-shops {
+  div#more_news, div#more_sales, div#more_shops {
     margin-top: 55px;
   }
 
