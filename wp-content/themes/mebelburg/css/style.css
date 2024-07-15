@@ -4033,6 +4033,11 @@ figcaption.wp-element-caption br {
   display: none;
 }
 
+
+.wp-block-column p {
+  margin-top: 1em !important;
+}
+
 @media (max-width: 1024px) {
   .content-title-3 {
     font-size: calc(1em + 1.303vw);
