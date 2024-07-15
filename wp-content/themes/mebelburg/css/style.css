@@ -2110,9 +2110,9 @@ p.footer-address {
   color: #fff;
 }
 
-.swiper-wrapper.cats-slider__wrapper {
+/* .swiper-wrapper.cats-slider__wrapper {
   justify-content: center;
-}
+} */
 
 .swiper-slide.shops-cat {
   width: max-content !important;
@@ -2797,9 +2797,9 @@ section.page-section._page-enter .container {
     max-height: 354px;
   }
 
-  .swiper-wrapper.cats-slider__wrapper {
+  /* .swiper-wrapper.cats-slider__wrapper {
     justify-content: flex-start;
-}
+} */
 
   li.shops-list__item {
     display: flex;
