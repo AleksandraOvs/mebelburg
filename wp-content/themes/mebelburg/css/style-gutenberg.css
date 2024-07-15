@@ -61,3 +61,8 @@ h5{
 .editor-styles-wrapper .wp-block.block-core-columns.wp-block-column {
     border: 1px dotted rgba(0, 0, 0, 1);
 }
+
+.wp-block-spacer {
+    clear: both;
+    background: rgba(0, 0, 0, .2);
+}
