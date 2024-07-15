@@ -2595,9 +2595,9 @@ li.tribe-events-nav-next a:hover:after {
 }
 
 @media(min-width: 1440px) {
-  .swiper-wrapper.cats-slider__wrapper {
+  /* .swiper-wrapper.cats-slider__wrapper {
     transform: none !important;
-  }
+  } */
 
 }
 
