@@ -22,7 +22,7 @@
     </div>
 
     <div class="container-nopaddings">
-        <div class="page-section__content">
+        <div class="page-section__content category-news">
 
             <div class="container">
                 <?php
