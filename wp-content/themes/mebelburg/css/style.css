@@ -2226,6 +2226,7 @@ section.page-section._food-page .page-section__content {
 }
 
 li.food-block__list__item {
+  list-style:none;
   padding-top: 80px;
   padding-bottom: 120px;
 }
