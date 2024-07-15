@@ -77,7 +77,7 @@
             wp_reset_postdata();
 
             ?>
-            <div id="more-shops">
+            <div id="more_shops">
                 <button class="button">Смотреть еще</button>
             </div>
 

@@ -132,3 +132,94 @@ function loadPostsFromCategory()
 
 //     die;
 // }
+
+
+
+//  fn ajax hook
+add_action('wp_ajax_nopriv_loadNews', 'loadNews');
+add_action('wp_ajax_loadNews', 'loadNews');
+
+function loadNews()
+{
+    // параметры цикла
+    $news_query_args = array(
+        //'post_type' => 'shops',
+        'category_name' => 'news',
+        'post_status' => 'publish',
+        'posts_per_page' => 6,
+        'paged' => $_POST['paged'],
+    );
+
+    // цикл
+    $news_query = new WP_Query($news_query_args);
+
+    $response_news = '';
+    $max_news_pages = $news_query->max_num_pages;
+
+    if ($news_query->have_posts()) {
+        ob_start();
+        while ($news_query->have_posts()) : $news_query->the_post();
+
+            $response_news .= get_template_part('templates/post-item');
+
+        endwhile;
+        $output_news = ob_get_contents();
+        ob_end_clean();
+    } else {
+        $output_news = '<p style="padding: 20px;">По выбранным фильтрам ничего не найдено</p>';
+    }
+
+
+    $result_news = [
+        'max' => $max_news_pages,
+        'html' =>  $output_news,
+    ];
+
+    echo json_encode($result_news);
+    exit;
+}
+
+
+//  fn ajax hook
+add_action('wp_ajax_nopriv_loadSales', 'loadSales');
+add_action('wp_ajax_loadSales', 'loadSales');
+
+function loadSales()
+{
+    // параметры цикла
+    $sales_query_args = array(
+        //'post_type' => 'shops',
+        'category_name' => 'sales',
+        'post_status' => 'publish',
+        'posts_per_page' => 6,
+        'paged' => $_POST['paged'],
+    );
+
+    // цикл
+    $sales_query = new WP_Query($sales_query_args);
+
+    $response_sales = '';
+    $max_sales_pages = $sales_query->max_num_pages;
+
+    if ($sales_query->have_posts()) {
+        ob_start();
+        while ($sales_query->have_posts()) : $sales_query->the_post();
+
+            $response_sales .= get_template_part('templates/sale-item');
+
+        endwhile;
+        $output_sales = ob_get_contents();
+        ob_end_clean();
+    } else {
+        $output_sales = '<p style="padding: 20px;">По выбранным фильтрам ничего не найдено</p>';
+    }
+
+
+    $result_sales = [
+        'max' => $max_sales_pages,
+        'html' =>  $output_sales,
+    ];
+
+    echo json_encode($result_sales);
+    exit;
+}

@@ -15,7 +15,7 @@
 
             <div class="page-section__description">
                 <p>
-                Отчёты о прошедших мероприятиях, информация о важных событиях центра
+                    Отчёты о прошедших мероприятиях, информация о важных событиях центра
                 </p>
             </div>
         </div>
@@ -46,7 +46,12 @@
                 wp_reset_postdata();
 
                 ?>
-                <?php get_template_part('templates/loadmore') ?>
+
+                <div id="more_news">
+                    <button class="button">Смотреть еще</button>
+                </div>
+                <?php //get_template_part('templates/loadmore') 
+                ?>
 
             </div>
 

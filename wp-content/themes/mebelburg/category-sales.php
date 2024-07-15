@@ -45,8 +45,10 @@
             wp_reset_postdata();
 
             ?>
-           <?php get_template_part('templates/loadmore') ?>
-            
+           <?php //get_template_part('templates/loadmore') ?>
+           <div id="more_sales">
+                    <button class="button">Смотреть еще</button>
+                </div>
             </div>
             
 
