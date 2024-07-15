@@ -16,7 +16,7 @@
     </div>
 
     <div class="container-nopaddings">
-        <div class="page-section__content">
+        <div class="page-section__content category">
 
             <div class="container">
  <?php
