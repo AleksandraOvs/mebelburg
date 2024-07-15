@@ -58,6 +58,6 @@ h5{
     background: rgba(0, 0, 0, .07);
 }
 
-.wp-block.block-core-columns.wp-block-column {
-    border: 3px dotted var(--beige);
+.editor-styles-wrapper .wp-block.block-core-columns.wp-block-column {
+    border: 1px dotted rgba(0, 0, 0, 1);
 }
