@@ -74,7 +74,7 @@ function loadmore(){
         'paged' => $paged,
         'post_status' => 'publish',
         'post_type' => 'sales',
-        'posts_per_page' => 6
+        'posts_per_page' => 3
     );
 
 
@@ -110,7 +110,7 @@ function loadmore_posts(){
         'post_status' => 'publish',
         'category_name' => 'news',
         //'post_type' => 'post',
-        'posts_per_page' => 6
+        'posts_per_page' => 12
     );
 
 
