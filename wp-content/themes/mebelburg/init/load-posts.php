@@ -62,72 +62,73 @@ function loadPostsFromCategory()
 
 
 //  fn ajax hook
-add_action('wp_ajax_nopriv_loadmore', 'loadmore');
-add_action('wp_ajax_loadmore', 'loadmore');
 
-function loadmore(){
+// add_action('wp_ajax_nopriv_loadmore', 'loadmore');
+// add_action('wp_ajax_loadmore', 'loadmore');
 
-    $paged = ! empty ($_POST['paged']) ? $_POST['paged'] :1;
-    $paged++;
+// function loadmore(){
 
-    $args = array(
-        'paged' => $paged,
-        'post_status' => 'publish',
-        'post_type' => 'sales',
-        'posts_per_page' => 3
-    );
+//     $paged = ! empty ($_POST['paged']) ? $_POST['paged'] :1;
+//     $paged++;
+
+//     $args = array(
+//         'paged' => $paged,
+//         'post_status' => 'publish',
+//         'post_type' => 'sales',
+//         'posts_per_page' => 3
+//     );
 
 
-    query_posts($args);
+//     query_posts($args);
     
-    while( have_posts() ): the_post();
-       get_template_part('templates/sale-item');
-endwhile;
+//     while( have_posts() ): the_post();
+//        get_template_part('templates/sale-item');
+// endwhile;
 
-    // query_posts( array(
-    //     'paged' => $paged
-    // ));
+//     // query_posts( array(
+//     //     'paged' => $paged
+//     // ));
 
-    // while( have_posts()) : the_post();
-    //     the_title();
-    // endwhile;
-
-
-    die;
-}
-
-//  fn ajax hook
-add_action('wp_ajax_nopriv_loadmore_posts', 'loadmore_posts');
-add_action('wp_ajax_loadmore_posts', 'loadmore_posts');
-
-function loadmore_posts(){
-
-    $paged = ! empty ($_POST['paged']) ? $_POST['paged'] :1;
-    $paged++;
-
-    $args = array(
-        'paged' => $paged,
-        'post_status' => 'publish',
-        'category_name' => 'news',
-        //'post_type' => 'post',
-        'posts_per_page' => 12
-    );
+//     // while( have_posts()) : the_post();
+//     //     the_title();
+//     // endwhile;
 
 
-    query_posts($args);
+//     die;
+// }
+
+// //  fn ajax hook
+// add_action('wp_ajax_nopriv_loadmore_posts', 'loadmore_posts');
+// add_action('wp_ajax_loadmore_posts', 'loadmore_posts');
+
+// function loadmore_posts(){
+
+//     $paged = ! empty ($_POST['paged']) ? $_POST['paged'] :1;
+//     $paged++;
+
+//     $args = array(
+//         'paged' => $paged,
+//         'post_status' => 'publish',
+//         'category_name' => 'news',
+//         //'post_type' => 'post',
+//         'posts_per_page' => 12
+//     );
+
+
+//     query_posts($args);
     
-    while( have_posts() ): the_post();
-       get_template_part('templates/post-item');
-endwhile;
+//     while( have_posts() ): the_post();
+//        get_template_part('templates/post-item');
+// endwhile;
 
-    // query_posts( array(
-    //     'paged' => $paged
-    // ));
+//     // query_posts( array(
+//     //     'paged' => $paged
+//     // ));
 
-    // while( have_posts()) : the_post();
-    //     the_title();
-    // endwhile;
+//     // while( have_posts()) : the_post();
+//     //     the_title();
+//     // endwhile;
 
 
-    die;
-}
+//     die;
+// }
