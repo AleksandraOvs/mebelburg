@@ -3325,6 +3325,10 @@ ul.plan-slider__slide__number-list.plan-list li span {
   .section-rent__causes__list {
     grid-template-columns: 1fr;
   }
+
+  .tribe-events .tribe-events-l-container {
+    padding-top: 170px !important;
+}
 }
 
 @media (max-width: 662px) {
