@@ -2388,6 +2388,10 @@ h1.tribe-events-single-event-title {
   text-align: center;
 }
 
+.tribe-events .tribe-events-c-subscribe-dropdown {
+  display: none;
+}
+
 #tribe-events-pg-template {
   margin: 0 auto;
   max-width: 1048px;
