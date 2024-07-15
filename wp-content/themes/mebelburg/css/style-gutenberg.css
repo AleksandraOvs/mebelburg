@@ -53,3 +53,11 @@ h5{
 .wp-block-column p {
     margin-top: 1em !important;
 }
+
+.block-editor-block-list__block.wp-block.wp-block-columns {
+    background: rgba(0, 0, 0, .07);
+}
+
+.wp-block.block-core-columns.wp-block-column {
+    border: 3px dotted var(--beige);
+}
