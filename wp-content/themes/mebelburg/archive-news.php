@@ -45,7 +45,7 @@
             wp_reset_postdata();
 
             ?>
-           <?php get_template_part('templates/loadmore') ?>
+           <?php //get_template_part('templates/loadmore') ?>
             
             </div>
             
