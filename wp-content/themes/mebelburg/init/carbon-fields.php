@@ -93,8 +93,13 @@ function site_carbon()
         ->add_tab(__('Главный слайдер'), array(
             Field::make('complex', 'crb_hero_slider', 'Слайдер на первом экране')
                 ->add_fields(array(
-                    Field::make('rich_text', 'crb_hero_slider_header', 'Заголовок')
+                    // Field::make('rich_text', 'crb_hero_slider_header', 'Заголовок')
+                    //     ->set_width(33),
+                    Field::make('complex', 'crb_h2_lines', 'Строки для заголовка')
+                    ->add_fields(array(
+                        Field::make('text', 'crb_h2_line', 'Строка для заголовка')
                         ->set_width(33),
+                    )),
                     Field::make('text', 'crb_hero_slider_link_more', 'Ссылка кнопки')
                         ->set_width(33),
                     Field::make('image', 'crb_hero_slider_image', 'Изображение слайда')

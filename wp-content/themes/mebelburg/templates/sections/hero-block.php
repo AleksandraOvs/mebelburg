@@ -22,9 +22,24 @@
 
                             <div class="hero-slider__slide__content">
                                 <?php
-                                if ($slide_header = $hero_slide['crb_hero_slider_header']) {
-                                    echo $slide_header;
-                                }
+                                // if ($slide_header = $hero_slide['crb_hero_slider_header']) {
+                                //     echo $slide_header;
+                                // }
+                                ?>
+
+                                <?php
+                                
+                                    //if($header_lines = carbon_get_theme_option('crb_h2_lines')){
+                                        ?>
+                                        <h2 class="h2_title">
+                                            <?php
+                                                foreach($hero_slide['crb_h2_lines'] as $header_line){
+                                                    echo '<span>'. $header_line ['crb_h2_line'].'</span>';
+                                                }
+                                            ?>
+                                        </h2>
+                                        <?php
+                                    //}
                                 ?>
 
                                 <?php
