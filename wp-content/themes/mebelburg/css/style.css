@@ -2657,7 +2657,7 @@ h2.enter__title_events {
   font-style: italic;
 }
 
-.enter__title:before, .enter__title_events:before {
+.enter__title:before {
   content: '';
   display: block;
   position: absolute;
@@ -2667,6 +2667,21 @@ h2.enter__title_events {
   height: 116px;
   width: 116px;
   background: url(../images/enter.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+
+.enter__title_events:before{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -30%;
+  right: 5%;
+  height: 66px;
+  width: 66px;
+  background-color: var(--beige);
   background-size: cover;
   background-position: center;
   border-radius: 100%;
