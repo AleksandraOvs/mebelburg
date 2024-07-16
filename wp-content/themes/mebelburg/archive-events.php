@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template name: Страница Мероприятия
  */
@@ -21,7 +22,7 @@
 
             <div class="page-section__description _events-desc">
                 <p>
-                Бесплатные консультации дизайнеров интерьера, полезные лекции, встречи с&nbsp;профессионалами и&nbsp;праздники по&nbsp;хорошим поводам
+                    Бесплатные консультации дизайнеров интерьера, полезные лекции, встречи с&nbsp;профессионалами и&nbsp;праздники по&nbsp;хорошим поводам
                 </p>
             </div>
         </div>
@@ -31,33 +32,41 @@
         <div class="page-section__content">
 
             <div class="container">
- <?php
+                <?php
 
-            if (have_posts()) {
-            ?>
-                <ul class="post-block__list">
-                    <?php
-                    while (have_posts()) {
-                        the_post();
-                    ?>
-                        <?php get_template_part('templates/post-item'); ?>
-                    <?php
-                    }
-                    ?>
-                </ul>
-            <?php
-            } else {
-            }
+                if (have_posts()) {
+                ?>
+                    <ul class="post-block__list">
+                        <?php
+                        while (have_posts()) {
+                            the_post();
+                        ?>
+                            <?php get_template_part('templates/post-item'); ?>
+                        <?php
+                        }
+                        ?>
+                    </ul>
+                <?php
+                } else {
+                ?>
 
-            wp_reset_postdata();
+                    <h2 class="enter__title">
+                        Скоро <span>тут</span> появятся<br>мероприятия
+                    </h2>
 
-            ?>
-           <?php //get_template_part('templates/loadmore') ?>
-            
+                <?php
+                }
+
+                wp_reset_postdata();
+
+                ?>
+                <?php //get_template_part('templates/loadmore') 
+                ?>
+
             </div>
-            
 
-           
+
+
 
         </div>
     </div>
