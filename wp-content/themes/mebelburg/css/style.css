@@ -2647,6 +2647,10 @@ section.page-section._page-enter .container {
   z-index: 2;
 }
 
+h2.enter__title_events {
+  font-size: calc(1em + 2vw);
+}
+
 .enter__title span, .enter__title_events span {
   color: #663780;
   font-weight: 300;
@@ -2688,12 +2692,24 @@ section.page-section._page-enter .container {
   z-index: -1;
   top: -30%;
   right: 5%;
-  height: 116px;
-  width: 116px;
+  height: 76px;
+  width: 76px;
   background-color: var(--beige);
   background-size: cover;
   background-position: center;
   border-radius: 100%;
+}
+
+.enter__title_events:after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--purple);
+  border-radius: 100%;
+  bottom: 40%;
+  left: calc(50% - 25px);
 }
 
 .page-section__content._enter:after {
