@@ -2640,20 +2640,20 @@ section.page-section._page-enter .container {
   height: 100%;
 }
 
-.enter__title {
+.enter__title, .enter__title_events {
   position: relative;
   width: max-content;
   margin: 0 auto;
   z-index: 2;
 }
 
-.enter__title span {
+.enter__title span, .enter__title_events span {
   color: #663780;
   font-weight: 300;
   font-style: italic;
 }
 
-.enter__title:before {
+.enter__title:before, .enter__title_events:before {
   content: '';
   display: block;
   position: absolute;
@@ -2678,6 +2678,21 @@ section.page-section._page-enter .container {
   height: 76px;
   width: 76px;
   background: var(--beige);
+  border-radius: 100%;
+}
+
+.enter__title_events:after{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -30%;
+  right: 5%;
+  height: 116px;
+  width: 116px;
+  background-color: var(--beige);
+  background-size: cover;
+  background-position: center;
   border-radius: 100%;
 }
 

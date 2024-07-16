@@ -50,7 +50,7 @@
                 } else {
                 ?>
 
-                    <h2 class="enter__title">
+                    <h2 class="enter__title_events">
                         Скоро <span>тут</span> появятся<br>мероприятия
                     </h2>
 
