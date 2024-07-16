@@ -52,10 +52,10 @@ get_header() ?>
                 <img class="section-advertising__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/advpic03.png' ?>" alt="">
                 <div class="section-advertising__grid__item__content">
                     <div class="section-advertising__grid__item__content__top">
-                        <p>100 000+</p>
+                        <p>180 000+</p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom ">
-                        <p>человек — потенциальные посетители среди жителей ближайших ЖК</p>
+                        <p>человек в зоне ближайших ближайших ЖК</p>
                     </div>
                 </div>
             </li>
@@ -65,7 +65,7 @@ get_header() ?>
                         <p class="color-beige">850 000+</p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom">
-                        <p>человек — потенциальные посетители среди жителей ближайших ЖК</p>
+                        <p>человек в ближайшей торговой зоне</p>
                     </div>
                 </div>
             </li>
