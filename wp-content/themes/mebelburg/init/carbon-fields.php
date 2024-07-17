@@ -80,6 +80,9 @@ function site_carbon()
         ->add_tab(__('Файлы'), array(
 
             Field::make("file", "crb_politics_file", "Файл политики (PDF)")
+                ->set_value_type('url'), // сохранить в метаполе ссылку на файл
+
+            Field::make("file", "crb_advertising_file", "Файл презентации для страницы Реклама (PDF)")
                 ->set_value_type('url') // сохранить в метаполе ссылку на файл
 
         ));

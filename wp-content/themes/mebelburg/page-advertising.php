@@ -71,15 +71,22 @@ get_header() ?>
             </li>
         </ul>
 
-        <div class="section-advertising__present">
+        <?php if ($adv_file = carbon_get_theme_option('crb_advertising_file')){
+            ?>
+            <div class="section-advertising__present">
             <p class="section-rent__desc">
             Скачайте презентацию, чтобы узнать все рекламные
             возможности на территории ИВЦ
             </p>
             <div class="section-advertising__present__download">
-                <a href="/" class="button">Скачать презентацию</a>
+            <?php printf('<a class="button" href="%s">Скачать&nbsp;презентацию</a>', $adv_file); ?>
             </div>
         </div>
+            <?php
+        }
+        ?>
+
+        
     </div>
 
 
