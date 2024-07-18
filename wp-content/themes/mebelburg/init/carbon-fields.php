@@ -83,7 +83,12 @@ function site_carbon()
                 ->set_value_type('url'), // сохранить в метаполе ссылку на файл
 
             Field::make("file", "crb_advertising_file", "Файл презентации для страницы Реклама (PDF)")
-                ->set_value_type('url') // сохранить в метаполе ссылку на файл
+                ->set_value_type('url'), // сохранить в метаполе ссылку на файл
+
+            Field::make("file", "crb_rent_file1", "Файл общей презентации для страницы Аренда (PDF)")
+            ->set_value_type('url'), // сохранить в метаполе ссылку на файл
+            Field::make("file", "crb_rent_file2", "Файл презентации по участку для страницы Аренда (PDF)")
+            ->set_value_type('url'), // сохранить в метаполе ссылку на файл
 
         ));
 

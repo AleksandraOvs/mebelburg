@@ -51,39 +51,39 @@ get_header() ?>
                 </div>
             </li>
 
-                <li class="section-plan__grid__item border" style="background-color:#fff; background-image:url(<?php echo get_stylesheet_directory_uri() . '/images/adv1.svg' ?>); background-repeat:no-repeat; background-position: center;">
-                    <div class="section-plan__grid__item__content">
-                        <div class="section-plan__grid__item__content__top">
-                            <p>03</p>
-                        </div>
-                        <div class="section-plan__grid__item__content__bottom ">
-                            <p>этажа товаров для вашего дома</p>
-                        </div>
+            <li class="section-plan__grid__item border" style="background-color:#fff; background-image:url(<?php echo get_stylesheet_directory_uri() . '/images/adv1.svg' ?>); background-repeat:no-repeat; background-position: center;">
+                <div class="section-plan__grid__item__content">
+                    <div class="section-plan__grid__item__content__top">
+                        <p>03</p>
                     </div>
-                </li>
-                <li class="section-plan__grid__item">
-                    <img class="section-plan__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/0851.jpg' ?>" alt="">
-                    <div class="section-plan__grid__item__content">
-                        <div class="section-plan__grid__item__content__top color-white">
-                            <p>252 м/м</p>
-                        </div>
-                        <div class="section-plan__grid__item__content__bottom color-white">
-                            <p>Наземная парковка</p>
-                        </div>
+                    <div class="section-plan__grid__item__content__bottom ">
+                        <p>этажа товаров для вашего дома</p>
                     </div>
-                </li>
-                <li class="section-plan__grid__item border-black">
+                </div>
+            </li>
+            <li class="section-plan__grid__item">
+                <img class="section-plan__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/0851.jpg' ?>" alt="">
+                <div class="section-plan__grid__item__content">
+                    <div class="section-plan__grid__item__content__top color-white">
+                        <p>252 м/м</p>
+                    </div>
+                    <div class="section-plan__grid__item__content__bottom color-white">
+                        <p>Наземная парковка</p>
+                    </div>
+                </div>
+            </li>
+            <li class="section-plan__grid__item border-black">
                 <img class="section-plan__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/parking.jpg' ?>" alt="">
-                    <div class="section-plan__grid__item__content">
-                        <div class="section-plan__grid__item__content__top color-white">
-                            <p>184 м/м</p>
-                        </div>
-                        <div class="section-plan__grid__item__content__bottom color-white">
-                            <p>Подземный паркинг</p>
-                        </div>
+                <div class="section-plan__grid__item__content">
+                    <div class="section-plan__grid__item__content__top color-white">
+                        <p>184 м/м</p>
                     </div>
-                </li>
-           
+                    <div class="section-plan__grid__item__content__bottom color-white">
+                        <p>Подземный паркинг</p>
+                    </div>
+                </div>
+            </li>
+
             <li class="section-rent__grid__item">
                 <img class="section-rent__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/rentpic02.jpg' ?>" alt="">
                 <div class="section-rent__grid__item__content">
@@ -197,18 +197,45 @@ get_header() ?>
         </div>
     </div>
 
+    <?php 
+    
+    $rent_file1 = carbon_get_theme_option('crb_rent_file1');
+    $rent_file2 = carbon_get_theme_option('crb_rent_file2')
+    ?>
+        <div class="section-rent__present">
+            <p class="section-rent__desc">
+                Скачайте презентацию, чтобы узнать все возможности&nbsp;по аренде в&nbsp;ИВЦ
+            </p>
+            <div class="section-rent__present__download">
+                <?php
+                if ($rent_file1) {
+                    printf('<a class="button" href="%s">Скачать общую&nbsp;презентацию</a>', $rent_file1);
+                }
+                ?>
+
+                <?php
+                if ($rent_file2) {
+                    printf('<a class="button" href="%s">Скачать&nbsp;презентацию (участок)</a>', $rent_file2);
+                }
+                ?>
+
+            </div>
+        </div>
+   
+
 
     <div class="section-rent__causes__form-block">
         <div class="container">
             <h2>Хотите арендовать помещение?</h2>
             <p class="form-block__description">
-            Оставьте заявку — и мы свяжемся с вами для обсуждения деталей
+                Оставьте заявку — и мы свяжемся с вами для обсуждения деталей
             </p>
 
-            <?php if ($rent_contactform = carbon_get_theme_option('crb_cf_rent' )){
-                echo do_shortcode(" $rent_contactform "); 
-            }?>
-            <?php //echo do_shortcode('[contact-form-7 id="f53577e" title="Untitled"]')?>
+            <?php if ($rent_contactform = carbon_get_theme_option('crb_cf_rent')) {
+                echo do_shortcode(" $rent_contactform ");
+            } ?>
+            <?php //echo do_shortcode('[contact-form-7 id="f53577e" title="Untitled"]')
+            ?>
         </div>
     </div>
 
