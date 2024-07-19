@@ -7,7 +7,7 @@
 
 </main>
 
-<div id="popup-pic" class="popup" data-fancybox  style="display: none;">
+<div id="popup-pic" class="popup" data-fancybox style="display: none;">
 
 </div>
 
@@ -55,7 +55,9 @@
             <div class="footer__inner__bottom__left">
                 <div class="footer__inner__bottom__left__col1">
                     <div class="footer-bottom__logo">
-                        <img class="footer-bottom__logo__img" src="<?php echo get_stylesheet_directory_uri() . '/images/svg/profit_logo.svg' ?>" alt="">
+                        <a href="https://profitmanagement.ru">
+                            <img class="footer-bottom__logo__img" src="<?php echo get_stylesheet_directory_uri() . '/images/svg/profit_logo.svg' ?>" alt="">
+                        </a>
                     </div>
                     <div class="footer-bottom__copyright">
                         © ИВЦ "Мöбельбург", 2024
@@ -67,40 +69,40 @@
             <div class="footer__inner__bottom__right">
                 <a href="<?php echo site_url('privacy-policy') ?>" class="policy-link">Политика конфиденциальности</a>
                 <div class="footer__inner__bottom__messengers">
-                <?php
-                if ($crb_header_contacts = carbon_get_theme_option('crb_messengers_contacts')) {
-                ?>
-
                     <?php
-                    foreach ($crb_header_contacts as $crb_contact) {
+                    if ($crb_header_contacts = carbon_get_theme_option('crb_messengers_contacts')) {
                     ?>
 
-                        <a class="messenger__item" href="<?php echo $crb_contact['crb_contact_link'] ?>" class="contact-link">
-                            <?php
-                            if ($crb_contact_icon = $crb_contact['crb_contact_image']) {
-                                $contact_icon_url = wp_get_attachment_image_url($crb_contact['crb_contact_image'], 'full');
-                                echo '<img class="contact-link__img" src="' . $contact_icon_url . '" />';
-                            }
-                            ?>
+                        <?php
+                        foreach ($crb_header_contacts as $crb_contact) {
+                        ?>
 
-                            <?php
-                            // if ($crb_contact_text = $crb_contact['crb_contact_name']) {
-                            //     echo '<span class="contact-link__name">' . $crb_contact_text . '" </span>';
-                            // }
-                            ?>
+                            <a class="messenger__item" href="<?php echo $crb_contact['crb_contact_link'] ?>" class="contact-link">
+                                <?php
+                                if ($crb_contact_icon = $crb_contact['crb_contact_image']) {
+                                    $contact_icon_url = wp_get_attachment_image_url($crb_contact['crb_contact_image'], 'full');
+                                    echo '<img class="contact-link__img" src="' . $contact_icon_url . '" />';
+                                }
+                                ?>
 
-                        </a>
+                                <?php
+                                // if ($crb_contact_text = $crb_contact['crb_contact_name']) {
+                                //     echo '<span class="contact-link__name">' . $crb_contact_text . '" </span>';
+                                // }
+                                ?>
+
+                            </a>
+
+                        <?php
+                        }
+                        ?>
+
+
 
                     <?php
                     }
                     ?>
-
-
-
-                <?php
-                }
-                ?>
-            </div>
+                </div>
             </div>
 
 

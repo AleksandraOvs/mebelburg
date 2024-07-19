@@ -1420,7 +1420,7 @@ section.page-section._page-adv h2 {
 
 .form-rent p span input {
   width: 100%;
-  padding: 18px 18px 18px 0;
+  padding: 18px 18px 18px 10px;
   border-bottom: 1px solid var(--black);
 }
 
@@ -2042,11 +2042,24 @@ p.footer-address {
   height: 32px;
 }
 
+.footer-bottom__logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-bottom__logo a:hover img {
+  transform: scale(1.05);
+  filter: opacity(0.5);
+  transition: all .5s ease-in-out;
+}
+
 .footer-bottom__logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center;
+  transition: all .5s ease-in-out;
 }
 
 .footer-bottom__copyright {
@@ -3739,7 +3752,7 @@ h2.enter__title_events {
     width: 100%;
     display: block;
     max-width: 100%;
-}
+  }
 
   .footer__inner__bottom__messengers {
     position: absolute;
