@@ -228,7 +228,8 @@ get_header() ?>
         <div class="container">
             <h2>Хотите арендовать помещение?</h2>
             <p class="form-block__description">
-                Оставьте заявку — и мы свяжемся с вами для обсуждения деталей
+            Оставьте заявку и&nbsp;мы свяжемся с&nbsp;вами для обсуждения деталей.
+            Или напрямую позвоните менеджеру по&nbsp;аренде по телефону <a href="tel:+79500011618">+7 950 001-16-18</a>
             </p>
 
             <?php if ($rent_contactform = carbon_get_theme_option('crb_cf_rent')) {

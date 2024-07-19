@@ -19,11 +19,17 @@ add_action('wp_ajax_loadPostsFromCategory', 'loadPostsFromCategory');
  */
 function loadPostsFromCategory()
 {
+
+    //$paged = ! empty ($_POST['paged']) ? $_POST['paged'] :1;
+    //$paged++;
+    //echo '<pre>';
+    //echo $paged;
+
     // параметры цикла
     $custom_query_args = array(
         'post_type' => 'shops',
         'post_status' => 'publish',
-        'posts_per_page' => 3,
+        //'posts_per_page' => 9,
         'paged' => $_POST['paged'],
     );
 
