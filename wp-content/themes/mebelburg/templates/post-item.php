@@ -46,9 +46,9 @@
         </div> -->
 
         <?php
-        if ($sale_desc = carbon_get_post_meta(get_the_ID(), 'crb_sale_desc')) {
+        //if ($sale_desc = carbon_get_post_meta(get_the_ID(), 'crb_sale_desc')) {
         ?>
-            <div class="sale-block__item__content__bottom"><?php echo $sale_desc ?></div>
-        <?php } ?>
+            <!-- <div class="sale-block__item__content__bottom"><?php //echo $sale_desc ?></div> -->
+        <?php //} ?>
     </div>
 </li>
