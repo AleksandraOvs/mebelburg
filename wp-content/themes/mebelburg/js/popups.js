@@ -8,7 +8,7 @@ setInterval(function() {
   if (intervalCounter > len) intervalCounter = 1;
   $(".advice-block__inner").removeClass("active");
   $(".advice-block__inner").eq(intervalCounter - 1).addClass("active");
-}, 9000);
+}, 20000);
 
 $(document).on('click', '.advice-close', function () {
 clearInterval(setInterval);
