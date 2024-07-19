@@ -28,7 +28,7 @@ function wp_js_and_css()
 };
 
 require 'init/carbon-fields.php';
-require 'init/ajax.php';
+//require 'init/ajax.php';
 require 'init/breadcrumbs.php';
 require 'init/pagination.php';
 
