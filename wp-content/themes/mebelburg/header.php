@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
 
+    <link type="image/x-icon" href="<?php echo get_stylesheet_directory_uri() . '/images/favicon.ico' ?>" rel="shortcut icon">
+    <link type="Image/x-icon" href="<?php echo get_stylesheet_directory_uri() . '/images/favicon.ico' ?>" rel="icon">
+
     <?php wp_head() ?>
 </head>
 
