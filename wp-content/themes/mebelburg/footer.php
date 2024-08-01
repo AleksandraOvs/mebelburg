@@ -63,7 +63,7 @@
                         © ИВЦ "Мöбельбург", 2024
                     </div>
                 </div>
-                <a href="/" class="sitedev-link">Разработка сайта</a>
+                <a href="https://msokovikova.ru/" class="sitedev-link">Разработка сайта</a>
             </div>
 
             <div class="footer__inner__bottom__right">
