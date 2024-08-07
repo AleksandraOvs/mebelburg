@@ -65,7 +65,7 @@ get_header() ?>
                         <p class="color-beige">850 000+</p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom">
-                        <p>человек в человек в первичной торговой зоне</p>
+                        <p>человек в первичной торговой зоне</p>
                     </div>
                 </div>
             </li>
