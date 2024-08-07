@@ -55,7 +55,7 @@ get_header() ?>
                         <p>180 000+</p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom ">
-                        <p>человек в зоне ближайших ближайших ЖК</p>
+                        <p>человек в зоне ближайших ЖК</p>
                     </div>
                 </div>
             </li>
@@ -65,7 +65,7 @@ get_header() ?>
                         <p class="color-beige">850 000+</p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom">
-                        <p>человек в ближайшей торговой зоне</p>
+                        <p>человек в человек в первичной торговой зоне</p>
                     </div>
                 </div>
             </li>
