@@ -42,15 +42,15 @@ get_header() ?>
 
                     <!-- 1 floor -->
                     <?php
-                    //if ($floor1_slide = carbon_get_post_meta(get_the_ID(), 'crb_scheme1f_img')) {
+                    if ($floor1_slide = carbon_get_post_meta(get_the_ID(), 'crb_scheme1f_img')) {
                         //  foreach ($floors_slides as $floor_slide) {
-                        //$floor1_slide_img_url = wp_get_attachment_image_url($floor1_slide, 'full');
+                        $floor1_slide_img_url = wp_get_attachment_image_url($floor1_slide, 'full');
                     ?>
 
                         <div class="swiper-slide floors-slider__slide">
                             <a data-fancybox="gallery" data-src="<?php echo $floor1_slide_img_url; ?>">
-                                <?php get_template_part('map/floor1') ?>
-                                <!-- <img class="floors-slider__img" src="<?php echo $floor1_slide_img_url; ?>" alt=""> -->
+
+                                <img class="floors-slider__img" src="<?php echo $floor1_slide_img_url; ?>" alt="">
                             </a>
 
 
@@ -62,17 +62,15 @@ get_header() ?>
                             <ul class="floors-slider__slide__number-list">
                                 <?php
                                 $floor1_slide_numbers = carbon_get_post_meta(get_the_ID(), 'crb_scheme1f_list');
-                                $i = 0;
                                 foreach ($floor1_slide_numbers as $number_first) {
-                                    $i++;
-                                    echo '<li id="area'.$i.'"><div class="number-list__num">' . $number_first['crb_scheme1f_list_number'] . '</div><span>' . $number_first['crb_scheme1f_list_desc'] . '</span></li>';
+                                    echo '<li><div class="number-list__num">' . $number_first['crb_scheme1f_list_number'] . '</div><span>' . $number_first['crb_scheme1f_list_desc'] . '</span></li>';
                                 }
                                 ?>
                             </ul>
 
                         </div>
                     <?php
-                    //}
+                    }
                     //  }
                     ?>
 
@@ -97,9 +95,7 @@ get_header() ?>
                             <ul class="floors-slider__slide__number-list">
                                 <?php
                                 $floor2_slide_numbers = carbon_get_post_meta(get_the_ID(), 'crb_scheme2f_list');
-                               
                                 foreach ($floor2_slide_numbers as $number_second) {
-                                    $i++;
                                     echo '<li><div class="number-list__num">' . $number_second['crb_scheme2f_list_number'] . '</div><span>' . $number_second['crb_scheme2f_list_desc'] . '</span></li>';
                                 }
                                 ?>
