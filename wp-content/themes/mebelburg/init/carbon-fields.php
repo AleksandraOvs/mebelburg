@@ -35,7 +35,7 @@ function site_carbon()
             Field::make('image', 'crb_header_map_icon', 'Иконка')
                 ->set_width(33),
             Field::make('text', 'crb_link_map', 'Ссылка')
-            ->help_text('слаг страницы, например /contacts')
+                ->help_text('слаг страницы, например /contacts')
                 ->set_width(33),
 
 
@@ -86,13 +86,13 @@ function site_carbon()
                 ->set_value_type('url'), // сохранить в метаполе ссылку на файл
 
             Field::make("file", "crb_rent_file1", "Файл общей презентации для страницы Аренда (PDF)")
-            ->set_value_type('url'), // сохранить в метаполе ссылку на файл
+                ->set_value_type('url'), // сохранить в метаполе ссылку на файл
             Field::make("file", "crb_rent_file2", "Файл презентации по участку для страницы Аренда (PDF)")
-            ->set_value_type('url'), // сохранить в метаполе ссылку на файл
+                ->set_value_type('url'), // сохранить в метаполе ссылку на файл
 
         ));
 
-        
+
 
     Container::make('theme_options', 'Первый экран')
 
@@ -104,10 +104,10 @@ function site_carbon()
                     // Field::make('rich_text', 'crb_hero_slider_header', 'Заголовок')
                     //     ->set_width(33),
                     Field::make('complex', 'crb_h2_lines', 'Строки для заголовка')
-                    ->add_fields(array(
-                        Field::make('text', 'crb_h2_line', 'Строка для заголовка')
-                        ->set_width(33),
-                    )),
+                        ->add_fields(array(
+                            Field::make('text', 'crb_h2_line', 'Строка для заголовка')
+                                ->set_width(33),
+                        )),
                     Field::make('text', 'crb_hero_slider_link_more', 'Ссылка кнопки')
                         ->set_width(33),
                     Field::make('image', 'crb_hero_slider_image', 'Изображение слайда')
@@ -124,7 +124,7 @@ function site_carbon()
                         ->set_width(40),
                     Field::make('rich_text', 'crb_advice_text', 'Текст совета')
                         ->set_width(60)
-                
+
                 ))
 
         ));
@@ -149,7 +149,7 @@ function site_carbon()
         ->show_on_category('sales')
         ->add_fields(array(
             //Field::make('image', 'crb_sale_img', 'Фото')
-             //   ->set_width(33),
+            //   ->set_width(33),
             Field::make('text', 'crb_sale_date', 'Дата акции')
                 ->set_width(33),
             // Field::make('text', 'crb_shop_item_cat', 'Категория магазина')
@@ -239,16 +239,112 @@ function site_carbon()
         ));
 
     Container::make('post_meta', 'Схемы и планы')
-        ->show_on_template('page-scheme.php')
+        ->show_on_template(array ('page-scheme.php', 'map.php'))
         ->add_tab(__('1 этаж'), array(
-            Field::make('image', 'crb_scheme1f_img', 'Изображение 1 этажа'),
-            Field::make('complex', 'crb_scheme1f_list', 'Расшифровка схемы')
+            //Field::make('image', 'crb_scheme1f_img', 'Изображение 1 этажа'),
+            // Field::make('complex', 'crb_scheme1f_list', 'Расшифровка схемы')
+            //     ->add_fields(array(
+            //         Field::make('text', 'crb_scheme1f_list_number', 'Подпись к цифре')
+            //             ->set_width(50),
+            //         Field::make('text', 'crb_scheme1f_list_desc', 'Подпись к цифре')
+            //             ->set_width(50),
+            //     ))
+
+
+            Field::make('complex', 'crb_scheme1f_items', 'Расшифровка схемы')
                 ->add_fields(array(
-                    Field::make('text', 'crb_scheme1f_list_number', 'Подпись к цифре')
-                        ->set_width(50),
-                    Field::make('text', 'crb_scheme1f_list_desc', 'Подпись к цифре')
-                        ->set_width(50),
+                    // Field::make('text', 'crb_scheme1f_list_id', 'Цифра для id')
+                    //     ->set_width(33)
+                    //     ->help_text('поле вида: номер этажа _ номер секции (в случае, если секция имеет два номера, то их писать через нижнее подчеркивание)'),
+                    Field::make('text', 'crb_scheme1f_list_number', 'Номер секции')
+                        ->set_width(33),
+                    Field::make('text', 'crb_scheme1f_list_name', 'Название магазина')
+                        ->set_width(33),
                 ))
+
+        
+
+
+
+            // Field::make('text', 'crb_scheme1_1', '#1')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_3', '#3')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_4', '#4')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_5', '#5')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_6', '#6')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_7', '#7')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_8', '#8')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_9_15', '#9 и #15')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_10_16', '#10 и #16')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_11', '#11')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_12', '#12')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_13_19', '#13 и #19')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_14', '#13 и #14')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_17', '#17')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_18_1_24', '#18.1 и #24')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_20_25', '#20 и #25')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_21_26', '#21 и #26')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_22_27', '#22 и #27')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_23', '#23')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_28', '#28')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_29', '#29')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_30', '#30')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_31', '#31')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_32', '#32')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_33', '#33')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_34', '#34')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_35_41', '#35_41')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_36', '#36')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_37', '#37')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_38', '#38')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_39', '#39')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_40', '#40')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_42', '#42')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_43', '#43')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_44', '#44')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_45_46_47', '#45, #46 и #47')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_48', '#48')
+            // ->set_width(20),
+            // Field::make('text', 'crb_scheme1_49', '#49')
+            // ->set_width(20)
+
+
+
         ))
 
         ->add_tab(__('2 этаж'), array(
