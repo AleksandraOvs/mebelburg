@@ -1436,6 +1436,20 @@ span.wpcf7-form-control-wrap input {
   background: transparent;
 }
 
+.wpcf7-spinner {
+  visibility: hidden;
+  display: inline-block;
+  background-color: transparent;
+  opacity: 0.75;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0 24px;
+  position: relative;
+}
+
 .form-rent p span:nth-child(9) {
   width: 66%;
 }
@@ -1460,7 +1474,15 @@ span.wpcf7-form-control-wrap input {
 }
 
 .submit-button p {
+  position:relative;
   display: block;
+}
+
+.submit .submit-button p span.wpcf7-spinner {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: auto;
 }
 
 .submit-button p span {
