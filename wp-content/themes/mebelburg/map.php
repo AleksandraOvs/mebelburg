@@ -37,35 +37,24 @@ get_header() ?>
                         <path d="M1 6H19" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
-
                 <div class="swiper-wrapper floors-slider__wrapper">
                     <div class="swiper-slide floors-slider__slide">
                         <div class="floors-slider__slide__floor">
                             <p>1 этаж</p>
                         </div>
-
                         <div class="floors-slider__slide__floor__content">
                             <?php get_template_part('map/floor1') ?>
-
-
-
                             <ul class="floors-slider__slide__number-list areas-table" id="areas">
-                                <?php
-                                // $floor1_slide_numbers = carbon_get_post_meta(get_the_ID(), 'crb_scheme1f_list');
-                                // $i = 0;
-                                // foreach ($floor1_slide_numbers as $number_first) {
-                                //     $i++;
-                                //     echo '<li id="area' . $i . '"><div class="number-list__num">' . $number_first['crb_scheme1f_list_number'] . '</div><span>' . $number_first['crb_scheme1f_list_desc'] . '</span></li>';
-                                // }
-                                ?>
-
                                 <?php
                                 if ($shop_names = carbon_get_post_meta(get_the_ID(), 'crb_scheme1f_items')) {
                                     $i = 0;
                                     foreach ($shop_names as $shop_name) {
                                         $i++;
-                                        echo '<li id="area' . $i . '" class="area-item">
-        <input class="areas-input" type="checkbox"><span class="number-list__num">' . $shop_name['crb_scheme1f_list_number'] . '</span><span class="area-item__name">' . $shop_name['crb_scheme1f_list_name'] . '</span></li>';
+
+                                        if ($shop = $shop_name['crb_scheme1f_list_name']){
+                                            echo '<li id="area' . $i . '" class="area-item">
+        <input class="areas-input" type="checkbox"><span class="number-list__num">' . $shop_name['crb_scheme1f_list_number'] . '</span><span class="area-item__name">' . $shop . '</span></li>';
+                                        }
                                     }
                                 ?>
                                     </li>
