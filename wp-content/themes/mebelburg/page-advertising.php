@@ -27,24 +27,25 @@ get_header() ?>
 
         <ul class="section-advertising__grid">
             <li class="section-advertising__grid__item">
-                <img class="section-advertising__grid__item__img" src="/" alt="">
-                <div class="section-advertising__grid__item__content bg-beige">
+                <img class="section-advertising__grid__item__img" src="<?php echo get_stylesheet_directory_uri() . '/images/adv001.jpg' ?>" alt="">
+                <div class="section-advertising__grid__item__content">
                     <div class="section-advertising__grid__item__content__top color-white">
-                        <p>30 236 м<sup>2</sup></p>
+                        <!-- <p>30 236 м<sup>2</sup></p> -->
+                         <p>Статика</p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom color-white">
-                        <p>общая площадь интерьерно-выставочного центра</p>
+                        <p>Мольберты, подвесные флаги, путеводители по&nbsp;центру и&nbsp;другие разновидности рекламной&nbsp;продукции</p>
                     </div>
                 </div>
             </li>
             <li class="section-advertising__grid__item">
-                <img class="section-advertising__grid__item__img" src="<?php echo get_stylesheet_directory_uri() . '/images/advpic02.png' ?>" alt="">
+                <img class="section-advertising__grid__item__img" src="<?php echo get_stylesheet_directory_uri() . '/images/adv002.jpg' ?>" alt="">
                 <div class="section-advertising__grid__item__content">
                     <div class="section-advertising__grid__item__content__top color-white">
-                        <p>17 000 м<sup>2</sup></p>
+                        <p>Медиа</p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom color-white">
-                        <p>площадь магазинов и&nbsp;экспозиций</p>
+                        <p>Аудиоролики в&nbsp;комплексе, динамичная и&nbsp;статичная реклама на&nbsp;навигационном экране</p>
                     </div>
                 </div>
             </li>
@@ -52,20 +53,21 @@ get_header() ?>
                 <img class="section-advertising__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/advpic03.png' ?>" alt="">
                 <div class="section-advertising__grid__item__content">
                     <div class="section-advertising__grid__item__content__top">
-                        <p>180 000+</p>
+                        <p>Промо</p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom ">
-                        <p>человек в зоне ближайших ЖК</p>
+                        <p>Размещение промостойки, консультации&nbsp;специалистов, демонстрация товаров, лифлетинг</p>
                     </div>
                 </div>
             </li>
-            <li class="section-advertising__grid__item bg-white border-black">
+            <li class="section-advertising__grid__item border-black">
+            <img class="section-advertising__grid__item__img rentpic03" src="<?php echo get_stylesheet_directory_uri() . '/images/adv003.jpg' ?>" alt="">
                 <div class="section-advertising__grid__item__content">
-                    <div class="section-advertising__grid__item__content__top color-white">
-                        <p class="color-beige">850 000+</p>
+                    <div class="section-advertising__grid__item__content__top">
+                        <p>Брендирование</p>
                     </div>
                     <div class="section-advertising__grid__item__content__bottom">
-                        <p>человек в первичной торговой зоне</p>
+                        <p>Размещение фирменных рекламных островков, брендирование&nbsp;эскалаторов, размещение рекламы в&nbsp;лифтах и&nbsp;другие варианты рекламы в&nbsp;комплексе</p>
                     </div>
                 </div>
             </li>
