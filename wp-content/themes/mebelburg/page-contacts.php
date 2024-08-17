@@ -35,25 +35,26 @@ get_header() ?>
         <ul class="page-contacts__contact-cards">
 
 
-            
-                <li class="page-contacts__item">
-                    <div class="page-contacts__item__head">
-                        <div class="pci_heading"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_contact_card_head1') ?></div>
-                        <div class="pci_icon">
-                            <?php
-                            if ($pci_icon = carbon_get_post_meta(get_the_ID(), 'crb_contacts_cards_icon1')) {
-                                $cc_icon_url = wp_get_attachment_image_url($pci_icon, 'full');
-                                echo '<img class="contact-card__icon__img" src="' . $cc_icon_url . '" />';
-                            }
-                            ?>
-                        </div>
-                    </div>
 
-                    <div class="page-contacts__item__content">
+            <li class="page-contacts__item">
+                <div class="page-contacts__item__head">
+                    <div class="pci_heading"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_contact_card_head1') ?></div>
+                    <div class="pci_icon">
                         <?php
-                        if ($contacts_items1 = carbon_get_post_meta(get_the_ID(), 'crb_contact_card_items1')) {
-                            foreach ($contacts_items1 as $contacts_item1) {
+                        if ($pci_icon = carbon_get_post_meta(get_the_ID(), 'crb_contacts_cards_icon1')) {
+                            $cc_icon_url = wp_get_attachment_image_url($pci_icon, 'full');
+                            echo '<img class="contact-card__icon__img" src="' . $cc_icon_url . '" />';
+                        }
                         ?>
+                    </div>
+                </div>
+
+                <div class="page-contacts__item__content">
+                    <?php
+                    if ($contacts_items1 = carbon_get_post_meta(get_the_ID(), 'crb_contact_card_items1')) {
+                        foreach ($contacts_items1 as $contacts_item1) {
+                    ?>
+                            <div class="item-inner">
                                 <div class="item-contact">
                                     <?php echo $contacts_item1['crb_contacts_name1'] ?>
                                 </div>
@@ -63,34 +64,34 @@ get_header() ?>
                                         <?php echo $contacts_item1['crb_contacts_text1'] ?>
                                     </a>
                                 </div>
+                            </div>
+                    <?php
+                        }
+                    }
+                    ?>
+                </div>
+            </li>
 
+            <li class="page-contacts__item">
+                <div class="page-contacts__item__head">
+                    <div class="pci_heading"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_contact_card_head2') ?></div>
+                    <div class="pci_icon">
                         <?php
-                            }
+                        if ($pci_icon1 = carbon_get_post_meta(get_the_ID(), 'crb_contacts_cards_icon2')) {
+                            $cc_icon_url1 = wp_get_attachment_image_url($pci_icon1, 'full');
+                            echo '<img class="contact-card__icon__img" src="' . $cc_icon_url1 . '" />';
                         }
                         ?>
                     </div>
-                </li>
+                </div>
 
-                <li class="page-contacts__item">
-                    <div class="page-contacts__item__head">
-                        <div class="pci_heading"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_contact_card_head2') ?></div>
-                        <div class="pci_icon">
-                            <?php
-                            if ($pci_icon1 = carbon_get_post_meta(get_the_ID(), 'crb_contacts_cards_icon2')) {
-                                $cc_icon_url1 = wp_get_attachment_image_url($pci_icon1, 'full');
-                                echo '<img class="contact-card__icon__img" src="' . $cc_icon_url1 . '" />';
-                            }
-                            ?>
-                        </div>
-                    </div>
-
-                    <div class="page-contacts__item__content">
-                        <?php
-                        if ($contacts_items2 = carbon_get_post_meta(get_the_ID(), 'crb_contact_card_items2')) {
-                            foreach ($contacts_items2 as $contacts_item2) {
-                        ?>
-                        <div class="item-inner">
-                              <div class="item-contact">
+                <div class="page-contacts__item__content">
+                    <?php
+                    if ($contacts_items2 = carbon_get_post_meta(get_the_ID(), 'crb_contact_card_items2')) {
+                        foreach ($contacts_items2 as $contacts_item2) {
+                    ?>
+                            <div class="item-inner">
+                                <div class="item-contact">
                                     <?php echo $contacts_item2['crb_contacts_name2'] ?>
                                 </div>
 
@@ -99,36 +100,36 @@ get_header() ?>
                                         <?php echo $contacts_item2['crb_contacts_text2'] ?>
                                     </a>
                                 </div>
-                        </div>
-                              
+                            </div>
 
+
+                    <?php
+                        }
+                    }
+                    ?>
+                </div>
+            </li>
+
+            <li class="page-contacts__item">
+                <div class="page-contacts__item__head">
+                    <div class="pci_heading"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_contact_card_head3') ?></div>
+                    <div class="pci_icon">
                         <?php
-                            }
+                        if ($pci_icon2 = carbon_get_post_meta(get_the_ID(), 'crb_contacts_cards_icon3')) {
+                            $cc_icon_url2 = wp_get_attachment_image_url($pci_icon2, 'full');
+                            echo '<img class="contact-card__icon__img" src="' . $cc_icon_url2 . '" />';
                         }
                         ?>
                     </div>
-                </li>
+                </div>
 
-                <li class="page-contacts__item">
-                    <div class="page-contacts__item__head">
-                        <div class="pci_heading"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_contact_card_head3') ?></div>
-                        <div class="pci_icon">
-                            <?php
-                            if ($pci_icon2 = carbon_get_post_meta(get_the_ID(), 'crb_contacts_cards_icon3')) {
-                                $cc_icon_url2 = wp_get_attachment_image_url($pci_icon2, 'full');
-                                echo '<img class="contact-card__icon__img" src="' . $cc_icon_url2 . '" />';
-                            }
-                            ?>
-                        </div>
-                    </div>
-
-                    <div class="page-contacts__item__content">
-                        <?php
-                        if ($contacts_items3 = carbon_get_post_meta(get_the_ID(), 'crb_contact_card_items3')) {
-                            foreach ($contacts_items3 as $contacts_item3) {
-                        ?>
-                        <div class="item-inner">
-                              <div class="item-contact">
+                <div class="page-contacts__item__content">
+                    <?php
+                    if ($contacts_items3 = carbon_get_post_meta(get_the_ID(), 'crb_contact_card_items3')) {
+                        foreach ($contacts_items3 as $contacts_item3) {
+                    ?>
+                            <div class="item-inner">
+                                <div class="item-contact">
                                     <?php echo $contacts_item3['crb_contacts_name3'] ?>
                                 </div>
 
@@ -137,41 +138,41 @@ get_header() ?>
                                         <?php echo $contacts_item3['crb_contacts_text3'] ?>
                                     </a>
                                 </div>
-                        </div>
-                              
+                            </div>
 
-                        <?php
-                            }
+
+                    <?php
                         }
-                        ?>
-                    </div>
-                </li>
+                    }
+                    ?>
+                </div>
+            </li>
         </ul>
 
         <div class="page-contacts__schedule">
             <?php
-                if ($shedule = carbon_get_post_meta(get_the_ID(), 'crb_contact_shed')){
-                    echo $shedule;
-                }
+            if ($shedule = carbon_get_post_meta(get_the_ID(), 'crb_contact_shed')) {
+                echo $shedule;
+            }
             ?>
         </div>
- </div>
- 
-        <div class="subscribe-us">
-            <div class="container">
-                <div class="subscribe-us__description">
+    </div>
+
+    <div class="subscribe-us">
+        <div class="container">
+            <div class="subscribe-us__description">
                 Как оставаться в&nbsp;курсе последних событий и акций?
-                </div>
+            </div>
 
-                <h3 class="subscribe-us__title">
+            <h3 class="subscribe-us__title">
                 Подписывайтесь на&nbsp;наши сообщества
-                </h3>
+            </h3>
 
-               <?php
-                if ($crb_contacts = carbon_get_theme_option('crb_messengers_contacts')) {
-                ?>
+            <?php
+            if ($crb_contacts = carbon_get_theme_option('crb_messengers_contacts')) {
+            ?>
                 <ul class="contact-page__messengers">
-                
+
 
                     <?php
                     foreach ($crb_contacts as $crb_contact) {
@@ -191,19 +192,19 @@ get_header() ?>
                     <?php
                     }
                     ?>
-               
-            </ul>
- <?php
-                }
-                ?>
-            </div>
+
+                </ul>
+            <?php
+            }
+            ?>
         </div>
+    </div>
 
 
 
 
 
-   
+
 </section>
 
 <?php get_footer() ?>
