@@ -241,26 +241,26 @@ function site_carbon()
     Container::make('post_meta', 'Схемы и планы')
         ->show_on_template(array ('page-scheme.php', 'map.php'))
         ->add_tab(__('1 этаж'), array(
-            //Field::make('image', 'crb_scheme1f_img', 'Изображение 1 этажа'),
-            // Field::make('complex', 'crb_scheme1f_list', 'Расшифровка схемы')
-            //     ->add_fields(array(
-            //         Field::make('text', 'crb_scheme1f_list_number', 'Подпись к цифре')
-            //             ->set_width(50),
-            //         Field::make('text', 'crb_scheme1f_list_desc', 'Подпись к цифре')
-            //             ->set_width(50),
-            //     ))
-
-
-            Field::make('complex', 'crb_scheme1f_items', 'Расшифровка схемы')
+            Field::make('image', 'crb_scheme1f_img', 'Изображение 1 этажа'),
+            Field::make('complex', 'crb_scheme1f_list', 'Расшифровка схемы')
                 ->add_fields(array(
-                    // Field::make('text', 'crb_scheme1f_list_id', 'Цифра для id')
-                    //     ->set_width(33)
-                    //     ->help_text('поле вида: номер этажа _ номер секции (в случае, если секция имеет два номера, то их писать через нижнее подчеркивание)'),
-                    Field::make('text', 'crb_scheme1f_list_number', 'Номер секции')
-                        ->set_width(33),
-                    Field::make('text', 'crb_scheme1f_list_name', 'Название магазина')
-                        ->set_width(33),
+                    Field::make('text', 'crb_scheme1f_list_number', 'Подпись к цифре')
+                        ->set_width(50),
+                    Field::make('text', 'crb_scheme1f_list_desc', 'Подпись к цифре')
+                        ->set_width(50),
                 ))
+
+
+            // Field::make('complex', 'crb_scheme1f_items', 'Расшифровка схемы')
+            //     ->add_fields(array(
+            //         // Field::make('text', 'crb_scheme1f_list_id', 'Цифра для id')
+            //         //     ->set_width(33)
+            //         //     ->help_text('поле вида: номер этажа _ номер секции (в случае, если секция имеет два номера, то их писать через нижнее подчеркивание)'),
+            //         Field::make('text', 'crb_scheme1f_list_number', 'Номер секции')
+            //             ->set_width(33),
+            //         Field::make('text', 'crb_scheme1f_list_name', 'Название магазина')
+            //             ->set_width(33),
+            //     ))
 
         
 
