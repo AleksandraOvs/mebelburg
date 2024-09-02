@@ -54,6 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
     //     //
     //   }); 
 
+    document.addEventListener('wpcf7submit', function( event ){
+        //alert ('submit');
+        location = "https://mobelburg.ru/thank-you";
+    }, false );
+
 });
 
 
