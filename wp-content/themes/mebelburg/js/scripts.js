@@ -50,14 +50,16 @@ document.addEventListener("DOMContentLoaded", () => {
     siteDev.textContent = 'Разработка';
     }
 
-    // Fancybox.bind('[data-fancybox]', {
-    //     //
-    //   }); 
-
-    document.addEventListener('wpcf7submit', function( event ){
-        //alert ('submit');
-        location = "https://mobelburg.ru/thank-you";
-    }, false );
+    document.addEventListener('wpcf7mailsent', function( event ){
+  
+           if (/rent/.test(location.href)) {
+            location = "https://mobelburg.ru/thank-you-rent";
+          } 
+    
+          if (/advertising/.test(location.href)) {
+            location = "https://mobelburg.ru/thank-you-adv";
+          } 
+        }, false );
 
 });
 
