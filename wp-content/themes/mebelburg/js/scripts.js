@@ -53,11 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener('wpcf7mailsent', function( event ){
   
            if (/rent/.test(location.href)) {
-            location = "https://mobelburg.ru/thank-you-rent";
+            location = "https://mobelburg.ru/rent/thank-you-rent";
           } 
     
           if (/advertising/.test(location.href)) {
-            location = "https://mobelburg.ru/thank-you-adv";
+            location = "https://mobelburg.ru/advertising/thank-you-adv";
           } 
         }, false );
 
