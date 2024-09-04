@@ -239,7 +239,7 @@ function site_carbon()
         ));
 
     Container::make('post_meta', 'Схемы и планы')
-        ->show_on_template(array ('page-scheme.php', 'map.php'))
+        ->show_on_template(array ('page-scheme.php', 'page-imagemap.php', 'map.php'))
         ->add_tab(__('1 этаж'), array(
             Field::make('image', 'crb_scheme1f_img', 'Изображение 1 этажа'),
             Field::make('complex', 'crb_scheme1f_list', 'Расшифровка схемы')
@@ -367,7 +367,17 @@ function site_carbon()
                     Field::make('text', 'crb_scheme3f_list_desc', 'Подпись к цифре')
                         ->set_width(50),
                 ))
-        ));
+        ))
+
+                ->add_tab(__('Слайды с image-map'), array(
+                    Field::make('text', 'crb_imagemap1_shortcode', 'Шорткод для первого этажа')
+                    ->set_width(30),
+                    Field::make('text', 'crb_imagemap2_shortcode', 'Шорткод для второго этажа')
+                    ->set_width(30),
+                    Field::make('text', 'crb_imagemap3_shortcode', 'Шорткод для третьего этажа')
+                    ->set_width(30),
+                
+                ));
 
     Container::make('post_meta', 'Схемы и планы')
         ->show_on_template('page-plan.php')
