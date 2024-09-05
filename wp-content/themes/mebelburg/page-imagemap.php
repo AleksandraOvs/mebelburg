@@ -30,6 +30,7 @@ get_header() ?>
         </div>
 
         <div class="page-section__content _page-scheme__content">
+        
             <div class="swiper floors-slider">
                 <div class="floors-slider__button-prev">
                     <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,6 +49,9 @@ get_header() ?>
                     ?>
 
                         <div class="swiper-slide floors-slider__slide">
+                        <div class="floors-slider__slide__floor">
+                                <p>1 этаж</p>
+                            </div>
                             <!-- <a data-fancybox="gallery" data-src="<?php //echo $floor1_slide_img_url; 
                                                                         ?>">
 
@@ -60,12 +64,6 @@ get_header() ?>
                             echo do_shortcode($var1);
                             // echo $im_1floor;
                             ?>
-
-
-
-                            <div class="floors-slider__slide__floor">
-                                <p>1 этаж</p>
-                            </div>
 
                             <ul class="floors-slider__slide__number-list">
                                 <?php
@@ -88,15 +86,15 @@ get_header() ?>
                         //  foreach ($floors_slides as $floor_slide) {
                         ?>
                         <div class="swiper-slide floors-slider__slide">
+                            
+                        <div class="floors-slider__slide__floor">
+                                <p>2 этаж</p>
+                            </div>
                         <?php
                             $var2 = '[' . $im_2floor . ']';
                             echo do_shortcode($var2);
                             // echo $im_1floor;
                             ?>
-
-                            <div class="floors-slider__slide__floor">
-                                <p>2 этаж</p>
-                            </div>
 
                             <ul class="floors-slider__slide__number-list">
                                 <?php
@@ -119,18 +117,15 @@ get_header() ?>
                         //  foreach ($floors_slides as $floor_slide) {
                     ?>
                         <div class="swiper-slide floors-slider__slide">
+                            
+                        <div class="floors-slider__slide__floor">
+                                <p>3 этаж</p>
+                            </div>
                         <?php
                             $var3 = '[' . $im_3floor . ']';
                             echo do_shortcode($var3);
                             // echo $im_1floor;
                             ?>
-
-
-
-
-                            <div class="floors-slider__slide__floor">
-                                <p>3 этаж</p>
-                            </div>
 
                             <ul class="floors-slider__slide__number-list">
                                 <?php
