@@ -375,6 +375,7 @@ nav.header__inner__bottom .main-menu {
   font-family: 'Inter-Tight', sans-serif;
   font-size: 14px;
   line-height: 1;
+  text-decoration: none;
   white-space: nowrap;
   color: var(--black);
   font-weight: 400;
