@@ -1648,6 +1648,8 @@ li.page-contacts__item {
 .item-contact__link a {
   font-size: 20px;
   font-weight: 500;
+  color: var(--black);
+  text-decoration: none;
 }
 
 .page-contacts__item__content .item-inner:not(:last-child) {
