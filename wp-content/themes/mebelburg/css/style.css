@@ -2002,6 +2002,7 @@ ul.section-plan__grid li:nth-child(5):after {
   position: relative;
   margin-bottom: 5px;
   padding-bottom: 2px;
+  text-decoration: none;
   display: inline;
   background: transparent;
   line-height: 2;
