@@ -24,10 +24,11 @@ function wp_js_and_css()
 	wp_enqueue_script('fancy_scripts', get_stylesheet_directory_uri() . '/js/jquery.fancybox.min.js', array('jquery'), null, true);
 	wp_enqueue_script('jquery-ui', get_stylesheet_directory_uri() . '/js/jquery-ui.js', array('jquery'), null, true);
 	wp_enqueue_script('popups-script', get_stylesheet_directory_uri() . '/js/popups.js', array('jquery'), null, true);
-	if (is_page('imap')){
-		wp_enqueue_script('map_scripts', get_stylesheet_directory_uri() . '/map/map-js.js', array('jquery'), null, true);
-		wp_enqueue_style('map_styles', get_stylesheet_directory_uri() . '/map/map-styles.css', array(), time());
-	}
+	//if (is_page('imap')){
+		//wp_enqueue_script('map_scripts', get_stylesheet_directory_uri() . '/map/map-js.js', array('jquery'), null, true);
+		//wp_enqueue_style('map_styles', get_stylesheet_directory_uri() . '/map/map-styles.css', array(), time());
+		wp_enqueue_script('image_pro_scripts', get_stylesheet_directory_uri() . '/js/image-map-pro.min.js', array('jquery'), null, true);
+	//}
 };
 
 require 'init/carbon-fields.php';
