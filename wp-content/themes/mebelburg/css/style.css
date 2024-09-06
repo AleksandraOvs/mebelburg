@@ -1039,6 +1039,11 @@ li.post-block__item:hover .post-block__item__content .post__content .post-thumbn
   justify-content: space-between;
 }
 
+.post-block__item__content a {
+  text-decoration: none;
+  color: var(--black);
+}
+
 .post__time {
   margin-top: 20px;
   font-size: 14px;
