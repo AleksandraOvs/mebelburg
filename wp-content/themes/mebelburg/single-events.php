@@ -4,7 +4,11 @@
     <div class="container">
         <div class="page-section__header">
             <ul class="breadcrumbs__list">
-                крошки крошки
+                <a href="<?php echo site_url() ?>">Главная</a>
+                    <span> / </span>
+                    <a href="<?php echo site_url()?>/events">Мероприятия</a>
+                    <span> / </span>
+                    <?php the_title() ?>
                 <?php //echo site_breadcrumbs(); ?>
             </ul>
 
