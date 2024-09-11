@@ -4,6 +4,7 @@
     <div class="container">
         <div class="page-section__header">
             <ul class="breadcrumbs__list">
+                крошки крошки
                 <?php //echo site_breadcrumbs(); ?>
             </ul>
 
