@@ -52,9 +52,6 @@ get_header() ?>
 
                                 <img class="floors-slider__img" src="<?php echo $floor1_slide_img_url; ?>" alt="">
                             </a>
-
-
-
                             <div class="floors-slider__slide__floor">
                                 <p>1 этаж</p>
                             </div>

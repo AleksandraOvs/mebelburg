@@ -29,7 +29,49 @@ get_header() ?>
             </div>
         </div>
 
+<<<<<<< HEAD
         <div id="image-map-pro"></div>
+=======
+        <div class="page-section__content _page-scheme__content _map">
+            <div class="swiper floors-slider">
+                <div class="floors-slider__button-prev">
+                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1L1 6L6 11" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1 6H19" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="swiper-wrapper floors-slider__wrapper">
+                    <div class="swiper-slide floors-slider__slide">
+                        <div class="floors-slider__slide__floor">
+                            <p>1 этаж</p>
+                        </div>
+                        <div class="floors-slider__slide__floor__content">
+                            <?php get_template_part('map/floor1') ?>
+                            <ul class="floors-slider__slide__number-list areas-table" id="areas">
+                                <?php
+                                if ($shop_names = carbon_get_post_meta(get_the_ID(), 'crb_scheme1f_items')) {
+                                    $i = 0;
+                                    foreach ($shop_names as $shop_name) {
+                                        $i++;
+
+                                        if ($shop = $shop_name['crb_scheme1f_list_name']){
+                                            echo '<li id="area' . $i . '" class="area-item">
+        <input class="areas-input" type="checkbox"><span class="number-list__num">' . $shop_name['crb_scheme1f_list_number'] . '</span><span class="area-item__name">' . $shop . '</span></li>';
+                                        }
+                                    }
+                                ?>
+                                    </li>
+                                <?php
+                                }
+
+                                ?>
+                            </ul>
+                        </div>
+                    </div><!-- /end of slide -->
+                </div>
+            </div>
+        </div>
+>>>>>>> 4bef5e6c3e69723a34dbcc920e99ee7d8a10877d
     </div>
 
 </section>

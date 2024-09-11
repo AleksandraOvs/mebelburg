@@ -138,7 +138,7 @@
     fill: #472659;
 }
 
-.selected path, g.selected polygon, g.selected rect {
+.selected path, g.selected polygon, g.selected rect, g.selected polyline {
     position:relative;
     fill: #fff5e1;
 }
