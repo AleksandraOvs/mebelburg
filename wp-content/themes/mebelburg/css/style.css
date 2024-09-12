@@ -485,7 +485,7 @@ section.hero-block {
 
 .floors-slider__button-prev,
 .floors-slider__button-next {
-  top: 20%;
+  top: calc(50% - 50px);
 }
 
 .floors-slider__button-prev,
