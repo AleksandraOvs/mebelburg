@@ -229,7 +229,7 @@ get_header() ?>
             <h2>Хотите арендовать помещение?</h2>
             <div class="form-block__description">
             <p>Оставьте заявку и&nbsp;мы свяжемся с&nbsp;вами для обсуждения деталей.</p>
-            <p>Или напрямую позвоните менеджеру по&nbsp;аренде по телефону <a href="tel:+79500011618">+7&nbsp;950&nbsp;001-16-18</a></p>
+            <p>Или напрямую позвоните менеджеру по&nbsp;аренде по телефонам: <a href="tel:+79500011618">+7&nbsp;950&nbsp;001-16-18</a>, <a href="tel:+79910151512">+7&nbsp;991&nbsp;015-15-12</a></p>
             </div>
 
             <?php if ($rent_contactform = carbon_get_theme_option('crb_cf_rent')) {

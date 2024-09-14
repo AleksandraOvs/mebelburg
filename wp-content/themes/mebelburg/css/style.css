@@ -452,6 +452,7 @@ section.hero-block {
 }
 
 .swiper-slide.hero-slider__slide {
+  background: #fff;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
