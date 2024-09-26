@@ -66,6 +66,10 @@ body._fixed {
   min-height: 100vh;
 }
 
+.bold{
+  font-weight: 500;
+}
+
 h1 {
   font-size: 80px;
   font-family: 'Inter-Tight', sans-serif;
@@ -171,7 +175,7 @@ p {
 
 header.header {
   position: fixed;
-  z-index: 10;
+  z-index: 50;
   width: 100%;
 }
 
@@ -399,28 +403,6 @@ nav.header__inner__bottom .main-menu {
   gap: 6px;
   justify-content: space-between;
 }
-
-/* 
-.header__menu li:nth-child(6) {
-  margin-right: 220px;
-} */
-
-/**********************************************************/
-/* ul.header__inner__menu1,
-ul.header__inner__menu2 {
-  list-style: none;
-  display: flex;
-  gap: 6px;
-}
-
-.header__inner .container {
-  display: flex;
-}
-
-.header__inner .container {
-  display: flex;
-  justify-content: space-between;
-} */
 
 /*BREADCRUMBS*/
 
@@ -1289,7 +1271,8 @@ ul.section-rent__grid li:nth-child(4) .section-plan__grid__item__content {
 
 .section-rent__grid__item__content__bottom,
 .section-advertising__grid__item__content__bottom,
-.section-plan__grid__item__content__bottom {
+.section-plan__grid__item__content__bottom,
+.section-loyalty__grid__item__content__bottom {
   font-size: 20px;
   font-weight: 500;
   line-height: 100%;

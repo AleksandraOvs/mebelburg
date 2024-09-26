@@ -19,7 +19,6 @@ function site_carbon()
             Field::make('image', 'crb_address_icon', 'Иконка адреса')
                 ->set_width(50),
 
-
             Field::make('complex', 'crb_messengers_contacts', 'Контакты')
                 ->add_fields(array(
                     Field::make('text', 'crb_contact_name', 'Название')
@@ -37,14 +36,10 @@ function site_carbon()
             Field::make('text', 'crb_link_map', 'Ссылка')
                 ->help_text('слаг страницы, например /contacts')
                 ->set_width(33),
-
-
-
             Field::make('text', 'crb_header_shed', 'Часы работы')
                 ->set_width(50),
             Field::make('image', 'crb_header_shed_icon', 'Иконка')
                 ->set_width(50),
-
         ))
 
         ->add_tab(__('Мессенджеры'), array(
@@ -92,8 +87,6 @@ function site_carbon()
 
         ));
 
-
-
     Container::make('theme_options', 'Первый экран')
 
         ->set_page_menu_position(2)
@@ -124,12 +117,8 @@ function site_carbon()
                         ->set_width(40),
                     Field::make('rich_text', 'crb_advice_text', 'Текст совета')
                         ->set_width(60)
-
                 ))
-
         ));
-
-
 
     Container::make('post_meta', 'Информация о магазине')
         ->show_on_post_type('shops')
@@ -239,7 +228,7 @@ function site_carbon()
         ));
 
     Container::make('post_meta', 'Схемы и планы')
-        ->show_on_template(array ('page-scheme.php', 'page-imagemap.php', 'map.php'))
+        ->show_on_template(array('page-scheme.php', 'page-imagemap.php', 'map.php'))
         ->add_tab(__('1 этаж'), array(
             Field::make('image', 'crb_scheme1f_img', 'Изображение 1 этажа'),
             Field::make('complex', 'crb_scheme1f_list', 'Расшифровка схемы')
@@ -249,7 +238,6 @@ function site_carbon()
                     Field::make('text', 'crb_scheme1f_list_desc', 'Подпись к цифре')
                         ->set_width(50),
                 ))
-
 
             // Field::make('complex', 'crb_scheme1f_items', 'Расшифровка схемы')
             //     ->add_fields(array(
@@ -261,10 +249,6 @@ function site_carbon()
             //         Field::make('text', 'crb_scheme1f_list_name', 'Название магазина')
             //             ->set_width(33),
             //     ))
-
-        
-
-
 
             // Field::make('text', 'crb_scheme1_1', '#1')
             // ->set_width(20),
@@ -342,9 +326,6 @@ function site_carbon()
             // ->set_width(20),
             // Field::make('text', 'crb_scheme1_49', '#49')
             // ->set_width(20)
-
-
-
         ))
 
         ->add_tab(__('2 этаж'), array(
@@ -369,15 +350,15 @@ function site_carbon()
                 ))
         ))
 
-                ->add_tab(__('Слайды с image-map'), array(
-                    Field::make('text', 'crb_imagemap1_shortcode', 'Шорткод для первого этажа')
-                    ->set_width(30),
-                    Field::make('text', 'crb_imagemap2_shortcode', 'Шорткод для второго этажа')
-                    ->set_width(30),
-                    Field::make('text', 'crb_imagemap3_shortcode', 'Шорткод для третьего этажа')
-                    ->set_width(30),
-                
-                ));
+        ->add_tab(__('Слайды с image-map'), array(
+            Field::make('text', 'crb_imagemap1_shortcode', 'Шорткод для первого этажа')
+                ->set_width(30),
+            Field::make('text', 'crb_imagemap2_shortcode', 'Шорткод для второго этажа')
+                ->set_width(30),
+            Field::make('text', 'crb_imagemap3_shortcode', 'Шорткод для третьего этажа')
+                ->set_width(30),
+
+        ));
 
     Container::make('post_meta', 'Схемы и планы')
         ->show_on_template('page-plan.php')
@@ -392,5 +373,23 @@ function site_carbon()
                     Field::make('text', 'crb_plan_list_desc', 'Подпись к цифре')
                         ->set_width(50)
                 ))
+        ));
+
+    Container::make('post_meta', 'Контент для страницы Лояльности')
+        ->show_on_template('page-loyalty.php')
+        ->add_tab(__('Логотипы партнёров'), array(
+            Field::make('complex', 'crb_loyalty_partners', 'Лого партнёров')
+                ->add_fields(array(
+                    Field::make('image', 'crb_partner_logo', 'Логотип')
+                        ->set_width(50),
+                    Field::make('text', 'crb_partner_logo_alt', 'Alt лого')
+                        ->set_width(50)
+                )),
+        ))
+
+        ->add_tab(__('Форма обратной связи'), array(
+            Field::make('text', 'crb_cf_loyalty', 'Контактная форма для страницы Лояльности')
+                ->help_text('вставьте шорткод для формы обратной связи в это поле')
+                ->set_width(33),
         ));
 }
