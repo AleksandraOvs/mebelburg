@@ -4062,6 +4062,10 @@ h2.enter__title_events {
     max-width: 90%;
   }
 
+  .page__title {
+    width: 100%;
+  }
+
   /* .swiper-slide.floors-slider__slide a {
     display: block;
     width: 100%;
