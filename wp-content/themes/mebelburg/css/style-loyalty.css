@@ -2,6 +2,10 @@
     margin: 35px auto 55px;
 }
 
+section.page-section._page-loyalty {
+    padding-bottom: 0;
+}
+
 .section-loyalty__grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
