@@ -11,6 +11,7 @@ function wp_js_and_css()
 	//wp_enqueue_style('swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css');
 	wp_enqueue_style('swiper-style', get_stylesheet_directory_uri() . '/css/swiper-bundle.min.css', array(), time());
 	wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/style.css', array(), time());
+	wp_enqueue_style('loyalty_styles', get_stylesheet_directory_uri() . '/css/style-loyalty.css', array(), time());
 	wp_enqueue_style('fonts', get_stylesheet_directory_uri() . '/css/fonts.css', array(), time());
 	wp_enqueue_style('fancy_styles', get_stylesheet_directory_uri() . '/css/jquery.fancybox.min.css', array(), time());
 	wp_enqueue_style('popups_styles', get_stylesheet_directory_uri() . '/css/popups.css', array(), time());
