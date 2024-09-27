@@ -314,4 +314,9 @@ h4.for-members__heading {
     ul.section-loyalty__grid li:nth-child(5) {
         grid-area: unset;
     }
+
+    .form-rent p .wpcf7-form-control-wrap {
+        display: block;
+        width: 100%;
+    }
 }
