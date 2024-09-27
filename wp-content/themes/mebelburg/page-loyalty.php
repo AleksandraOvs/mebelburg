@@ -21,7 +21,7 @@ get_header() ?>
                     Ищем дизайнеров, декораторов и&nbsp;дизайн-студии, которым интересно развитие в&nbsp;своём деле и&nbsp;сотрудничество с&nbsp;нами
                 </p>
 
-                <a href="/my-account" class="button">Участвовать</a>
+                <a href="#form-loyalty" class="button">Участвовать</a>
             </div>
         </div>
 
@@ -189,7 +189,7 @@ get_header() ?>
     </div>
 
 
-    <div class="section-rent__causes__form-block">
+    <div class="section-rent__causes__form-block" id="form-loyalty">
         <div class="container">
             <h2>Хотите стать участником программы??</h2>
             <p class="form-block__description">
