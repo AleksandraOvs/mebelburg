@@ -241,9 +241,6 @@ h4.for-members__heading {
     .section-steps__list{
         grid-template-columns: repeat(1, 1fr);
     }
-}
-
-@media (max-width: 1024px){
     li#menu-item-1017 {
         display: block;
     }
@@ -261,6 +258,10 @@ h4.for-members__heading {
     a.header__top__link{
         display:none;
     }
+}
+
+@media (max-width: 1024px){
+    
 }
 
 @media (max-width: 768px) {
