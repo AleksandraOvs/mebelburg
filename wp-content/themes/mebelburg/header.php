@@ -42,6 +42,8 @@
                             echo '<p class="address">' . $address . '</p>';
                         }
                         ?>
+
+                        <a class="header__top__link" href="/">Программа лояльности</a>
                     </div>
 
                     <ul class="header__top__messengers">

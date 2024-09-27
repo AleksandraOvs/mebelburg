@@ -199,6 +199,11 @@ header.header {
   margin-left: 10px;
 }
 
+a.header__top__link {
+  color: #fff;
+  padding: 0 25px;
+}
+
 img.address__img {
   width: 16px;
   height: 16px;
