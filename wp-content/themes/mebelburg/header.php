@@ -43,7 +43,7 @@
                         }
                         ?>
 
-                        <a class="header__top__link" href="/">Программа лояльности</a>
+                        <a class="header__top__link" href="/loyalty">Программа лояльности</a>
                     </div>
 
                     <ul class="header__top__messengers">
