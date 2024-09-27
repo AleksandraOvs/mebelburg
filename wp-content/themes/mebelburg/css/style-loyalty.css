@@ -257,6 +257,10 @@ h4.for-members__heading {
     li#menu-item-1017 a{
         color: #fff;
     }
+
+    a.header__top__link{
+        display:none;
+    }
 }
 
 @media (max-width: 768px) {
