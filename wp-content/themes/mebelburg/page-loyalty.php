@@ -21,7 +21,7 @@ get_header() ?>
                     Ищем дизайнеров, декораторов и&nbsp;дизайн-студии, которым интересно развитие в&nbsp;своём деле и&nbsp;сотрудничество с&nbsp;нами
                 </p>
 
-                <a href="/loyalty" class="button">Участвовать</a>
+                <a href="/my-account" class="button">Участвовать</a>
             </div>
         </div>
 
