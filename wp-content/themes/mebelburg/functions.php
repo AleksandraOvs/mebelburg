@@ -15,6 +15,7 @@ function wp_js_and_css()
 	wp_enqueue_style('fonts', get_stylesheet_directory_uri() . '/css/fonts.css', array(), time());
 	wp_enqueue_style('fancy_styles', get_stylesheet_directory_uri() . '/css/jquery.fancybox.min.css', array(), time());
 	wp_enqueue_style('popups_styles', get_stylesheet_directory_uri() . '/css/popups.css', array(), time());
+	wp_enqueue_style('account_styles', get_stylesheet_directory_uri() . '/css/account.css', array(), time());
 
 	wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', get_stylesheet_directory_uri() . '/js/jquery-3.7.1.min.js', array(), null, true);
