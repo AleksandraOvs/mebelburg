@@ -1392,7 +1392,6 @@ section.page-section._page-adv h2 {
   flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2%;
-  justify-content: center;
   row-gap: 60px;
 }
 
