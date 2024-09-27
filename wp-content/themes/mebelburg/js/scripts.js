@@ -26,7 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
         let navItemLength = document.querySelectorAll('nav .main-menu li').length;
         let ourLogo = document.querySelector('.container .header__inner__logo');
 
-        let menuItems = document.querySelectorAll('nav .main-menu li:nth-child(' + Math.floor(navItemLength / 2 + 1) + ')');
+        // let menuItems = document.querySelectorAll('nav .main-menu li:nth-child(' + Math.floor(navItemLength / 2 + 1) + ')');
+
+        let menuItems = document.querySelectorAll('nav .main-menu li:nth-child(' + Math.floor(navItemLength / 2 ) + ')');
 
         for (var i = 0; i < menuItems.length; i++) {
             menuItems[i].after(ourLogo);
