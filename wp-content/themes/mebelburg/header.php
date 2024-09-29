@@ -43,7 +43,10 @@
                         }
                         ?>
 
-                        <a class="header__top__link" href="/loyalty">Программа лояльности</a>
+                        <div class="loyalty-link">
+                            <img src="<?php echo get_stylesheet_directory_uri() ?>/images/svg/user.svg" alt="">
+                            <a class="header__top__link" href="/loyalty">Программа лояльности</a>
+                        </div>
                     </div>
 
                     <ul class="header__top__messengers">

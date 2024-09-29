@@ -199,9 +199,22 @@ header.header {
   margin-left: 10px;
 }
 
+.loyalty-link {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.loyalty-link img{
+  width: 16px;
+    height: 16px;
+    object-fit: contain;
+    object-position: center;
+    margin-right: 10px;
+}
+
 a.header__top__link {
   color: #fff;
-  padding: 0 25px;
 }
 
 img.address__img {
