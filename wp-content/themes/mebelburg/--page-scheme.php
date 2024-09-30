@@ -42,18 +42,22 @@ get_header() ?>
 
                     <!-- 1 floor -->
                     <?php
-                    if ($im_1floor = carbon_get_post_meta(get_the_ID(), 'crb_imagemap1_shortcode')) {
+                    if ($floor1_slide = carbon_get_post_meta(get_the_ID(), 'crb_scheme1f_img')) {
+                        //  foreach ($floors_slides as $floor_slide) {
+                        $floor1_slide_img_url = wp_get_attachment_image_url($floor1_slide, 'full');
                     ?>
 
                         <div class="swiper-slide floors-slider__slide">
+                            <a data-fancybox="gallery" data-src="<?php echo $floor1_slide_img_url; ?>">
+
+                                <img class="floors-slider__img" src="<?php echo $floor1_slide_img_url; ?>" alt="">
+                            </a>
+
+
+
                             <div class="floors-slider__slide__floor">
                                 <p>1 этаж</p>
                             </div>
-
-                            <?php
-                            $var1 = '[' . $im_1floor . ']';
-                            echo do_shortcode($var1);
-                            ?>
 
                             <ul class="floors-slider__slide__number-list">
                                 <?php
@@ -72,17 +76,21 @@ get_header() ?>
 
                     <!-- 2 floor -->
                     <?php
-                    if ($im_2floor = carbon_get_post_meta(get_the_ID(), 'crb_imagemap2_shortcode')) {
+                    if ($floor2_slide = carbon_get_post_meta(get_the_ID(), 'crb_scheme2f_img')) {
+                        //  foreach ($floors_slides as $floor_slide) {
+                        $floor2_slide_img_url = wp_get_attachment_image_url($floor2_slide, 'full');
                     ?>
                         <div class="swiper-slide floors-slider__slide">
+                            <a data-fancybox="gallery" data-src="<?php echo $floor2_slide_img_url; ?>">
+
+                                <img class="floors-slider__img" src="<?php echo $floor2_slide_img_url; ?>" alt="">
+                            </a>
+
+
 
                             <div class="floors-slider__slide__floor">
                                 <p>2 этаж</p>
                             </div>
-                            <?php
-                            $var2 = '[' . $im_2floor . ']';
-                            echo do_shortcode($var2);
-                            ?>
 
                             <ul class="floors-slider__slide__number-list">
                                 <?php
@@ -96,21 +104,27 @@ get_header() ?>
                         </div>
                     <?php
                     }
+                    //  }
                     ?>
 
                     <!-- 3 floor -->
                     <?php
-                    if ($im_3floor = carbon_get_post_meta(get_the_ID(), 'crb_imagemap3_shortcode')) {
+                    if ($floor3_slide = carbon_get_post_meta(get_the_ID(), 'crb_scheme3f_img')) {
+                        //  foreach ($floors_slides as $floor_slide) {
+                        $floor3_slide_img_url = wp_get_attachment_image_url($floor3_slide, 'full');
                     ?>
                         <div class="swiper-slide floors-slider__slide">
+                            <a data-fancybox="gallery" data-src="<?php echo $floor3_slide_img_url; ?>">
+
+                                <img class="floors-slider__img" src="<?php echo $floor3_slide_img_url; ?>" alt="">
+                            </a>
+
+
+
 
                             <div class="floors-slider__slide__floor">
                                 <p>3 этаж</p>
                             </div>
-                            <?php
-                            $var3 = '[' . $im_3floor . ']';
-                            echo do_shortcode($var3);
-                            ?>
 
                             <ul class="floors-slider__slide__number-list">
                                 <?php
@@ -124,6 +138,7 @@ get_header() ?>
                         </div>
                     <?php
                     }
+                    //  }
                     ?>
 
                 </div>
