@@ -79,7 +79,8 @@ form#login #submit {
 }
 
 .tml.tml-login form,
-.tml.tml-lostpassword form {
+.tml.tml-lostpassword form,
+.tml.tml-register {
     margin: 0 auto;
     width: 70%;
 }
@@ -135,10 +136,14 @@ ul.tml-links li {
     list-style: none;
 }
 
-.tml-dashboard {
+/* .tml-dashboard {
     border: 1px solid var(--black);
     border-radius: 20px;
     padding: 20px;
+} */
+
+.page-section__content .tml-dashboard .tml-dashboard-links li:first-child {
+    display: none;
 }
 
 .tml-dashboard-avatar {
@@ -160,11 +165,19 @@ p.tml-dashboard-greeting {
     font-style: italic;
 }
 
-.page-section__content .tml-dashboard {
+/* .page-section__content .tml-dashboard {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.1);
+} */
+
+.tml-dashboard-avatar {
+    display: none;
+}
+
+.page-section__content .tml-dashboard .tml-dashboard-greeting {
+    display: none;
 }
 
 ul.tml-dashboard-links {
@@ -197,4 +210,67 @@ ul.tml-dashboard-links li a:hover{
     background: #fff;
     color: var(--black);
     transition: all .5s linear;
+}
+
+p.wppb-alert {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-section__content._dashboard-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-section__content._dashboard-content .tml-dashboard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    /* display: flex; */
+    align-items: center;
+}
+
+
+.section-title{
+    width: 80%;
+    margin: 0 auto;
+    font-size: calc(1em + 2.5vw);
+    font-family: 'Inter-Tight', sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+p.user-greeting {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+._dashboard-events{
+    margin-top: 5vh;
+}
+
+.section-title._promocode{
+    margin-top: 5vh;
+}
+
+.promocode-inner{
+    max-width:50%;
+    margin: 40px auto;
+    padding: 10px 20px;
+    border-radius:30px;
+    border:1px solid var(--black);
+    background: rgba(0,0,0,.1);
+}
+
+.promocode-inner p{
+    font-size:20px;
+    color: var(--black);
+    text-transform:uppercase;
 }

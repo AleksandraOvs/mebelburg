@@ -27,9 +27,9 @@ function wp_js_and_css()
 	wp_enqueue_script('jquery-ui', get_stylesheet_directory_uri() . '/js/jquery-ui.js', array('jquery'), null, true);
 	wp_enqueue_script('popups-script', get_stylesheet_directory_uri() . '/js/popups.js', array('jquery'), null, true);
 	//if (is_page('imap')){
-		//wp_enqueue_script('map_scripts', get_stylesheet_directory_uri() . '/map/map-js.js', array('jquery'), null, true);
-		//wp_enqueue_style('map_styles', get_stylesheet_directory_uri() . '/map/map-styles.css', array(), time());
-		wp_enqueue_script('image_pro_scripts', get_stylesheet_directory_uri() . '/js/image-map-pro.min.js', array('jquery'), null, true);
+	//wp_enqueue_script('map_scripts', get_stylesheet_directory_uri() . '/map/map-js.js', array('jquery'), null, true);
+	//wp_enqueue_style('map_styles', get_stylesheet_directory_uri() . '/map/map-styles.css', array(), time());
+	wp_enqueue_script('image_pro_scripts', get_stylesheet_directory_uri() . '/js/image-map-pro.min.js', array('jquery'), null, true);
 	//}
 };
 
@@ -47,6 +47,23 @@ function gut_styles()
 	add_theme_support('editor-styles');
 	add_editor_style('css/style-gutenberg.css');
 }
+
+function theme_setup()
+{
+	/*
+		* Make theme available for translation.
+		* Translations can be filed in the /languages/ directory.
+		* If you're building a theme based on untheme, use a find and replace
+		* to change 'untheme' to the name of your theme in all the template files.
+		*/
+	load_theme_textdomain('mbtheme', get_template_directory() . '/languages');
+
+}
+add_action('after_setup_theme', 'theme_setup');
+
+
+
+
 
 register_nav_menus(array(
 	'head_menu' => 'Main menu',
@@ -279,28 +296,26 @@ function register_widgets()
 // }
 
 //изменение количества выводимых записей для произвольного типа записи shops
-function modify_main_query( $query ) 
+function modify_main_query($query)
 {
-    if ( is_admin() || ! $query->is_main_query() ) {
-        return;
-    }
+	if (is_admin() || ! $query->is_main_query()) {
+		return;
+	}
 
-    if ( is_post_type_archive( 'shops' ) ) {
-        $query->set( 'posts_per_page', 15);
-        return;
-    }
+	if (is_post_type_archive('shops')) {
+		$query->set('posts_per_page', 15);
+		return;
+	}
 
-	if ( is_post_type_archive( 'sales' ) ) {
-        $query->set( 'posts_per_page', 6);
-        return;
-    }
+	if (is_post_type_archive('sales')) {
+		$query->set('posts_per_page', 6);
+		return;
+	}
 }
-add_action( 'pre_get_posts', 'modify_main_query' );
+add_action('pre_get_posts', 'modify_main_query');
 
 
 /**
  * Подгрузка постов ajax
  */
 require get_template_directory() . '/init/load-posts.php';
-
-

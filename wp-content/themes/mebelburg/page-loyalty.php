@@ -195,9 +195,13 @@ get_header() ?>
             <p class="form-block__description">
             Оставьте заявку на сайте, и&nbsp;наш менеджер свяжется с&nbsp;вами, чтобы уточнить детали и&nbsp;подтвердить участие
             </p>
-            <?php if ($loyalty_contactform = carbon_get_post_meta(get_the_ID(), 'crb_cf_loyalty')) {
-                echo do_shortcode(" $loyalty_contactform ");
-            } ?>
+
+            <?php echo do_shortcode('[theme-my-login]'); ?>
+            <?php
+            // if ($loyalty_contactform = carbon_get_post_meta(get_the_ID(), 'crb_cf_loyalty')) {
+            //     echo do_shortcode(" $loyalty_contactform ");
+            // }
+            ?>
             <?php //echo do_shortcode('[contact-form-7 id="8b26afb" title="Форма (реклама)"]')
             ?>
         </div>

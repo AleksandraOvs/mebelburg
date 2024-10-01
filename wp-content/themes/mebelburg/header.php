@@ -15,7 +15,7 @@
     <?php wp_head() ?>
 </head>
 
-<body class="relative">
+<body class="relative"> 
 
     <!-- Preloader -->
     <div class="loader-mask">
@@ -43,11 +43,29 @@
                         }
                         ?>
 
-                        <div class="loyalty-link">
-                            <img src="<?php echo get_stylesheet_directory_uri() ?>/images/svg/user.svg" alt="">
-                            <a class="header__top__link" href="/loyalty">Программа лояльности</a>
-                        </div>
+                        <?php  /* Панель входа на сайт */
+                        global $user_ID, $user_identity;
+                        wp_get_current_user();
+                        if (!$user_ID):
+                        ?>
+                            <div class="loyalty-link">
+                                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/svg/user.svg" alt="">
+                                <a class="header__top__link" href="/loyalty">Программа лояльности</a>
+                            </div>
+                        <?php else: ?>
+                            <div class="loyalty-link">
+                                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/svg/user.svg" alt="">
+                                <span>Привет,&nbsp;</span><a class="header__top__link" href="/dashboard"><?php _e(' '); ?><?php echo $user_identity; ?> !</a>
+                            </div>
+
+                        <?php endif; ?>
                     </div>
+                    <!-- <div class="loyalty-link">
+                    <img src="<?php //echo get_stylesheet_directory_uri() 
+                                ?>/images/svg/user.svg" alt="">
+                    <a class="header__top__link" href="/loyalty">Программа лояльности</a>
+                </div> -->
+
 
                     <ul class="header__top__messengers">
                         <?php
