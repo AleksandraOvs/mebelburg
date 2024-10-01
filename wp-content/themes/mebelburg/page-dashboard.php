@@ -128,39 +128,39 @@
                         <li class="section-steps__list__item">
                             <div class="causes-list__content">
                                 <div class="section-steps__head">
-                                    <h4>Доступность</h4>
+                                    <h4>Приводи клиентов</h4>
                                     <div class="item-num">
                                         <p>01</p>
                                     </div>
                                 </div>
                                 <div class="section-rent__causes__list__item__bottom">
-                                    <p>Оставьте заявку на&nbsp;сайте и&nbsp;ознакомьтесь с&nbsp;условиями программы лояльности</p>
+                                    <p>Каждая покупка твоих клиентов в&nbsp;нашем центре приближает тебя к&nbsp;победе</p>
                                 </div>
                             </div>
                         </li>
                         <li class="section-steps__list__item">
                             <div class="causes-list__content">
                                 <div class="section-steps__head">
-                                    <h4>Подтверждение</h4>
+                                    <h4>Регистрируй чеки</h4>
                                     <div class="item-num">
                                         <p>02</p>
                                     </div>
                                 </div>
                                 <div class="section-rent__causes__list__item__bottom">
-                                    <p>Дождитесь звонка менеджера — он подтвердит ваше участие в&nbsp;программе</p>
+                                    <p>Зарегистрируй чеки клиентов в&nbsp;специальной форме до&nbsp;31 декабря 2024&nbsp;год</p>
                                 </div>
                             </div>
                         </li>
                         <li class="section-steps__list__item">
                             <div class="causes-list__content">
                                 <div class="section-steps__head">
-                                    <h4>Бонусы</h4>
+                                    <h4>Выигрывай</h4>
                                     <div class="item-num">
                                         <p>03</p>
                                     </div>
                                 </div>
                                 <div class="section-rent__causes__list__item__bottom">
-                                    <p>Безоговорочно пользуйтесь бонусами, которые мы&nbsp;приготовили для&nbsp;вас</p>
+                                    <p>Дождись подведения итогов и&nbsp;выиграй графический планшет</p>
                                 </div>
                             </div>
                         </li>
