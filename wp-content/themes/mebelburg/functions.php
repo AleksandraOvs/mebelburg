@@ -1,5 +1,11 @@
 <?php
-
+add_action('after_setup_theme', 'remove_admin_bar');
+function remove_admin_bar()
+{
+	if (!current_user_can('administrator') && !is_admin()) {
+		show_admin_bar(false);
+	}
+}
 //require_once __DIR__ . '/init/walker.php' ;
 
 add_action('wp_enqueue_scripts', 'wp_js_and_css');
@@ -47,22 +53,6 @@ function gut_styles()
 	add_theme_support('editor-styles');
 	add_editor_style('css/style-gutenberg.css');
 }
-
-function theme_setup()
-{
-	/*
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on untheme, use a find and replace
-		* to change 'untheme' to the name of your theme in all the template files.
-		*/
-	load_theme_textdomain('mbtheme', get_template_directory() . '/languages');
-
-}
-add_action('after_setup_theme', 'theme_setup');
-
-
-
 
 
 register_nav_menus(array(
