@@ -321,6 +321,12 @@ function site_carbon()
 
         ->add_tab(__('Промокод на коворкинг'), array(
                     Field::make('text', 'crb_dashbord_promocode', 'Заголовок'),
-        ));
+        ))
+
+        ->add_tab(__('Контактная форма'), array(
+            Field::make('text', 'crb_dashbord_form_head', 'Заголовок формы'),
+            Field::make('text', 'crb_dashbord_form_desc', 'Подзаголовок формы'),
+            Field::make('text', 'crb_dashbord_form', 'Шорткод формы'),
+));
 
 }

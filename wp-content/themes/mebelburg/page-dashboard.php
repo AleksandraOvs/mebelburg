@@ -166,11 +166,27 @@
                         </li>
                     </ul>
 
+                    <?php
+                    if ($dashboard_contactform = carbon_get_post_meta(get_the_ID(), 'crb_dashbord_form')) {
+                    ?>
+                        <section class="section-dashboard__form">
+                            <?php if ($dashboard_contactform_head = carbon_get_post_meta(get_the_ID(), 'crb_dashbord_form_head')) {
+                                echo  '<h3 class="section-title">' . $dashboard_contactform_head . '</h3>';
+                            }
+                            ?>
 
+                            <?php if ($dashboard_contactform_desc = carbon_get_post_meta(get_the_ID(), 'crb_dashbord_form_desc')) {
+                                echo  '<p class="form-block__description">' . $dashboard_contactform_desc . '</p>';
+                            }
+                            ?>
 
-
-
-
+                            <?php
+                            echo do_shortcode(" $dashboard_contactform ");
+                            ?>
+                        </section>
+                    <?php
+                    }
+                    ?>
                     <?php //echo do_shortcode('[contact-form-7 id="f896057" title="Contact form 1"]')
                     ?>
             </div>

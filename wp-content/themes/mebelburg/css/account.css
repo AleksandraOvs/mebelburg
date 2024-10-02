@@ -278,3 +278,13 @@ p.user-greeting {
     color: var(--black);
     text-transform:uppercase;
 }
+
+.section-dashboard__form{
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.page-section__content._dashboard-content .section-dashboard__form {
+    margin-top: 10vh;
+}
