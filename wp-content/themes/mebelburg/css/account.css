@@ -334,6 +334,13 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
     position: relative;
 }
 
+.dnd-upload-counter {
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+}
+
 @media (max-width: 768px){
     .form-for-designers {
         display: grid;
