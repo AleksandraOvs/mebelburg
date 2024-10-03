@@ -44,6 +44,8 @@ require 'init/carbon-fields.php';
 require 'init/breadcrumbs.php';
 require 'init/pagination.php';
 require 'init/roles.php';
+require 'contacts-report/contact-form-cfdb-7.php';
+
 
 
 add_action('after_setup_theme', 'gut_styles');

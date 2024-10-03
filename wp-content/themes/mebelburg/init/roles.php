@@ -46,3 +46,9 @@ $result = add_role(
 
 
 //запрет доступа к админке end
+
+
+function hello_world_cf7_func() {
+    return "Привет! Я шорткод для Contact Form 7!";
+}
+wpcf7_add_form_tag('hello_world', 'hello_world_cf7_func');

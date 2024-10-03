@@ -142,9 +142,9 @@ ul.tml-links li {
     padding: 20px;
 } */
 
-.page-section__content._dashboard-content .section-title {
+/* .page-section__content._dashboard-content .section-title {
     margin-top: 10vh;
-}
+} */
 
 .page-section__content .tml-dashboard .tml-dashboard-links li:first-child {
     display: none;
