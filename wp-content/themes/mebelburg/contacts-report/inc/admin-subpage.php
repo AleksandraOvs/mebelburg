@@ -247,8 +247,12 @@ class CFDB7_List_Table extends WP_List_Table
             if(isset($form_value['cfdb7_status']) && ( $form_value['cfdb7_status'] === 'read' ) )
                 $link  = "<a href=admin.php?page=cfdb7-list.php&fid=%s&ufid=%s>%s</a>";
 
-
-
+            // global $user_ID, $user_identity;
+            //     wp_get_current_user();
+            //     if (!$user_ID){
+            //         $user = $user_identity;
+            //     }
+            
             $fid                    = $result->form_post_id;
             $form_values['form_id'] = $result->form_id;
 
@@ -278,7 +282,7 @@ class CFDB7_List_Table extends WP_List_Table
                 }
 
             }
-            $form_values['form-date'] = sprintf($link, $fid, $result->form_id, $result->form_date );
+            $form_values['form-date'] = sprintf($link, $fid, $result->form_id, $result->form_date);
             $data[] = $form_values;
         }
 

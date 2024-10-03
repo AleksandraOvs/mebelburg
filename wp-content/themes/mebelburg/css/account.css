@@ -288,3 +288,47 @@ p.user-greeting {
 .page-section__content._dashboard-content .section-dashboard__form {
     margin-top: 10vh;
 }
+
+.form-for-designers p span input {
+    display: block;
+    width: 100%;
+    padding: 18px 18px 18px 10px;
+    border-bottom: 1px solid var(--black);
+}
+
+.form-for-designers {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-end;
+    gap: 18px;
+}
+
+.codedropz-upload-inner h3,
+.codedropz-upload-inner span {
+    display: none;
+}
+
+.form-for-designers-upload p .wpcf7-form-control-wrap {
+    border: none;
+}
+
+.form-for-designers-upload p .wpcf7-form-control-wrap {
+    padding: 0;
+}
+
+.codedropz-upload-handler{
+    margin-bottom: 0;
+}
+
+section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
+    display: block;
+    margin: 40px auto;
+}
+
+.codedropz-upload-handler {
+    border: 1px solid var(--beige);
+    border-radius: 30px;
+    margin-bottom: 0;
+    position: relative;
+}

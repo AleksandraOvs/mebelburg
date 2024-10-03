@@ -32,9 +32,7 @@
                         <p>' . $for_waiting_message . '</p>
                         </div>';
                     };
-                } elseif (current_user_can('administrator')) {
-                    //echo 'You are administrator';
-                } elseif (current_user_can('designer')) {
+                } elseif (current_user_can('designer') || current_user_can('administrator') ) {
                     ?>
                     <p class="user-greeting"><span>Привет,&nbsp;</span><?php echo $user_identity; ?>!</p>
 
