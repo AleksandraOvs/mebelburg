@@ -306,7 +306,7 @@ function site_carbon()
         ));
 
         Container::make('post_meta', 'Контент для личного кабинета')
-        ->show_on_template('page-dashboard.php')
+        ->show_on_template('page-lk.php','page-dashboard.php')
         ->add_tab(__('Информация для не добавленных пользователей'), array(
             Field::make('rich_text', 'crb_wait_member_message', 'Текст сообщения')
         ))

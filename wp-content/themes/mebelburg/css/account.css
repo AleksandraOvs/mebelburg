@@ -351,3 +351,13 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
         margin: 0 auto;
     }
 }
+
+/*  wp recall */
+
+div#webx-header {
+    display: none;
+}
+
+.webx-userinfo {
+    display: none;
+}

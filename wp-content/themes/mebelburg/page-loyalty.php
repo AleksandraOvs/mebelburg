@@ -197,6 +197,7 @@ get_header() ?>
             </p>
 
             <?php echo do_shortcode('[theme-my-login]'); ?>
+            <?php echo do_shortcode('[loginform] '); ?>
             <?php
             // if ($loyalty_contactform = carbon_get_post_meta(get_the_ID(), 'crb_cf_loyalty')) {
             //     echo do_shortcode(" $loyalty_contactform ");
