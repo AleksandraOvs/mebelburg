@@ -453,3 +453,31 @@ div#webx-header {
 .webx-userinfo {
     display: none;
 }
+
+.rcl-public-box .rcl-form-field {
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    margin: 7px 0;
+    padding: 8px;
+}
+
+.rcl-public-box .rcl-form-field{
+    background-color: transparent;
+}
+
+.rcl-content .rcl-content-group .group-title {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.rcl-bttn.rcl-bttn__type-simple {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 18px;
+    box-shadow: 0 0 0 1px #e5e5e5 inset;
+}
+
+.rcl-bttn:not(.rcl-bttn__type-clear) .rcl-bttn__ico-left i{
+    display: none;
+}
