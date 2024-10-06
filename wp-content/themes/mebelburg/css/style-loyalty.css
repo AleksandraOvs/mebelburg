@@ -255,9 +255,9 @@ h4.for-members__heading {
         color: #fff;
     }
 
-    a.header__top__link{
+    /* a.header__top__link{
         display:none;
-    }
+    } */
 }
 
 @media (max-width: 1024px){
