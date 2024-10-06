@@ -521,20 +521,21 @@ a.rcl-uploader-button i {
     margin: 3px;
     border: 1px solid #eaeaea;
     background: #fff;
-    width: 200px;
-    border-radius: 30px;
-    height: 200px;
+    width: 100px;
+    border-radius: 15px;
+    height: 100px;
     display: inline-block;
-    overflow: hidden;
 }
 
 a.rcl-bttn.rcl-bttn__mod-only-icon.rcl-bttn__type-simple.rcl-bttn__size-standart {
-    /* padding: 10px; */
-    width: 40px;
-    height: 40px;
+    position: relative;
+    width: 30px;
+    height: 30px;
     border: none;
-    outline: none;
-    box-shadow:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
     top: 10px;
     left: 10px;
     /* right: 10px; */
