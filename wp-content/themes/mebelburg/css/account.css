@@ -1,5 +1,9 @@
-section.page-section._dashbord {
+section.page-section._dashboard {
     padding-bottom: 0;
+}
+
+section.section-steps .section-steps__list {
+    margin-top: 0;
 }
 
 input{
