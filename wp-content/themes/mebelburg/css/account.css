@@ -484,7 +484,7 @@ div#webx-header {
 }
 
 .rcl-content .rcl-content-group .group-title {
-    /* display: none; */
+    display: none;
 }
 
 .rcl-uploader .rcl-uploader-button-box {
