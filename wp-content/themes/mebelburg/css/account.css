@@ -605,3 +605,8 @@ body .rcl-upload-gallery .attachment-manager > .rcl-bttn .rcl-bttn__ico {
     margin-top: 18px;
     padding: 0;
 }
+
+.page-section__content._dashboard-content #rcl-office {
+    max-width: 100% !important;
+    width: 100%;
+}
