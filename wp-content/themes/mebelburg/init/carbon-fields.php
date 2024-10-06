@@ -311,14 +311,6 @@ function site_carbon()
             Field::make('rich_text', 'crb_wait_member_message', 'Текст сообщения')
         ))
 
-        ->add_tab(__('Добавить предложение или меропритяие'), array(
-            Field::make('complex', 'crb_dashbord_events', 'Добавить мероприятие')
-                ->add_fields(array(
-                    Field::make('image', 'crb_dashboard_event', 'Изображение'),
-                    Field::make('rich_text', 'crb_dashbord_event_head', 'Заголовок'),
-                )),
-        ))
-
         ->add_tab(__('Промокод на коворкинг'), array(
                     Field::make('text', 'crb_dashbord_promocode', 'Заголовок'),
         ))
