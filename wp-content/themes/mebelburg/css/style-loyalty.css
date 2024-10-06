@@ -217,6 +217,16 @@ h4.for-members__heading {
     width: 100%;
 }
 
+div#form-loyalty .container .rcl-loginform .username, div#form-loyalty .container .rcl-loginform .author-avatar {
+    display: none;
+}
+
+.panel_lk_recall .rcl-widget-buttons .rcl-widget-button {
+    margin: 0 0 18px;
+    overflow: hidden;
+    padding: 0;
+}
+
 @media (max-width: 1240px){
     ul.partners-logo__list {
         display: grid;
