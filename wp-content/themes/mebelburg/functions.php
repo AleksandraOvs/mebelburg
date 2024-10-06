@@ -352,3 +352,16 @@ add_action('pre_get_posts', 'modify_main_query');
  * Подгрузка постов ajax
  */
 require get_template_directory() . '/init/load-posts.php';
+
+
+// Вывод колонок в списке записей
+function remove_post_columns($posts_columns) {
+	$posts_columns = array(
+		"cb" => "",
+		"title" => "Заголовок",
+		"author" => "Автор",
+		"date" => "Дата",
+	);
+	return $posts_columns;
+}
+add_filter('manage_posts_columns', 'remove_post_columns');
