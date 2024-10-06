@@ -13,7 +13,7 @@
             </ul>
 
             <div class="page__title _single-template__title">
-                <h2><span>Cумма чеков:</span><?php the_title() ?></h2>
+                <h2><?php the_title() ?></h2>
                 <p class="_single-template__time"><?php the_time('j.m.Y'); ?></p>
             </div>
         </div>
