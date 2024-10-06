@@ -23,12 +23,11 @@
         </div>
 
         <div class="post__content__title">
+            <span>Сумма:&nbsp;</span>
             <?php
             if (!has_excerpt()) {
                 the_title();
-            } else {
-                the_excerpt();
-            }
+            } 
             ?>
 
         </div>
