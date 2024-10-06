@@ -481,3 +481,33 @@ div#webx-header {
 .rcl-bttn:not(.rcl-bttn__type-clear) .rcl-bttn__ico-left i{
     display: none;
 }
+
+.rcl-content .rcl-content-group .group-title {
+    display: none;
+}
+
+.rcl-uploader .rcl-uploader-button-box {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rcl-public-box .rcl-form-field > label {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    line-height: normal;
+    margin: 0 0 3px;
+}
+
+.rcl-uploader-button input {
+    /* position: absolute; */
+    border: none;
+    /* top: 0; */
+    /* right: 0; */
+    /* opacity: 0; */
+    /* cursor: pointer; */
+    height: 100%;
+}
