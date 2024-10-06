@@ -639,3 +639,10 @@ body .rcl-upload-gallery .attachment-manager > .rcl-bttn .rcl-bttn__ico {
     max-width: 100% !important;
     width: 100%;
 }
+
+@media (max-width: 576px){
+    .rcl-public-box .rcl-form-field {
+        background-color: transparent;
+        max-width: 100%;
+    }
+}
