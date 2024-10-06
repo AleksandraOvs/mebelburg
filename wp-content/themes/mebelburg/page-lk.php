@@ -131,9 +131,9 @@
                         ?>
 
                         <section class="section-steps">
-                            <div class="section-title">
+                            <h3 class="section-title">
                                 Участвуй в розыгрыше приза!
-                            </div>
+                    </h3>
 
                             <ul class="section-steps__list">
                                 <li class="section-steps__list__item">
