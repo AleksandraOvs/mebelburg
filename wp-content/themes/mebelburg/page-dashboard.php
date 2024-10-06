@@ -34,7 +34,7 @@
                     };
                 } elseif (current_user_can('designer') || current_user_can('administrator') ) {
                     ?>
-                    <p class="user-greeting"><span>Привет,&nbsp;</span><?php echo $user_identity; ?>!</p>
+                    <!-- <p class="user-greeting"><span>Привет,&nbsp;</span><?php //echo $user_identity; ?>!</p> -->
 
 
                     <h3 class="section-title">

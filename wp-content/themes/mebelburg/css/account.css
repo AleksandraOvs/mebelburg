@@ -25,6 +25,10 @@ input[type="submit"]{
     transition: all 0.3s linear;
 }
 
+#webx-content .rcl-field-input input, .rcl-field-input select {
+    border-radius: 0;
+}
+
 .page-section__description{
     display: flex;
     flex-direction: column;
