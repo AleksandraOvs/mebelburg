@@ -525,7 +525,7 @@ a.rcl-uploader-button i {
     border-radius: 15px;
     height: 100px;
     display: inline-block;
-    overflow:scroll;
+    overflow: hidden;
 }
 
 .rcl-upload-gallery.simple-manager .attachment-manager {
