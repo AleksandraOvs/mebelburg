@@ -586,3 +586,22 @@ body .rcl-bttn:not(.rcl-bttn__type-clear):last-child {
 body .rcl-upload-gallery .attachment-manager > .rcl-bttn .rcl-bttn__ico {
     padding: 0;
 }
+
+.page-section__content._dashboard-content .page-section__content._dashboard-content {
+    position: relative;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.webx-area-tabs{
+    box-shadow:none;
+}
+
+.webx-userinfo, .webx-area-tabs {
+    background: #fff;
+    font-size: 16px;
+    margin-top: 18px;
+    padding: 0;
+}
