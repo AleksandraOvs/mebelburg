@@ -44,6 +44,8 @@ function site_breadcrumbs()
 
         } elseif (is_post_type_archive('events')){
             echo 'Мероприятия';
+        } elseif (is_post_type_archive('check')){
+            echo 'Чеки';
 
 
         // } elseif (is_archive()){
