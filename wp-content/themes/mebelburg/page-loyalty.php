@@ -196,7 +196,7 @@ get_header() ?>
             Оставьте заявку на сайте, и&nbsp;наш менеджер свяжется с&nbsp;вами, чтобы уточнить детали и&nbsp;подтвердить участие
             </p>
 
-            <?php echo do_shortcode('[theme-my-login]'); ?>
+            <?php //echo do_shortcode('[theme-my-login]'); ?>
             <?php echo do_shortcode('[loginform] '); ?>
             <?php
             // if ($loyalty_contactform = carbon_get_post_meta(get_the_ID(), 'crb_cf_loyalty')) {
