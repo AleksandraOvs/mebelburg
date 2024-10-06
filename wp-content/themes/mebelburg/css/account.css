@@ -223,6 +223,7 @@ p.wppb-alert {
 }
 
 .page-section__content._dashboard-content {
+    margin-top: 40px;
     position: relative;
     display: flex;
     flex-direction: column;

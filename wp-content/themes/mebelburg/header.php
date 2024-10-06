@@ -55,7 +55,7 @@
                         <?php else: ?>
                             <div class="loyalty-link">
                                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/svg/user.svg" alt="">
-                                <span>Привет,&nbsp;</span><a class="header__top__link" href="/dashboard"><?php _e(' '); ?><?php echo $user_identity; ?> !</a>
+                                <span>Привет,&nbsp;</span><a class="header__top__link" href="/account"><?php _e(' '); ?><?php echo $user_identity; ?> !</a>
                             </div>
 
                         <?php endif; ?>
