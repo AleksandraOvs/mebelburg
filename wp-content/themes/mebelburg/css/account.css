@@ -551,6 +551,7 @@ a.rcl-uploader-button i {
     right: 5px;
     width: 20px;
     height: 20px;
+    border-radius: 100%;
 }
 
 a.rcl-bttn.rcl-bttn__mod-only-icon.rcl-bttn__type-simple.rcl-bttn__size-standart {
