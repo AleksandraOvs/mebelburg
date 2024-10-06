@@ -465,6 +465,8 @@ div#webx-header {
 
 .rcl-public-box .rcl-form-field{
     background-color: transparent;
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 .rcl-content .rcl-content-group .group-title {
