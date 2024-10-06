@@ -74,10 +74,10 @@
                                                     $query->the_post();
                                             ?>
 
-                                            <?php the_title() ?>
+                                            <?php //the_title() ?>
 
 
-                                                    <?php //get_template_part('templates/post-item'); ?>
+                                                    <?php get_template_part('templates/post-item'); ?>
                                             <?php
                                                 }
                                                 echo '</ul>';
