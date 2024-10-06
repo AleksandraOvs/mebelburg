@@ -1,3 +1,7 @@
+section.page-section._dashbord {
+    padding-bottom: 0;
+}
+
 input{
     background-color: transparent;
     border: none;
