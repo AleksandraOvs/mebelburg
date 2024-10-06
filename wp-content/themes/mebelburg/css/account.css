@@ -525,6 +525,7 @@ a.rcl-uploader-button i {
     border-radius: 15px;
     height: 100px;
     display: inline-block;
+    overflow:scroll;
 }
 
 a.rcl-bttn.rcl-bttn__mod-only-icon.rcl-bttn__type-simple.rcl-bttn__size-standart {
@@ -536,9 +537,20 @@ a.rcl-bttn.rcl-bttn__mod-only-icon.rcl-bttn__type-simple.rcl-bttn__size-standart
     align-items: center;
     justify-content: center;
     box-shadow: none;
-    top: 10px;
-    left: 10px;
+    top: 5px;
+    left: 5px;
     /* right: 10px; */
     background: var(--purple);
     color: #fff;
+}
+
+body .rcl-bttn:not(.rcl-bttn__type-clear):last-child {
+    margin: 0 auto;
+}
+
+.rcl-upload-gallery {
+    margin-top: 40px;
+    display: flex;
+    position: relative;
+    justify-content: center;
 }
