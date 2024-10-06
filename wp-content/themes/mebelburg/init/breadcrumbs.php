@@ -47,6 +47,9 @@ function site_breadcrumbs()
         } elseif (is_post_type_archive('check')){
             echo 'Чеки';
 
+        } elseif (is_post_type_archive('fordesigners')){
+            echo 'Предложения для дизайнеров';
+
 
         // } elseif (is_archive()){
         //     echo 'Новости';

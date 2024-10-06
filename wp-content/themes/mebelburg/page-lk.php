@@ -32,9 +32,9 @@
                         <p>' . $for_waiting_message . '</p>
                         </div>';
                     };
-                } elseif (current_user_can('designer') || current_user_can('administrator') ) {
+                } elseif (current_user_can('designer') || current_user_can('administrator')) {
                     ?>
-                    <p class="user-greeting"><span>Привет,&nbsp;</span><?php echo $user_identity; ?>!</p>
+                    <!-- <p class="user-greeting"><span>Привет,&nbsp;</span><?php //echo $user_identity; ?>!</p> -->
 
 
                     <h3 class="section-title">
@@ -56,39 +56,43 @@
                                     <div class="post-block__item__content">
 
                                         <div class="post__content">
-                                            <a href="/" class="post-thumbnail">
-                                                <?php
-                                                if ($dashbord_event_img_url) {
-                                                ?>
-                                                    <img src="<?php echo $dashbord_event_img_url ?>" alt="">
-                                                <?php
-                                                } else {
-                                                    echo '<img src="' . get_bloginfo("template_url") . '/images/svg/placeholder.svg" />';
-                                                }
-                                                ?>
-                                                <div class="item__link">
-                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M13 8V1H6" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M13 1L1 13" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
 
-                                                </div>
-                                        </div>
-
-                                        <div class="post__content__title">
                                             <?php
-                                            if ($dashboard_event['crb_dashbord_event_head']) {
+
+                                            $args = array(
+                                                'posts_per_page' => 3,
+                                                'post_type' => 'fordesigners',
+                                                'publish' => true
+                                            );
+
+                                            $query = new WP_Query($args);
+
+                                            // Цикл
+                                            if ($query->have_posts()) {
+                                                echo '<ul class="post-block__list">';
+                                                while ($query->have_posts()) {
+                                                    $query->the_post();
                                             ?>
-                                                <div class="post__content__title">
-                                                    <?php echo $dashboard_event['crb_dashbord_event_head'] ?>
-                                                </div>
+
+                                            <?php the_title() ?>
+
+
+                                                    <?php //get_template_part('templates/post-item'); ?>
                                             <?php
+                                                }
+                                                echo '</ul>';
+                                            } else {
+                                                // Постов не найдено
                                             }
 
+                                            // Возвращаем оригинальные данные поста. Сбрасываем $post.
+                                            wp_reset_postdata();
+
                                             ?>
 
-                                        </div>
-                                        </a>
+
+
+                                            
 
                                         <div class="post__time">
                                             <?php the_time('j.m.Y'); ?>
