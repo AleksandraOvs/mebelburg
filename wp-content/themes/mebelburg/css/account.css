@@ -578,6 +578,7 @@ body .rcl-bttn:not(.rcl-bttn__type-clear):last-child {
 .rcl-upload-gallery {
     margin-top: 40px;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     justify-content: center;
 }
