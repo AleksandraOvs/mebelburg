@@ -485,6 +485,10 @@ div#webx-header {
 .rcl-public-box .rcl-form-field{
     background-color: transparent;
     max-width: 70%;
+    margin: 0 auto;
+}
+
+h3.section-title .form-block-description {
     margin: 30px auto;
 }
 
