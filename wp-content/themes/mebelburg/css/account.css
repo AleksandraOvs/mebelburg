@@ -466,7 +466,7 @@ div#webx-header {
 .rcl-public-box .rcl-form-field{
     background-color: transparent;
     max-width: 70%;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .rcl-content .rcl-content-group .group-title {
@@ -546,6 +546,24 @@ a.rcl-uploader-button i {
     right: unset;
     background: var(--purple);
     color: #fff;
+}
+
+.rcl-field-input input:not([type="file"]):not([type="checkbox"]):not([type="radio"]):not([type="button"]), .rcl-field-input textarea {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    box-shadow: none;
+    box-sizing: border-box;
+    float: none;
+    font-size: 100%;
+    height: auto;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 100%;
+    outline: 0;
+    padding: 18px;
+    width: 100%;
 }
 
 .rcl-upload-gallery.simple-manager .attachment-manager {
