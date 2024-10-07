@@ -482,6 +482,10 @@ div#webx-header {
     padding: 8px;
 }
 
+.container._single-template__content #rcl-post-bar #bar-item-rcl-edit-post a {
+    display: none;
+}
+
 .rcl-public-box .rcl-form-field{
     background-color: transparent;
     max-width: 70%;
