@@ -288,7 +288,7 @@ function register_post_types()
 		// 'show_in_nav_menus'   => null, // зависит от public
 		'show_in_menu'           => true, // показывать ли в меню админки
 		// 'show_in_admin_bar'   => null, // зависит от show_in_menu
-		'show_in_rest'        => false, // добавить в REST API. C WP 4.7
+		'show_in_rest'        => true, // добавить в REST API. C WP 4.7
 		'rest_base'           => null, // $post_type. C WP 4.7
 		'menu_position'       => '',
 		'menu_icon'           => 'dashicons-list-view',
@@ -296,7 +296,7 @@ function register_post_types()
 		//'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
 		//'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
 		'hierarchical'        => true,
-		'supports'            => ['title', 'thumbnail'], // ['title', 'thumbnail']'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+		'supports'            => ['title', 'thumbnail', 'editor'], // ['title', 'thumbnail']'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
 		'taxonomies'          => null,
 		'has_archive'         => true,
 		'rewrite'             => array(
