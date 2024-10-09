@@ -658,6 +658,7 @@ div#register-form-rcl form {
 
 .form-block-rcl.form_extend .form-block-rcl {
     order: 1;
+    width:100%;
 }
 
 .form-block-rcl.form_extend .default-field {
