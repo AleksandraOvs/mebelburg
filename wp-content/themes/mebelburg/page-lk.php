@@ -23,7 +23,7 @@
             <div class="page-section__content _dashboard-content">
                 <?php the_content() ?>
 
-                <?php if (current_user_can('wait_member')) {  ?>
+                <?php if (current_user_can('need-confirm') ) {  ?>
 
 
                     <?php

@@ -40,7 +40,8 @@
         $total_users = count($users);
 
         $query = get_users('&offset=' . $offset . '&number=' . $number);
-
+        //echo '<pre>';
+        //print_r($query);
         $total_pages = intval($total_users / $number) + 1;
 
         echo '<ul id="users">';
