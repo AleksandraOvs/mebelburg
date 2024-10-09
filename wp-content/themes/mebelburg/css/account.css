@@ -715,6 +715,12 @@ body .rcl-upload-gallery .attachment-manager > .rcl-bttn .rcl-bttn__ico {
     justify-content: center;
 }
 
+.page-section__content._dashboard-content .page-section__description:after {
+    width: 100%;
+    height: 1px;
+    margin: 40px auto;
+}
+
 .webx-area-tabs{
     box-shadow:none;
 }
