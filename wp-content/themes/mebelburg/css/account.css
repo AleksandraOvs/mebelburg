@@ -635,10 +635,38 @@ a.rcl-bttn.rcl-bttn__mod-only-icon.rcl-bttn__type-simple.rcl-bttn__size-standart
     margin: 5px auto;
     max-width: 100%;
     outline: 0;
-    padding: 6px 12px 6px 32px;
+    padding: 18px 18px 18px 34px;
     text-transform: none;
     width: 100%;
     -webkit-box-shadow: none !important;
+}
+
+div#register-form-rcl form {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.form-block-rcl.form_extend {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.form-block-rcl.form_extend .default-field {
+    order: 4;
+    width: 100%;
+}
+
+.form-block-rcl.form_extend .form-block-rcl {
+    order: 1;
+}
+
+.form-block-rcl.default-field {
+    width: 48%;
 }
 
 .panel_lk_recall .rcl-field-input textarea, .panel_lk_recall .rcl-field-input input:not([type="checkbox"]):not([type="radio"]) {
@@ -648,6 +676,10 @@ a.rcl-bttn.rcl-bttn__mod-only-icon.rcl-bttn__type-simple.rcl-bttn__size-standart
 
 body .rcl-bttn:not(.rcl-bttn__type-clear):last-child {
     margin: 0 auto;
+}
+
+.form-block-rcl label {
+    display: none;
 }
 
 .rcl-upload-gallery {
