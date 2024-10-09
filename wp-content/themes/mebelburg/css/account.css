@@ -620,9 +620,10 @@ a.rcl-bttn.rcl-bttn__mod-only-icon.rcl-bttn__type-simple.rcl-bttn__size-standart
 }
 
 .panel_lk_recall .default-field input {
-    background-color: transparent;
+    background-color: transparent !important;
     border-radius: 0;
-    border: 1px solid #e5e5e5;
+    border: none;
+    border-bottom: 1px solid var(--black);
     box-shadow: none;
     box-sizing: border-box;
     display: block;
