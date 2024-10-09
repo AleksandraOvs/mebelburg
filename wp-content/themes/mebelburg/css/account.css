@@ -673,6 +673,15 @@ div#login-form-rcl form .default-field {
     width: 100%;
 }
 
+.form-block-rcl {
+    width: 100%;
+}
+
+.form-block-rcl a.rcl-bttn {
+    display: block;
+    margin: 0 auto;
+}
+
 .panel_lk_recall .rcl-field-input textarea, .panel_lk_recall .rcl-field-input input:not([type="checkbox"]):not([type="radio"]) {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
