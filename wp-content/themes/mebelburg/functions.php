@@ -406,3 +406,16 @@ function remove_post_columns($posts_columns) {
 	return $posts_columns;
 }
 add_filter('manage_posts_columns', 'remove_post_columns');
+
+function getUserRegDate() {
+	$user = get_userdata(get_current_user_id());
+	$user_reg = $user->get('user_registered');
+	$datetime = new DateTime($user_reg);
+	$formatter = new IntlDateFormatter(
+		'ru_RU',
+		IntlDateFormatter::LONG,
+		IntlDateFormatter::LONG
+	);
+	$formatter->setPattern('d MMMM, yyyy');
+	echo $formatter->format($datetime);
+	}

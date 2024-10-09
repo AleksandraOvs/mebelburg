@@ -641,6 +641,11 @@ a.rcl-bttn.rcl-bttn__mod-only-icon.rcl-bttn__type-simple.rcl-bttn__size-standart
     -webkit-box-shadow: none !important;
 }
 
+.panel_lk_recall .rcl-field-input textarea, .panel_lk_recall .rcl-field-input input:not([type="checkbox"]):not([type="radio"]) {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
 body .rcl-bttn:not(.rcl-bttn__type-clear):last-child {
     margin: 0 auto;
 }
