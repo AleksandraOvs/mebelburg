@@ -659,6 +659,56 @@ body .rcl-upload-gallery .attachment-manager > .rcl-bttn .rcl-bttn__ico {
     width: 100%;
 }
 
+ul.user-data {
+    list-style: none;
+}
+
+ul#users {
+    list-style: none;
+}
+
+ul#users {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+li.user.clearfix {
+    position: relative;
+    display: flex;
+    gap: 18px;
+}
+
+.post-check-content {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul#users .user .user-data {
+    width: 30%;
+}
+
+.user-posts{
+    width: 70%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+ul.user-posts .post-block__item {
+    width: 30%;
+    min-width: 250px;
+}
+
+li.post-block__item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 @media (max-width: 576px){
     .rcl-public-box .rcl-form-field {
         background-color: transparent;
