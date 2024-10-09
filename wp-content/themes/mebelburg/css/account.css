@@ -656,13 +656,12 @@ div#register-form-rcl form {
     gap: 18px;
 }
 
-.form-block-rcl.form_extend .default-field {
-    order: 4;
-    width: 100%;
-}
-
 .form-block-rcl.form_extend .form-block-rcl {
     order: 1;
+}
+
+.form-block-rcl.form_extend .default-field {
+    order: 4;
 }
 
 .form-block-rcl.default-field {
