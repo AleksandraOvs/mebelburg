@@ -676,7 +676,7 @@ ul#users {
 li.user.clearfix {
     position: relative;
     display: flex;
-    gap: 18px;
+    gap: 30px;
 }
 
 .post-check-content {
@@ -707,6 +707,22 @@ li.post-block__item img {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+li.user .user-data, li.user .user-posts {
+    padding-top: 30px;
+}
+.user-data{
+    position: relative;
+}
+.user-data:before{
+    content:'';
+    width: 100%;
+    height: 1px;
+    background: var(--black);
+    position: absolute;
+    top:0;
+    left: 0;
 }
 
 @media (max-width: 576px){
