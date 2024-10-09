@@ -624,7 +624,7 @@ a.rcl-bttn.rcl-bttn__mod-only-icon.rcl-bttn__type-simple.rcl-bttn__size-standart
     border-radius: 0;
     border: none;
     border-bottom: 1px solid var(--black);
-    box-shadow: none;
+    box-shadow: none !important;
     box-sizing: border-box;
     display: block;
     float: none;
@@ -638,7 +638,7 @@ a.rcl-bttn.rcl-bttn__mod-only-icon.rcl-bttn__type-simple.rcl-bttn__size-standart
     padding: 6px 12px 6px 32px;
     text-transform: none;
     width: 100%;
-    -webkit-box-shadow: none;
+    -webkit-box-shadow: none !important;
 }
 
 body .rcl-bttn:not(.rcl-bttn__type-clear):last-child {
