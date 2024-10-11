@@ -649,6 +649,10 @@ div#register-form-rcl form {
     gap: 18px;
 }
 
+.rcl-field-core  .rcl-field-input input:invalid {
+    border-color: var(--black) !important;
+}
+
 .form-block-rcl.form_extend {
     width: 100%;
     display: flex;
