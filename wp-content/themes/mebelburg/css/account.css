@@ -695,6 +695,13 @@ div#login-form-rcl form .default-field {
     box-shadow: none !important;
 }
 
+.form-block-rcl.form_extend div.form-block-rcl:nth-child(6) {
+    order: 6;
+    font-size: 12px;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
 body .rcl-bttn:not(.rcl-bttn__type-clear):last-child {
     margin: 0 auto;
 }
