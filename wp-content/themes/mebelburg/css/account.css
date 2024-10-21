@@ -294,6 +294,7 @@ p.user-greeting {
 }
 
 .promocode-inner p{
+    text-align: center;
     font-size:20px;
     color: var(--black);
     text-transform:uppercase;
