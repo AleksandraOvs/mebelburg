@@ -28,3 +28,20 @@ const swiper = new Swiper('.hero-slider', {
     grabCursor: true
     //centeredSlides: true
   });
+
+  const swiperLec = new Swiper('.page-lectory-slider', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 18,
+    grabCursor: true,
+    navigation: {
+      nextEl: '.lec-slider__button-next',
+      prevEl: '.lec-slider__button-prev',
+      },
+    breakpoints:{
+      768:{
+        slidesPerView: 2,
+      }
+    }
+    //centeredSlides: true
+  });
