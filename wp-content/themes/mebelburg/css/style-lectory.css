@@ -262,7 +262,7 @@
     width: 100%;
   }
 
-  .form-inner div {
+  .form-inner .form-field {
     width: calc(50% - 9px);
   }
 
@@ -327,7 +327,7 @@
     gap: 12px;
   }
 
-  .contacts-description{
+  .contacts-description {
     margin-top: 35px;
   }
 
@@ -339,7 +339,7 @@
     font-size: 14px;
   }
 
-  .form-block__description{
+  .form-block__description {
     margin: 30px auto 85px;
   }
 
@@ -350,6 +350,10 @@
   .section__form-block {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  .form-inner .form-field {
+    width: 100%;
   }
 
 }
