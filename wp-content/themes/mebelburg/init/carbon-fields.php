@@ -305,20 +305,76 @@ function site_carbon()
                 ->set_width(33),
         ));
 
-        Container::make('post_meta', 'Контент для личного кабинета')
-        ->show_on_template('page-lk.php','page-dashboard.php')
+    Container::make('post_meta', 'Контент для личного кабинета')
+        ->show_on_template('page-lk.php', 'page-dashboard.php')
         ->add_tab(__('Информация для не добавленных пользователей'), array(
             Field::make('rich_text', 'crb_wait_member_message', 'Текст сообщения')
         ))
 
         ->add_tab(__('Промокод на коворкинг'), array(
-                    Field::make('text', 'crb_dashbord_promocode', 'Заголовок'),
+            Field::make('text', 'crb_dashbord_promocode', 'Заголовок'),
         ))
 
         ->add_tab(__('Контактная форма'), array(
             Field::make('text', 'crb_dashbord_form_head', 'Заголовок формы'),
             Field::make('text', 'crb_dashbord_form_desc', 'Подзаголовок формы'),
             Field::make('text', 'crb_dashbord_form', 'Шорткод формы'),
-));
+        ));
 
+    Container::make('post_meta', 'Контент для страницы Лекторий-Коворкинг')
+        ->show_on_page('lecture-coworking')
+        ->add_tab(__('Общая информация - абзацы'), array(
+            Field::make('complex', 'crb_text_fragments', 'Абзацы')
+                ->add_fields(array(
+                    Field::make('text', 'crb_text_fragment_head', 'Заголовок абзаца'),
+                    Field::make('rich_text', 'crb_text_fragment', 'Текст'),
+                ))
+        ))
+
+        ->add_tab(__('Слайдер на странице'), array(
+            Field::make('complex', 'crb_lec_slides', 'Слайды')
+                ->add_fields(array(
+                    Field::make('image', 'crb_lec_image', 'Изображение для слайда'),
+                ))
+        ))
+
+        ->add_tab(__('Услуги'), array(
+            Field::make('complex', 'crb_lec_services', 'Список услуг лектория/коворкинга')
+                ->add_fields(array(
+                    Field::make('text', 'crb_lec_services_head', 'Заголовок'),
+                    Field::make('complex', 'crb_lec_services_items', 'Услуга')
+                        ->add_fields(array(
+                            Field::make('text', 'crb_lec_services_name', 'Название услуги')
+                                ->set_width(33),
+                            Field::make('text', 'crb_lec_services_price', 'Цена')
+                                ->set_width(33),
+                            Field::make('rich_text', 'crb_lec_services_desc', 'Пояснение')
+                                ->set_width(33),
+                        ))
+                )),
+
+        ))
+
+        ->add_tab(__('Контакты'), array(
+            Field::make('complex', 'crb_lec_contacts', 'Конактные данные для страницы')
+                ->add_fields(array(
+                            Field::make('text', 'crb_lec_contact_name', 'Заголовок контакта')
+                                ->set_width(33),
+                            Field::make('text', 'crb_lec_contact', 'Текст контакта')
+                                ->set_width(33),
+                            Field::make('text', 'crb_lec_contact_link', 'Ссылка контакта')
+                                ->set_width(33),
+                            Field::make('rich_text', 'crb_lec_contact_desc', 'Пояснение')
+                                ->set_width(33),
+                )),
+
+        ))
+
+        ->add_tab(__('Форма обратной связи'), array(
+            Field::make('text', 'crb_cf_form_heading', 'Заголовок формы'),
+            Field::make('rich_text', 'crb_cf_form_description', 'Краткое описание формы'),
+            Field::make('text', 'crb_cf_form_shortcode', 'Контактная форма для страницы Лояльности')
+                ->help_text('вставьте шорткод для формы обратной связи в это поле')
+                ->set_width(33),
+        ));
 }
