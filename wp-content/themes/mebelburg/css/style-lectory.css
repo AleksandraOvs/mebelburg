@@ -266,6 +266,10 @@
     width: calc(50% - 9px);
   }
 
+  .form-inner .form-field:last-child{
+    width:100%;
+  }
+
   .form-inner div:last-child {
     width: 100%;
   }
