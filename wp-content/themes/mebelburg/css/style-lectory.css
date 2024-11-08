@@ -204,6 +204,10 @@
   flex-wrap: wrap;
 }
 
+.form-inner .form-field {
+  width: calc(33% - 18px);
+}
+
 @media (max-width: 768px) {
   .page-section._page-lectory .container .page-section__description {
     width: 90%;
