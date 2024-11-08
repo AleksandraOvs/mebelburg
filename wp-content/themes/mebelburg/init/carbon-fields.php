@@ -373,7 +373,7 @@ function site_carbon()
         ->add_tab(__('Форма обратной связи'), array(
             Field::make('text', 'crb_cf_form_heading', 'Заголовок формы'),
             Field::make('rich_text', 'crb_cf_form_description', 'Краткое описание формы'),
-            Field::make('text', 'crb_cf_form_shortcode', 'Контактная форма для страницы Лояльности')
+            Field::make('text', 'crb_cf_form_shortcode', 'Контактная форма для страницы')
                 ->help_text('вставьте шорткод для формы обратной связи в это поле')
                 ->set_width(33),
         ));
