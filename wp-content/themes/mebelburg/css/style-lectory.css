@@ -369,4 +369,12 @@
     width: 100%;
   }
 
+  .lec-slider__button-prev {
+    left: 12px;
+  }
+
+  .lec-slider__button-next {
+    right: 12px;
+  }
+
 }
