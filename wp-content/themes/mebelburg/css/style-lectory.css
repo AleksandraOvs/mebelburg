@@ -363,6 +363,11 @@
     width: 100%;
   }
 
+  .page-lectory-slider {
+    min-height: auto;
+    height: 230px;
+  }
+
   .section__form-block .container h2 {
     width: 100%;
   }
