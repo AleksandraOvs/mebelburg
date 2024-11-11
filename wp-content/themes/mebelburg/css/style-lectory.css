@@ -301,14 +301,18 @@
   }
 
   .page-lectory-slider {
-    margin-top: 55px;
-    margin-bottom: 55px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .lectory-price {
     margin: 85px auto 0;
     width: 100%;
     gap: 55px;
+  }
+
+  .lec-slider__button-prev, .lec-slider__button-next {
+    display: none;
   }
 
   .lectory-price-head {
