@@ -23,7 +23,7 @@
             <div class="page-section__content _dashboard-content">
                 <?php the_content() ?>
 
-                <?php if (current_user_can('need-confirm') ) {  ?>
+                <?php if (current_user_can('need-confirm')) {  ?>
 
 
                     <?php
@@ -114,6 +114,45 @@
 
                         ?>
 
+                        <!-- Блок с предложениями от магазинов -->
+
+                        <section class="section-sale">
+                            <?php
+                            if ($sale_items = carbon_get_post_meta(get_the_ID(), 'crb_sale_for_members')) {
+                            ?>
+                                <ul class="section-sale__list">
+                                    <?php
+                                    foreach ($sale_items as $sale_item) {
+                                    ?>
+                                        <li class="section-sale__list__item">
+                                        <div class="section-sale__list__item__shop">
+                                             <?php if ($sale_name = $sale_item['crb_sfm_brand']) {
+                                                echo '<h4>' . $sale_name . '</h4>';
+                                            }
+                                            ?>
+
+                                            <?php if ($sale_num = $sale_item['crb_sfm_brand_num']) {
+                                                echo '<div class="sale-num">' . $sale_num . '</div>';
+                                            }
+                                            ?>
+                                        </div>
+
+                                        <div class="section-sale__list__item__info">
+                                        <?php if ($sale_info = $sale_item['crb_sfm_text']) {
+                                                echo '<div class="sale-info">' . $sale_info . '</div>';
+                                            }
+                                            ?>
+                                        </div>
+                                        </li>
+                                    <?php
+                                    }
+                                    ?>
+                                </ul>
+                            <?php
+                            }
+                            ?>
+                        </section>
+
                         <?php
                         if ($dashboard_promocode = carbon_get_post_meta(get_the_ID(), 'crb_dashbord_promocode')) {
                         ?>
@@ -133,7 +172,7 @@
                         <section class="section-steps">
                             <h3 class="section-title">
                                 Участвуй в розыгрыше приза!
-                    </h3>
+                            </h3>
 
                             <ul class="section-steps__list">
                                 <li class="section-steps__list__item">

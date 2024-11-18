@@ -315,6 +315,15 @@ function site_carbon()
             Field::make('text', 'crb_dashbord_promocode', 'Заголовок'),
         ))
 
+        ->add_tab(__('Карточки акций'), array(
+            Field::make('complex', 'crb_sale_for_members', 'Предложения')
+            ->add_fields(array(
+                Field::make('text', 'crb_sfm_brand', 'Название магазина'),
+                Field::make('text', 'crb_sfm_brand_num', 'Номер секции'),
+                Field::make('rich_text', 'crb_sfm_text', 'Описание предложения'),
+            ))
+        ))
+
         ->add_tab(__('Контактная форма'), array(
             Field::make('text', 'crb_dashbord_form_head', 'Заголовок формы'),
             Field::make('text', 'crb_dashbord_form_desc', 'Подзаголовок формы'),
