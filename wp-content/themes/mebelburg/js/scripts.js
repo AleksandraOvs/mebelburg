@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tmp.forEach(e => e.style.display = 'block');
         item += step;
 
-        if (tmp.length < 8)
+        if (tmp.length < 4)
             this.remove();
     });
 
