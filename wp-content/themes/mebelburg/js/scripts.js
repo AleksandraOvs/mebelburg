@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //   });
 
     let data = Array.from(document.querySelectorAll('.section-sale__list li')),
-        step = 4,
+        step = 8,
         item = 0;
 
     data.slice(step).forEach(e => e.style.display = 'none');
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tmp.forEach(e => e.style.display = 'block');
         item += step;
 
-        if (tmp.length < 4)
+        if (tmp.length < 8)
             this.remove();
     });
 
