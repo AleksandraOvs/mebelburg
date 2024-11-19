@@ -416,10 +416,6 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
     line-height: 120%;
 }
 
- .section-sale__list .section-sale__list__item:nth-of-type(n+5) {
-    display: none;
-  } 
-
   .sale-info {
     font-size: 14px;
     line-height: 120%;
