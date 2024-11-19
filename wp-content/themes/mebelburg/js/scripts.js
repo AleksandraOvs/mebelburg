@@ -63,6 +63,14 @@ document.addEventListener("DOMContentLoaded", () => {
           } 
         }, false );
 
+
+        $(function(){
+            $('.show-hide-btn').click(function(){
+              $('.section-sale__list__item:nth-child(n+5)').slideToggle('');
+            $(this).addClass('hide');
+            });
+          });
+
 });
 
 

@@ -125,29 +125,34 @@
                                     foreach ($sale_items as $sale_item) {
                                     ?>
                                         <li class="section-sale__list__item">
-                                        <div class="section-sale__list__item__shop">
-                                             <?php if ($sale_name = $sale_item['crb_sfm_brand']) {
-                                                echo '<h4>' . $sale_name . '</h4>';
-                                            }
-                                            ?>
+                                            <div class="section-sale__list__item__shop">
+                                                <?php if ($sale_name = $sale_item['crb_sfm_brand']) {
+                                                    echo '<h4>' . $sale_name . '</h4>';
+                                                }
+                                                ?>
 
-                                            <?php if ($sale_num = $sale_item['crb_sfm_brand_num']) {
-                                                echo '<div class="sale-num">' . $sale_num . '</div>';
-                                            }
-                                            ?>
-                                        </div>
+                                                <?php if ($sale_num = $sale_item['crb_sfm_brand_num']) {
+                                                    echo '<div class="sale-num">' . $sale_num . '</div>';
+                                                }
+                                                ?>
+                                            </div>
 
-                                        <div class="section-sale__list__item__info">
-                                        <?php if ($sale_info = $sale_item['crb_sfm_text']) {
-                                                echo '<div class="sale-info">' . $sale_info . '</div>';
-                                            }
-                                            ?>
-                                        </div>
+                                            <div class="section-sale__list__item__info">
+                                                <?php if ($sale_info = $sale_item['crb_sfm_text']) {
+                                                    echo '<div class="sale-info">' . $sale_info . '</div>';
+                                                }
+                                                ?>
+                                            </div>
                                         </li>
                                     <?php
                                     }
                                     ?>
                                 </ul>
+
+                                <a class="show-hide-btn button">
+                                    <span>Смотреть все акции</span>
+                                    <!-- <i class="fa fa-chevron-down" aria-hidden="true"></i> -->
+                                </a>
                             <?php
                             }
                             ?>

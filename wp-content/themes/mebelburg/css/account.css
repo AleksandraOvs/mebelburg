@@ -373,14 +373,15 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
 }
 
 .section-sale__list__item {
+    position:relative;
     padding: 18px;
     border: 1px solid #999;
     background: #fff;
     border-radius: 10px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start; */
     height: 30vh;
 }
 
@@ -404,6 +405,9 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
 }
 
 .section-sale__list__item__info {
+    position:absolute;
+    bottom:18px;
+    left:18px;
     width: 80%;
   }
 
@@ -411,6 +415,23 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
     font-size: 14px;
     line-height: 120%;
 }
+
+.section-sale__list .section-sale__list__item:nth-of-type(n+5) {
+    display: none;
+  }
+
+  .sale-info {
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .show-hide-btn.button.hide {
+    display: none;
+  }
+
+  .show-hide-btn.button {
+    margin-top: 40px;
+  }
 
 
 
