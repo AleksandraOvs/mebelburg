@@ -102,7 +102,7 @@ document.querySelector('.show-hide-btn').addEventListener('click', function(e){
   tmp.forEach(e => e.style.display = 'block');
   item += step;
   
-  if(tmp.length < 8)
+  if(tmp.length < 1)
     this.remove();
 });
 
