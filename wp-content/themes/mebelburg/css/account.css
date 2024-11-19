@@ -416,18 +416,18 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
     line-height: 120%;
 }
 
-.section-sale__list .section-sale__list__item:nth-of-type(n+5) {
+ .section-sale__list .section-sale__list__item:nth-of-type(n+5) {
     display: none;
-  }
+  } 
 
   .sale-info {
     font-size: 14px;
     line-height: 120%;
   }
 
-  .show-hide-btn.button.hide {
+ .show-hide-btn.button.hide {
     display: none;
-  }
+  } 
 
   .show-hide-btn.button {
     margin-top: 40px;

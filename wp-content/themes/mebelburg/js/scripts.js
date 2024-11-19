@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // let menuItems = document.querySelectorAll('nav .main-menu li:nth-child(' + Math.floor(navItemLength / 2 + 1) + ')');
 
-        let menuItems = document.querySelectorAll('nav .main-menu li:nth-child(' + Math.floor(navItemLength / 2 ) + ')');
+        let menuItems = document.querySelectorAll('nav .main-menu li:nth-child(' + Math.floor(navItemLength / 2) + ')');
 
         for (var i = 0; i < menuItems.length; i++) {
             menuItems[i].after(ourLogo);
@@ -48,28 +48,46 @@ document.addEventListener("DOMContentLoaded", () => {
         policyLink.textContent = 'Политика';
     }
     if (window.innerWidth <= 480) {
-    const siteDev =  document.querySelector('.sitedev-link');
-    siteDev.textContent = 'Разработка';
+        const siteDev = document.querySelector('.sitedev-link');
+        siteDev.textContent = 'Разработка';
     }
 
-    document.addEventListener('wpcf7mailsent', function( event ){
-  
-           if (/rent/.test(location.href)) {
+    document.addEventListener('wpcf7mailsent', function (event) {
+
+        if (/rent/.test(location.href)) {
             location = "https://mobelburg.ru/rent/thank-you-rent";
-          } 
-    
-          if (/advertising/.test(location.href)) {
+        }
+
+        if (/advertising/.test(location.href)) {
             location = "https://mobelburg.ru/advertising/thank-you-adv";
-          } 
-        }, false );
+        }
+    }, false);
 
 
-        $(function(){
-            $('.show-hide-btn').click(function(){
-              $('.section-sale__list__item:nth-child(n+5)').slideToggle('');
-            $(this).addClass('hide');
-            });
-          });
+    // $(function(){
+    //     $('.show-hide-btn').click(function(){
+    //       $('.section-sale__list__item:nth-child(n+5)').slideToggle('');
+    //     $(this).addClass('hide');
+    //     });
+    //   });
+
+    let data = Array.from(document.querySelectorAll('.section-sale__list li')),
+        step = 4,
+        item = 0;
+
+    data.slice(step).forEach(e => e.style.display = 'none');
+    item += step;
+
+    document.querySelector('.show-hide-btn').addEventListener('click', function (e) {
+        let tmp = data.slice(item, item + step);
+        tmp.forEach(e => e.style.display = 'block');
+        item += step;
+
+        if (tmp.length < 4)
+            this.remove();
+    });
+
+
 
 });
 

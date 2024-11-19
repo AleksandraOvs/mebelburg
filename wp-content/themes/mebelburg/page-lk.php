@@ -150,7 +150,7 @@
                                 </ul>
 
                                 <a class="show-hide-btn button">
-                                    <span>Смотреть все акции</span>
+                                    <span>Смотреть ещё</span>
                                     <!-- <i class="fa fa-chevron-down" aria-hidden="true"></i> -->
                                 </a>
                             <?php
