@@ -413,7 +413,6 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
 }
 
 .sale-info {
-    font-size: 14px;
     line-height: 120%;
     width:100%;
 }
@@ -891,6 +890,12 @@ li.user .user-posts {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+@media (max-width: 1024px){
+    .section-sale__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 992px) {
