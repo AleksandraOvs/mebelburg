@@ -405,7 +405,6 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
     position: absolute;
     bottom: 18px;
     left: 18px;
-    width: calc(100% - 40px);
 }
 
 .sale-info p {
@@ -414,6 +413,7 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
 
 .sale-info {
     line-height: 120%;
+    width: calc(100% - 40px);
 }
 
 .show-hide-btn.button.hide {
