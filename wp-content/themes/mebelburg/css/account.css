@@ -382,7 +382,7 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start; */
-    height: 30vh;
+    min-height: 300px;
 }
 
 .section-sale__list__item__shop h4 {
@@ -409,14 +409,13 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
 }
 
 .sale-info p {
-    font-size: 14px;
     line-height: 120%;
 }
 
 .sale-info {
     font-size: 14px;
     line-height: 120%;
-    width: 80%;
+    width:100%;
 }
 
 .show-hide-btn.button.hide {
