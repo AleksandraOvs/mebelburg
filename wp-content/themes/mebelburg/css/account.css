@@ -373,7 +373,7 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
 }
 
 .section-sale__list__item {
-    position:relative;
+    position: relative;
     padding: 18px;
     border: 1px solid #999;
     background: #fff;
@@ -386,10 +386,7 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
 }
 
 .section-sale__list__item__shop h4 {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 100%;
+    font-size: calc(1em + 1.7vw);
     margin-bottom: 15px;
 }
 
@@ -405,29 +402,30 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
 }
 
 .section-sale__list__item__info {
-    position:absolute;
-    bottom:18px;
-    left:18px;
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
     width: 80%;
-  }
+}
 
 .sale-info p {
     font-size: 14px;
     line-height: 120%;
 }
 
-  .sale-info {
+.sale-info {
     font-size: 14px;
     line-height: 120%;
-  }
+    width: 80%;
+}
 
- .show-hide-btn.button.hide {
+.show-hide-btn.button.hide {
     display: none;
-  } 
+}
 
-  .show-hide-btn.button {
+.show-hide-btn.button {
     margin-top: 40px;
-  }
+}
 
 
 
@@ -910,13 +908,9 @@ li.user .user-posts {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .section-sale__list__item__shop h4 {
-        font-size: 18px;
-    }
-
     .section-sale__list__item__info {
         width: 100%;
-      }
+    }
 }
 
 @media (max-width: 576px) {
@@ -927,22 +921,18 @@ li.user .user-posts {
 
     .section-sale__list {
         grid-template-columns: repeat(1, 1fr);
-        gap:12px;
+        gap: 12px;
     }
 
     .section-sale__list__item {
         padding: 12px;
     }
 
-    .section-sale__list__item__shop h4 {
-        font-size: 14px;
-      }
-
-      .sale-num {
+    .sale-num {
         font-size: 12px;
-      }
+    }
 
-      .sale-info p {
+    .sale-info p {
         font-size: 12px;
-      }
+    }
 }
