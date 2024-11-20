@@ -4,6 +4,15 @@
     max-width: 769px;
 }
 
+@media screen and (max-width: 782px) {
+    html #wpadminbar {
+      height: 46px;
+      min-width: 240px;
+      position: fixed;
+      margin-top: 0 !important;
+    }
+  }
+
 body{
     font-family: 'Open Sans', serif;
     color:#343434;
