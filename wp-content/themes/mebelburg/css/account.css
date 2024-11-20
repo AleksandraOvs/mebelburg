@@ -386,7 +386,7 @@ section.section-dashboard__form .wpcf7 form p .wpcf7-submit {
 }
 
 .section-sale__list__item__shop h4 {
-    font-size: calc(1em + 1.7vw);
+    font-size: calc(1em + 1.7vh);
     margin-bottom: 15px;
 }
 
