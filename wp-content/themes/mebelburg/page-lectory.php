@@ -93,6 +93,11 @@
         ?>
             <div class="lectory-price">
                 <?php
+                    if ($lec_desc = carbon_get_post_meta(get_the_ID(),'crb_lec_services_description')){
+                        echo '<div class="lectory-price__part__description">'.$lec_desc.'</div>';
+                    }
+                ?>
+                <?php
                 foreach ($services as $service) {
                 ?>
                     <div class="lectory-price__part">

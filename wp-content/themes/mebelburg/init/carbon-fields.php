@@ -348,9 +348,10 @@ function site_carbon()
         ))
 
         ->add_tab(__('Услуги'), array(
+            Field::make('rich_text', 'crb_lec_services_description', 'Описание'),
             Field::make('complex', 'crb_lec_services', 'Список услуг лектория/коворкинга')
                 ->add_fields(array(
-                    Field::make('text', 'crb_lec_services_head', 'Заголовок'),
+                    Field::make('text', 'crb_lec_services_head', 'Заголовоык'),
                     Field::make('complex', 'crb_lec_services_items', 'Услуга')
                         ->add_fields(array(
                             Field::make('text', 'crb_lec_services_name', 'Название услуги')
