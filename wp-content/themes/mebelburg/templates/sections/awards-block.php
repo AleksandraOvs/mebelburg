@@ -23,4 +23,4 @@ if ($query->have_posts()) {
         </div>
     </section>
 
-<?php  } else {echo 'nothing';} ?>
+<?php  } ?>
