@@ -12,4 +12,6 @@
     </div>
 </section>
 
+<?php get_template_part('templates/sections/awards-block') ?>
+
 <?php get_footer() ?>
