@@ -2244,6 +2244,14 @@ ul.sale-block__list, .awds-block__list {
   gap: 18px;
 }
 
+.post-block__list._awds {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  list-style: none;
+  margin-top: 30px;
+}
+
 .awds-block__list{
   margin-top: 70px;
 }
@@ -4083,6 +4091,12 @@ h2.enter__title_events {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .post-block__list._awds {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
   }
 
 }

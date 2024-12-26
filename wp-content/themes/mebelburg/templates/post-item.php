@@ -20,6 +20,7 @@
                     </svg>
 
                 </div>
+            </a>
         </div>
 
         <div class="post__content__title">
@@ -32,7 +33,7 @@
             ?>
 
         </div>
-        </a>
+        
 
         <div class="post__time">
             <?php the_time('j.m.Y'); ?>
