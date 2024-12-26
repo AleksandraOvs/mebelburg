@@ -2256,6 +2256,18 @@ ul.sale-block__list, .awds-block__list {
   margin-top: 70px;
 }
 
+.post-block__list._awds li .post-block__item__content .post__content .post-thumbnail {
+  position: relative;
+  height: 420px;
+}
+
+.post-block__list._awds li .post-block__item__content .post__content .post-thumbnail img{
+  width: 100%;
+  height:100%;
+  object-fit:cover;
+  object-position: center;
+}
+
 li.sale-block__item {
   position: relative;
   padding: 18px;
@@ -3483,6 +3495,10 @@ h2.enter__title_events {
 
   .page-section__description._events-desc {
     width: 80%;
+  }
+
+  .post-block__list._awds li .post-block__item__content .post__content .post-thumbnail {
+    height: 300px;
   }
 
 
