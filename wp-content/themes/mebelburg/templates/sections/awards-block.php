@@ -16,7 +16,8 @@ if ($query->have_posts()) {
                 <?php
                 while ($query->have_posts()) {
                     $query->the_post();
-                    get_template_part('templates/post-item');
+                    //get_template_part('templates/post-item');
+                    get_template_part('templates/sale-item');
                 }
                 ?>
             </ul>
