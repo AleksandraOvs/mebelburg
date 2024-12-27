@@ -147,6 +147,14 @@ function site_carbon()
                 ->set_width(33)
         ));
 
+    Container::make('post_meta', 'Название')
+        //->show_on_post_type('sales')
+        ->show_on_category('awards')
+        ->add_fields(array(
+            Field::make('rich_text', 'crb_award_details', 'Краткое описание')
+                ->set_width(100),
+        ));
+
     Container::make('post_meta', 'Информация об организации')
         ->show_on_post_type('food')
         ->add_fields(array(
@@ -317,11 +325,11 @@ function site_carbon()
 
         ->add_tab(__('Карточки акций'), array(
             Field::make('complex', 'crb_sale_for_members', 'Предложения')
-            ->add_fields(array(
-                Field::make('text', 'crb_sfm_brand', 'Название магазина'),
-                Field::make('text', 'crb_sfm_brand_num', 'Номер секции'),
-                Field::make('rich_text', 'crb_sfm_text', 'Описание предложения'),
-            ))
+                ->add_fields(array(
+                    Field::make('text', 'crb_sfm_brand', 'Название магазина'),
+                    Field::make('text', 'crb_sfm_brand_num', 'Номер секции'),
+                    Field::make('rich_text', 'crb_sfm_text', 'Описание предложения'),
+                ))
         ))
 
         ->add_tab(__('Контактная форма'), array(
@@ -368,14 +376,14 @@ function site_carbon()
         ->add_tab(__('Контакты'), array(
             Field::make('complex', 'crb_lec_contacts', 'Конактные данные для страницы')
                 ->add_fields(array(
-                            Field::make('text', 'crb_lec_contact_name', 'Заголовок контакта')
-                                ->set_width(33),
-                            Field::make('text', 'crb_lec_contact', 'Текст контакта')
-                                ->set_width(33),
-                            Field::make('text', 'crb_lec_contact_link', 'Ссылка контакта')
-                                ->set_width(33),
-                            Field::make('rich_text', 'crb_lec_contact_desc', 'Пояснение')
-                                ->set_width(33),
+                    Field::make('text', 'crb_lec_contact_name', 'Заголовок контакта')
+                        ->set_width(33),
+                    Field::make('text', 'crb_lec_contact', 'Текст контакта')
+                        ->set_width(33),
+                    Field::make('text', 'crb_lec_contact_link', 'Ссылка контакта')
+                        ->set_width(33),
+                    Field::make('rich_text', 'crb_lec_contact_desc', 'Пояснение')
+                        ->set_width(33),
                 )),
 
         ))
