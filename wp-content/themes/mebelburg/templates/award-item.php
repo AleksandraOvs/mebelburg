@@ -31,7 +31,7 @@ if( has_post_thumbnail() ) {
 
             </div>
         </div>
-        <div class="sale-block__item__content__bottom"><?php the_exerpt() ?></div>
+        <div class="sale-block__item__content__bottom"><?php the_excerpt() ?></div>
 </a>
       
         
