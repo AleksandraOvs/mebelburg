@@ -23,6 +23,7 @@ function wp_js_and_css()
 	wp_enqueue_style('fancy_styles', get_stylesheet_directory_uri() . '/css/jquery.fancybox.min.css', array(), time());
 	wp_enqueue_style('popups_styles', get_stylesheet_directory_uri() . '/css/popups.css', array(), time());
 	wp_enqueue_style('account_styles', get_stylesheet_directory_uri() . '/css/account.css', array(), time());
+	wp_enqueue_style('snow-styles', get_stylesheet_directory_uri() . '/css/podarok.css', array(), time());
 
 	wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', get_stylesheet_directory_uri() . '/js/jquery-3.7.1.min.js', array(), null, true);
@@ -33,11 +34,13 @@ function wp_js_and_css()
 	wp_enqueue_script('fancy_scripts', get_stylesheet_directory_uri() . '/js/jquery.fancybox.min.js', array('jquery'), null, true);
 	wp_enqueue_script('jquery-ui', get_stylesheet_directory_uri() . '/js/jquery-ui.js', array('jquery'), null, true);
 	wp_enqueue_script('popups-script', get_stylesheet_directory_uri() . '/js/popups.js', array('jquery'), null, true);
+	
 	//if (is_page('imap')){
 	//wp_enqueue_script('map_scripts', get_stylesheet_directory_uri() . '/map/map-js.js', array('jquery'), null, true);
 	//wp_enqueue_style('map_styles', get_stylesheet_directory_uri() . '/map/map-styles.css', array(), time());
 	wp_enqueue_script('image_pro_scripts', get_stylesheet_directory_uri() . '/js/image-map-pro.min.js', array('jquery'), null, true);
 	//}
+	
 };
 
 require 'init/carbon-fields.php';
@@ -420,3 +423,8 @@ function getUserRegDate() {
 	$formatter->setPattern('d MMMM, yyyy');
 	echo $formatter->format($datetime);
 	}
+
+	function new_excerpt_more( $more ) {
+		return '';
+	}
+	add_filter('excerpt_more', 'new_excerpt_more');
