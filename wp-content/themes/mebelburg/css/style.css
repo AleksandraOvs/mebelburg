@@ -695,6 +695,16 @@ ul.sale-block li img {
   border-radius: 10px;
 }
 
+.award-detail{
+  background: var(--purple);
+  padding: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 10px;
+  max-width: 60%;
+}
+
 .sale-block__item__content__bottom {
   background: #fff;
   padding: 18px;
