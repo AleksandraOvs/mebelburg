@@ -30,6 +30,19 @@
 
             </div>
         </div>
-        <!-- <div class="sale-block__item__content__bottom"><?php //the_excerpt() ?></div> -->
+
+        <?php
+        if ($award_detail2 = carbon_get_post_meta(get_the_ID(), 'crb_award_details1')) {
+        ?>
+            <div class="sale-block__item__content__bottom">
+                <?php echo $award_detail2 ?>
+            </div>
+
+        <?php
+        }
+        ?>
+
+        <!-- <div class="sale-block__item__content__bottom"><?php //the_excerpt() 
+                                                            ?></div> -->
     </a>
 </li>
