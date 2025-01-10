@@ -151,7 +151,10 @@ function site_carbon()
         //->show_on_post_type('sales')
         ->show_on_category('awards')
         ->add_fields(array(
+
             Field::make('rich_text', 'crb_award_details', 'Краткое описание')
+                ->set_width(100),
+            Field::make('rich_text', 'crb_award_details1', 'Краткое описание (нижняя область)')
                 ->set_width(100),
         ));
 
