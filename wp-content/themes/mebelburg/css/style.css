@@ -2262,6 +2262,10 @@ ul.sale-block__list, .awds-block__list {
   margin-top: 30px;
 }
 
+.post-block__list._awds li .sale-block__item__content .sale-block__item__content__bottom {
+  max-width: 100%;
+}
+
 .awds-block__list{
   margin-top: 70px;
 }
