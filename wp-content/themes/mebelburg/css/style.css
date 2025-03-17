@@ -67,7 +67,7 @@ body._fixed {
   min-height: 100vh;
 }
 
-.bold{
+.bold {
   font-weight: 500;
 }
 
@@ -206,12 +206,12 @@ header.header {
   margin-left: 20px;
 }
 
-.loyalty-link img{
+.loyalty-link img {
   width: 16px;
-    height: 16px;
-    object-fit: contain;
-    object-position: center;
-    margin-right: 10px;
+  height: 16px;
+  object-fit: contain;
+  object-position: center;
+  margin-right: 10px;
 }
 
 a.header__top__link {
@@ -224,12 +224,12 @@ a.header__top__link {
   height: 16px;
 }
 
-.logout_link svg{
-  width:100%;
+.logout_link svg {
+  width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center;
-  margin-left:10px;
+  margin-left: 10px;
 }
 
 img.address__img {
@@ -299,17 +299,17 @@ a.messenger__item .contact-link__img {
 
 a.header__inner__burger {
   display: none;
-    position: absolute;
-    right: 12px;
-    top: 7px;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--black);
-    padding: 8px 10px;
-    border: 1px solid var(--beige);
-    background: #fff;
-    border-radius: 30px;
-    transition: all 0.3s linear;
+  position: absolute;
+  right: 12px;
+  top: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
+  padding: 8px 10px;
+  border: 1px solid var(--beige);
+  background: #fff;
+  border-radius: 30px;
+  transition: all 0.3s linear;
 }
 
 a.header__inner__burger:hover {
@@ -652,13 +652,13 @@ ul.sale-block li img {
 
 .sale-block__item__content {
   position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    color: var(--black);
-    text-decoration: none;
-    justify-content: space-between;
-    z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: var(--black);
+  text-decoration: none;
+  justify-content: space-between;
+  z-index: 2;
 }
 
 .sale-block__item__content__head {
@@ -695,7 +695,7 @@ ul.sale-block li img {
   border-radius: 10px;
 }
 
-.award-detail{
+.award-detail {
   background: var(--purple);
   padding: 18px;
   font-size: 20px;
@@ -884,13 +884,14 @@ section.section-adv {
   margin-top: 3em;
 }
 
-.section-shop, .section-awds {
+.section-shop,
+.section-awds {
   padding-top: 80px;
   padding-bottom: 120px;
   background: rgba(0, 0, 0, 0.1);
 }
 
-.section-shop{
+.section-shop {
   padding-bottom: 0;
 }
 
@@ -1517,7 +1518,7 @@ span.wpcf7-form-control-wrap input {
 }
 
 .submit-button p {
-  position:relative;
+  position: relative;
   display: block;
 }
 
@@ -1781,6 +1782,38 @@ ul.contact-page__messengers li:nth-child(2) .messenger__item img {
   width: 48px;
   height: 30px;
 }
+
+.how-list {
+  position: relative;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+.how-list:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: var(--light-gray);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.how-list li {
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.how-list h3 {
+  font-size: 18px;
+}
+
 
 /* ul.section-rent__causes__list li:last-child .causes-list__content .section-rent__causes__list__item__bottom {
   width: 100%;
@@ -2248,7 +2281,8 @@ div#more_shops {
 
 /*sales*/
 
-ul.sale-block__list, .awds-block__list {
+ul.sale-block__list,
+.awds-block__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
@@ -2266,7 +2300,7 @@ ul.sale-block__list, .awds-block__list {
   max-width: 100%;
 }
 
-.awds-block__list{
+.awds-block__list {
   margin-top: 70px;
 }
 
@@ -2275,10 +2309,10 @@ ul.sale-block__list, .awds-block__list {
   height: 420px;
 }
 
-.post-block__list._awds li .post-block__item__content .post__content .post-thumbnail img{
+.post-block__list._awds li .post-block__item__content .post__content .post-thumbnail img {
   width: 100%;
-  height:100%;
-  object-fit:cover;
+  height: 100%;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -3429,7 +3463,9 @@ h2.enter__title_events {
 }
 
 @media (max-width: 992px) {
-  ul.sale-block__list, ul.awds-block__list {
+
+  ul.sale-block__list,
+  ul.awds-block__list {
     grid-template-columns: 1fr;
   }
 
@@ -3772,6 +3808,10 @@ h2.enter__title_events {
 
   .psl__item__content__more__cat .shop__cat {
     font-size: 12px;
+  }
+
+  .how-list {
+    grid-template-columns: 1fr;
   }
 
   .sale-block__item__content__head__date {

@@ -182,7 +182,16 @@ function site_carbon()
     Container::make('post_meta', 'Страница Контакты')
         ->show_on_page('contacts')
         ->add_tab(__('Код карты'), array(
+
             Field::make('text', 'crb_contacts_map', 'Вставить код карты')
+        ))
+
+        ->add_tab(__('Блок Как добраться'), array(
+            Field::make('complex', 'crb_contact_how', 'Блок')
+            ->set_max(3)
+            ->add_fields(array(
+                Field::make('rich_text', 'crb_contact_how_block', 'NN')
+            ))
         ))
 
         ->add_tab(__('Телефон'), array(

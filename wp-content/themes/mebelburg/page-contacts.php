@@ -11,12 +11,10 @@ get_header() ?>
             <ul class="breadcrumbs__list">
                 <?php echo site_breadcrumbs(); ?>
             </ul>
-
             <div class="page-section__title">
                 <h2><span class="bold">Как добраться</span> в&nbsp;«МÖБЕЛЬБУРГ»</h2>
             </div>
         </div>
-
         <div class="page-section__content _page-contacts__content">
             <?php
             if ($map_code = carbon_get_post_meta(get_the_ID(), 'crb_contacts_map')) {
@@ -27,15 +25,25 @@ get_header() ?>
                 </div>
             <?php
             }
-
             ?>
+
+            <!-- БЛОК КАК ДОБРАТЬСЯ -->
+            <?php 
+                if ($how_blocks = carbon_get_post_meta(get_the_ID(), 'crb_contact_how')){
+                    ?>
+                    <ul class="how-list">
+                        <?php
+                            foreach ($how_blocks as $how_block){
+                                echo '<li>'.$how_block['crb_contact_how_block'].'</li>';
+                            }
+                        ?>
+                    </ul>
+                    <?php
+                }
+            ?>
+            <!-- end of БЛОК КАК ДОБРАТЬСЯ -->
         </div>
-
-
         <ul class="page-contacts__contact-cards">
-
-
-
             <li class="page-contacts__item">
                 <div class="page-contacts__item__head">
                     <div class="pci_heading"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_contact_card_head1') ?></div>
@@ -48,7 +56,6 @@ get_header() ?>
                         ?>
                     </div>
                 </div>
-
                 <div class="page-contacts__item__content">
                     <?php
                     if ($contacts_items1 = carbon_get_post_meta(get_the_ID(), 'crb_contact_card_items1')) {
@@ -71,7 +78,6 @@ get_header() ?>
                     ?>
                 </div>
             </li>
-
             <li class="page-contacts__item">
                 <div class="page-contacts__item__head">
                     <div class="pci_heading"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_contact_card_head2') ?></div>
@@ -84,7 +90,6 @@ get_header() ?>
                         ?>
                     </div>
                 </div>
-
                 <div class="page-contacts__item__content">
                     <?php
                     if ($contacts_items2 = carbon_get_post_meta(get_the_ID(), 'crb_contact_card_items2')) {
@@ -101,15 +106,12 @@ get_header() ?>
                                     </a>
                                 </div>
                             </div>
-
-
                     <?php
                         }
                     }
                     ?>
                 </div>
             </li>
-
             <li class="page-contacts__item">
                 <div class="page-contacts__item__head">
                     <div class="pci_heading"><?php echo carbon_get_post_meta(get_the_ID(), 'crb_contact_card_head3') ?></div>
@@ -122,7 +124,6 @@ get_header() ?>
                         ?>
                     </div>
                 </div>
-
                 <div class="page-contacts__item__content">
                     <?php
                     if ($contacts_items3 = carbon_get_post_meta(get_the_ID(), 'crb_contact_card_items3')) {
@@ -139,8 +140,6 @@ get_header() ?>
                                     </a>
                                 </div>
                             </div>
-
-
                     <?php
                         }
                     }
@@ -148,7 +147,6 @@ get_header() ?>
                 </div>
             </li>
         </ul>
-
         <div class="page-contacts__schedule">
             <?php
             if ($shedule = carbon_get_post_meta(get_the_ID(), 'crb_contact_shed')) {
@@ -157,23 +155,18 @@ get_header() ?>
             ?>
         </div>
     </div>
-
     <div class="subscribe-us">
         <div class="container">
             <div class="subscribe-us__description">
                 Как оставаться в&nbsp;курсе последних событий и акций?
             </div>
-
             <h3 class="subscribe-us__title">
                 Подписывайтесь на&nbsp;наши сообщества
             </h3>
-
             <?php
             if ($crb_contacts = carbon_get_theme_option('crb_messengers_contacts')) {
             ?>
                 <ul class="contact-page__messengers">
-
-
                     <?php
                     foreach ($crb_contacts as $crb_contact) {
                     ?>
@@ -188,11 +181,9 @@ get_header() ?>
 
                             </a>
                         </li>
-
                     <?php
                     }
                     ?>
-
                 </ul>
             <?php
             }
