@@ -1805,7 +1805,7 @@ ul.contact-page__messengers li:nth-child(2) .messenger__item img {
   bottom: 0;
 }
 
-.how-list li {
+.how-list li, .how-list li p {
   font-size: 14px;
   line-height: 120%;
 }
