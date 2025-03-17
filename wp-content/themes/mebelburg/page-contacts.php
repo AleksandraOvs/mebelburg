@@ -33,8 +33,10 @@ get_header() ?>
                     ?>
                     <ul class="how-list">
                         <?php
+                        $i = 0;
                             foreach ($how_blocks as $how_block){
-                                echo '<li>'.$how_block['crb_contact_how_block'].'</li>';
+                                $i++;
+                                echo '<li><div class="item-num"><p>'.$i.'</p></div>'.$how_block['crb_contact_how_block'].'</li>';
                             }
                         ?>
                     </ul>

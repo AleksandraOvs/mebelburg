@@ -3756,8 +3756,6 @@ h2.enter__title_events {
   .floors-slider__button-next {
     display: none;
   }
-
-
   .section-adv__description {
     padding-left: 0;
     padding-right: 0;
@@ -3812,6 +3810,17 @@ h2.enter__title_events {
 
   .how-list {
     grid-template-columns: 1fr;
+  }
+
+  .how-list li {
+    position: relative;
+    padding-left: 50px;
+  }
+
+  .how-list li .item-num{
+    position: absolute;
+    left: 0;
+    top: 10px;
   }
 
   .sale-block__item__content__head__date {
