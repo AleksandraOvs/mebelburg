@@ -188,10 +188,10 @@ function site_carbon()
 
         ->add_tab(__('Блок Как добраться'), array(
             Field::make('complex', 'crb_contact_how', 'Блок')
-            ->set_max(3)
-            ->add_fields(array(
-                Field::make('rich_text', 'crb_contact_how_block', 'NN')
-            ))
+                ->set_max(3)
+                ->add_fields(array(
+                    Field::make('rich_text', 'crb_contact_how_block', 'NN')
+                ))
         ))
 
         ->add_tab(__('Телефон'), array(
@@ -238,6 +238,22 @@ function site_carbon()
                     Field::make('text', 'crb_contacts_text3', 'Текст ссылки')
                         ->set_width(33),
                     Field::make('text', 'crb_contacts_link3', 'Ссылка')
+                        ->set_width(33),
+                ))
+        ))
+
+        ->add_tab(__('Отзывы'), array(
+            Field::make('text', 'crb_contact_card_head4', 'Заголовок карточки')
+                ->set_width(70),
+            Field::make('image', 'crb_contacts_cards_icon4', 'Иконка')
+                ->set_width(30),
+            Field::make('complex', 'crb_contact_card_items4', 'Контакты')
+                ->add_fields(array(
+                    Field::make('text', 'crb_contacts_name4', 'Название контакта')
+                        ->set_width(33),
+                    Field::make('text', 'crb_contacts_text4', 'Текст ссылки')
+                        ->set_width(33),
+                    Field::make('text', 'crb_contacts_link4', 'Ссылка')
                         ->set_width(33),
                 ))
         ))

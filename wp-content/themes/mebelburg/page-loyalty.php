@@ -102,7 +102,7 @@ get_header() ?>
                         $partner_logo_url = wp_get_attachment_image_url($partner_logo['crb_partner_logo'], 'full');
                     ?>
                         <li class="partners-logo__list__item">
-                            <img src="<?php echo $partner_logo_url ?>" alt="">
+                            <img src="<?php echo $partner_logo_url ?>" alt="<?php if($alt_text = $partner_logo['crb_partner_logo_alt']) : echo $alt_text; endif; ?>">
                         </li>
                     <?php
                     }

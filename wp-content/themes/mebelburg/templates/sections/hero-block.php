@@ -21,30 +21,17 @@
                             <img class="hero-slider__img" src="<?php echo $hero_slide_img_url; ?>" alt="">
 
                             <div class="hero-slider__slide__content">
-                                <?php
-                                // if ($slide_header = $hero_slide['crb_hero_slider_header']) {
-                                //     echo $slide_header;
-                                // }
-                                ?>
-
-                                <?php
-                                
-                                    //if($header_lines = carbon_get_theme_option('crb_h2_lines')){
-                                        ?>
-                                        <h2 class="h2_title">
-                                            <?php
-                                                foreach($hero_slide['crb_h2_lines'] as $header_line){
-                                                    echo '<span>'. $header_line ['crb_h2_line'].'</span>';
-                                                }
-                                            ?>
-                                        </h2>
-                                        <?php
-                                    //}
-                                ?>
+                                <h2 class="h2_title">
+                                    <?php
+                                    foreach ($hero_slide['crb_h2_lines'] as $header_line) {
+                                        echo '<span>' . $header_line['crb_h2_line'] . '</span>';
+                                    }
+                                    ?>
+                                </h2>
 
                                 <?php
                                 if ($slide_link = $hero_slide['crb_hero_slider_link_more']) {
-                                    echo '<div class="hero-slider__slide__content__more"><a class="hero-slider__slide__content__more__link" href="'.$slide_link.'">Более подробно</a></div>';
+                                    echo '<div class="hero-slider__slide__content__more"><a class="hero-slider__slide__content__more__link" href="' . $slide_link . '">Более подробно</a></div>';
                                 }
                                 ?>
                             </div>
@@ -64,8 +51,7 @@
         </div>
 
         <?php
-         $args = array(
-            //'post_type' => 'sales',
+        $args = array(
             'category_name' => 'sales',
             'posts_per_page' => 2,
         );
@@ -75,21 +61,20 @@
         if ($query->have_posts()) {
         ?>
             <ul class="sale-block__list">
-                    <?php
-                    while ($query->have_posts()) {
-                        $query->the_post();
-                    
-                       get_template_part('templates/sale-item');
-                    
-                    }
-                    ?>
-                </ul>
+                <?php
+                while ($query->have_posts()) {
+                    $query->the_post();
+
+                    get_template_part('templates/sale-item');
+                }
+                ?>
+            </ul>
         <?php
         }
         wp_reset_postdata();
 
         ?>
 
-        <a href="<?php echo site_url('sales')?>" class="button">Все акции</a>
+        <a href="<?php echo site_url('sales') ?>" class="button">Все акции</a>
     </div>
 </section>

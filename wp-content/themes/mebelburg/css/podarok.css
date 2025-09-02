@@ -1,0 +1,245 @@
+.page-template.page-template-page-podarok .site-container header .header__top {
+  background: transparent;
+}
+
+.page-template.page-template-page-podarok {
+  background-color: #1a3b70;
+  background-image: url(../images/svg/bg-element.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
+
+.page-template.page-template-page-podarok .site-container header .header__top .fixed-container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-template.page-template-page-podarok .site-container header .header__top .fixed-container .header__top__left .site-header__logo {
+  width: 50px;
+  height: 50px;
+}
+
+.page-template.page-template-page-podarok .site-container header .header__top .header__top__left__content h1 {
+  font-size: 30px;
+}
+
+.page-template.page-template-page-podarok .site-container header .header__top .header__top__left__content p {
+  font-size: 14px;
+}
+
+.page-section._podarok{
+  position: relative;
+}
+.page-section._podarok:before{
+  content: '';
+  width: 20%;
+  height: 95vh;
+  display: block;
+  position: fixed;
+  top: -15%;
+  left: 20px;
+  z-index: 1;
+  background: url(../images/svg/left-element.svg) no-repeat;
+    background-size: auto;
+  background-size: contain;
+}
+
+.page-section._podarok:after{
+  content: '';
+  width: 23%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  z-index:-1;
+  top: 0;
+  right: 20px;
+  background: url(../images/svg/right-element.svg) no-repeat;
+    background-size: auto;
+  background-size: contain;
+}
+
+.podarok-message {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 28%, rgba(255, 255, 255, 0.5) 100%);
+  padding: 7vh;
+  border-radius: 30px;
+  width: 70%;
+  margin: -120px auto 0;
+}
+
+.podarok-message h1 {
+  font-size: calc(1em + 2vw);
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 120%;
+}
+
+.page-section._podarok {
+  min-height: 100vh;
+}
+
+.page-section._podarok .fixed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ded-m {
+  max-width: 70%;
+  height: calc(100vh - 100px);
+  object-fit: contain;
+}
+
+.page-section._podarok {
+  padding-top: 0;
+}
+
+.podarok-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.podarok-address h2 {
+  margin: 0;
+}
+
+.address-pic {
+  height: 350px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 30px;
+  margin-top: 30px;
+  display: block;
+}
+
+.podarok-text {
+  width: 70%;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.podarok-text p span {
+  font-size: calc(1em + 2vw);
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.podarok-info p {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 300;
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.page-template.page-template-page-podarok main {
+  position: relative;
+  overflow: hidden;
+} 
+
+.page-template.page-template-page-podarok main:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 400px;
+  background: url(../images/svg/bottom-decor.svg) no-repeat;
+    background-size: auto;
+  background-size: auto;
+  background-size: auto;
+  background-size: contain;
+  bottom: -10%;
+  right: -15%;
+}
+
+@media (max-width: 768px) {
+  .ded-m {
+    max-width: 90%;
+  }
+
+  .podarok-message {
+    width: 90%;
+  }
+
+  .podarok-text {
+    width: 90%;
+  }
+
+  .page-section._podarok::before {
+    width: 20%;
+    height: 50vh;
+  }
+
+  .page-section._podarok::after {
+    width: 15%;
+    height: 70vh;
+  }
+
+  .page-template.page-template-page-podarok main::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 400px;
+    background: url(../images/svg/bottom-decor.svg) no-repeat;
+      background-size: auto;
+    background-size: auto;
+    background-size: auto;
+    background-size: auto;
+    background-size: contain;
+    bottom: -15%;
+    right: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ded-m {
+    max-width: 100%;
+    height: 70vh;
+  }
+
+  .podarok-message {
+    width: 100%;
+    padding: 3vh;
+    margin: -130px auto 0;
+  }
+
+  .podarok-text {
+    width: 100%;
+  }
+
+  .page-section._podarok::before {
+    position:absolute;
+    width: 20%;
+    height: 50vh;
+    top: -7%;
+  }
+
+  .page-section._podarok::after {
+    width: 30%;
+    height: 350px;
+    right: -5%;
+    top: -7%;
+    position: absolute;
+  }
+
+  .page-template.page-template-page-podarok main::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 81%;
+    height: 347px;
+    background: url(../images/svg/bottom-decor.svg) no-repeat;
+    background-size: contain;
+    bottom: -13%;
+    right: 10%;
+  }
+}
